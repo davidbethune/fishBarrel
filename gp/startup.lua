@@ -12,6 +12,9 @@ GP:log("Starting", GP.config.modName, GP.version)
 -- STARTUP Register Model Files
 GP:registerModelFiles(GP.config.modelFiles)
 
+-- STARTUP Register Jobs
+GP:registerAllJobs(GP.config.jobs)
+
 -- STARTUP Register Building Part Types
 GP:registerBuildingPartTypes(GP.config.categories)
 

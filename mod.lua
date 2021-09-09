@@ -5,12 +5,17 @@
 -- Creates a Fishmonger job to fill the barrel. 
 -- Transporters take produced fish to the Granary.
 -- 
--- Find details and more GP mods at mod.io:
+-- Find usage and modding instructions:
+-- https://foundation.mod.io/barrel-ofish
+--
+-- Get more GP mods at mod.io:
 -- https://mod.io/members/garranplum
 --
 -- Join the Foundation modding community:
 -- https://discord.gg/foundation
 --
+-- Join The Orchard, a GP modding server:
+-- https://discord.gg/aeehVjMtzB
 --
 -- Acknowledgements:
 -- Contains versions of models by @Batyushki and @RaisinMuffin, used with permission. 
@@ -25,7 +30,7 @@
 -- Mod Main Entrypoint & Loader
 
 -- GP OBJECT
-GP = {version = "2.0",}
+GP = {version = "2.1.0",}
 
 -- FUNCTION REGISTERMOD
 -- Register mod to the GP object.
@@ -51,7 +56,7 @@ GP:load("gp/building.lua")
 GP:load("gp/config.lua")
 
 -- JOBS
-GP:load("scripts/jobs.lua")
+GP:load("gp/jobs.lua")
 
 -- WORKPLACES
 GP:load("scripts/workplaces.lua")

@@ -14,6 +14,15 @@ local modName = "fishBarrel"
 -- MY CONFIG Paths
 local pathList = {"Worker_1", "Worker_2","Transport", "Visitor"}
 
+-- MY CONFIG Jobs
+local jobs = {
+    FISHMONGER = {
+        work = "MARKET_TENDER",
+        walk = "WALKING", 
+        delay = 7,
+    }
+}
+
 -- MY CONFIG Categories
 local categories = {
     BARREL = {
@@ -87,5 +96,6 @@ GP.config = {
     modelFiles = modelFiles,
     categories = categories,
     nodeTypes = nodeTypes,
+    jobs = jobs,
     monuments = monuments
 }
