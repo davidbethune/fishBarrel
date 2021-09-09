@@ -15,6 +15,9 @@ GP:registerModelFiles(GP.config.modelFiles)
 -- STARTUP Register Jobs
 GP:registerAllJobs(GP.config.jobs)
 
+-- STARTUP Register Workplaces
+GP:registerAllWorkplaces(GP.config.workplaces)
+
 -- STARTUP Register Building Part Types
 GP:registerBuildingPartTypes(GP.config.categories)
 

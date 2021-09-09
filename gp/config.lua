@@ -2,24 +2,29 @@
 -- by Garran Plum
 --
 -- GP Configuration for this individual mod.
-
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
-GP:log("Config",GP.version)
+GP:log("Config", GP.version)
 
 -- MY CONFIG Mod Name
 local modName = "fishBarrel"
 
 -- MY CONFIG Paths
-local pathList = {"Worker_1", "Worker_2","Transport", "Visitor"}
+local pathList = {"Worker_1", "Worker_2", "Transport", "Visitor"}
 
 -- MY CONFIG Jobs
 local jobs = {
-    FISHMONGER = {
-        work = "MARKET_TENDER",
-        walk = "WALKING", 
-        delay = 7,
+    FISHMONGER = {Work = "MARKET_TENDER", Walk = "WALKING", Delay = 7}
+}
+
+-- MY CONFIG Workplaces
+local workplaces = {
+    FISH_PRODUCER = {
+        Job = "FISHMONGER",
+        Positions = 1,
+        Produces = {FISH = 5},
+        Requires = {FISH = 1},
     }
 }
 
@@ -29,10 +34,8 @@ local categories = {
         Barrel = {
             Function = "FISH_PRODUCER",
             PathNodes = pathList,
-            PathTypes = {
-                DEFAULT = "Worker_1"
-            }
-        },
+            PathTypes = {DEFAULT = "Worker_1"}
+        }
     },
     FISH = {
         Ahi = {},
@@ -40,51 +43,38 @@ local categories = {
         Choice = {},
         Roughy = {},
         Salmon = {},
-        Trout = {},
+        Trout = {}
     },
     CRATE = {
         Crate = {
             Function = "FISH_GENERATOR",
             PathNodes = pathList,
-            PathTypes = {
-                DEFAULT = "Transport"
-            }
+            PathTypes = {DEFAULT = "Transport"}
         },
         Crate_Stack = {
             Function = "FISH_GENERATOR",
             PathNodes = pathList,
-            PathTypes = {
-                DEFAULT = "Transport"
-            }
-        },
+            PathTypes = {DEFAULT = "Transport"}
+        }
     },
     DECOR = {
         MARKET_BLUE_TENT = {AssetRegistered = true, BuildingRegistered = true},
         MARKET_FOOD_SIGN = {AssetRegistered = true, BuildingRegistered = true},
         FLOWER_YELLOW = {AssetRegistered = true},
-        FLOWER_BLUE = {AssetRegistered = true},
-    },
+        FLOWER_BLUE = {AssetRegistered = true}
+    }
 }
 
 -- MY CONFIG Model Files
-local modelFiles = { 
-    [modName] = {"BARREL", "CRATE", "FISH", "DECOR"}
-}
+local modelFiles = {[modName] = {"BARREL", "CRATE", "FISH", "DECOR"}}
 
 -- MY CONFIG Node Types
-local nodeTypes = {
-    MINOR = {"FISH"}
-}
+local nodeTypes = {MINOR = {"FISH"}}
 
 -- MY CONFIG Monuments
 local monuments = {
     FISH_BARREL = {
-        Categories = {
-            FISH,
-            CRATE,
-            BARREL,
-            DECOR
-            },
+        Categories = {FISH, CRATE, BARREL, DECOR},
         Type = "FOOD_PRODUCTION",
         Function = {}
     }
@@ -97,5 +87,6 @@ GP.config = {
     categories = categories,
     nodeTypes = nodeTypes,
     jobs = jobs,
+    workplaces = workplaces,
     monuments = monuments
 }

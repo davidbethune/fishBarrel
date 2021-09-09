@@ -22,12 +22,12 @@ myMod:register({
 	JobName = jobName,
 	JobDescription = jobName .. "_DESC",
 	IsLockedByDefault = false,
-    ProductionDelay = jobConfig.delay,
+    ProductionDelay = jobConfig.Delay,
 	AssetJobProgression = "DEFAULT_JOB_PROGRESSION",
 	CharacterSetup = {
         DataType = "CHARACTER_SETUP",
-        WalkAnimation = jobConfig.walk,
-		IdleAnimation = jobConfig.work
+        WalkAnimation = jobConfig.Walk,
+		IdleAnimation = jobConfig.Work
 		
 	}
 })

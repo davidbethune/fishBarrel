@@ -59,7 +59,7 @@ GP:load("gp/config.lua")
 GP:load("gp/jobs.lua")
 
 -- WORKPLACES
-GP:load("scripts/workplaces.lua")
+GP:load("gp/workplaces.lua")
 
 -- STARTUP
 -- Register custom buildings using GP object functions.
