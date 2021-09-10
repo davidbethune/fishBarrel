@@ -22,7 +22,7 @@ GP:registerAllWorkplaces(GP.config.workplaces)
 GP:registerBuildingPartTypes(GP.config.categories)
 
 -- STARTUP Register Monument
-GP:registerMonumentList(GP.config.monuments)
+GP:registerMonumentList(GP.config)
 
 
 

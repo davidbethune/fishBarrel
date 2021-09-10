@@ -74,7 +74,12 @@ local nodeTypes = {MINOR = {"FISH"}}
 -- MY CONFIG Monuments
 local monuments = {
     FISH_BARREL = {
-        Categories = {FISH, CRATE, BARREL, DECOR},
+        Categories = {
+            FISH = {}, 
+            CRATE = {Min = 1}, 
+            BARREL = {Min = 1}, 
+            DECOR = {}
+        },
         Type = "FOOD_PRODUCTION",
         Function = {}
     }

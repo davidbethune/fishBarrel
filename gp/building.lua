@@ -227,71 +227,60 @@ end
 -- FUNCTION Register Monument
 -- FUNCTIONAL INPUTS
 -- GAME EFFECT
-function GP:registerMonument(buildingName, buildingType, buildingFunction)
-    GP:log("Registering Monument:", buildingName, GP:ternary(buildingType,"for " .. buildingType))
+function GP:registerMonument(buildingName, config)
+    GP:log("Registering Monument:", buildingName)
+
+    -- Build Parts Lists
+    local buildingPartsList = {}
+    local requiredPartsList = {}
+
+    -- For each category in the monument...
+    for categoryKey, categoryConfig in pairs(config.monuments[buildingName].Categories) do
+
+        local categoryPartsList = {
+            Name = "CATEGORY_" .. categoryKey,
+            BuildingPartList = {}
+        }
+
+        -- For each part in the category...
+        for partKey, partConfig in pairs(config.categories[categoryKey]) do
+
+            -- Add the part to the category parts list
+            table.insert(categoryPartsList.BuildingPartList,"BUILDING_PART_" .. partKey)
+        end
+
+        -- Add the category parts list to the monument
+        table.insert(buildingPartsList,categoryPartsList)
+
+        -- Add category part requirements, if any
+        if (categoryConfig.Min) then
+            table.insert(requiredPartsList,{
+                Category = categoryKey,
+                Min = categoryConfig.Min})
+        end
+
+    end
+
     myMod:register({
         DataType = "BUILDING", 
         Id = "BUILDING_" .. buildingName,
         Name = buildingName,
         Description = buildingName .. "_DESC",
-        BuildingType = buildingType,
-        -- AssetBuildingFunction = buildingFunction,
+        BuildingType = config.monuments[buildingName].Type,
+        -- AssetBuildingFunction = config.monuments[buildingName].Function,
         AssetCoreBuildingPart = "BUILDING_PART_MONUMENT_POLE",
-        BuildingPartSetList = {
-            {
-                Name = "CATEGORY_BARREL",
-                BuildingPartList = {
-                    "BUILDING_PART_Barrel",
-                }
-            },
-            {
-                Name = "CATEGORY_CRATE",
-                BuildingPartList = {
-                    "BUILDING_PART_Crate",
-                    "BUILDING_PART_Crate_Stack",
-                }
-            },
-            {
-                Name = "CATEGORY_FISH",
-                BuildingPartList = {
-                    "BUILDING_PART_Salmon",
-                    "BUILDING_PART_Bass",
-                    "BUILDING_PART_Trout",
-                    "BUILDING_PART_Roughy",
-                    "BUILDING_PART_Ahi",
-                    "BUILDING_PART_Choice",
-                }
-            },
-            {
-                Name = "CATEGORY_DECOR",
-                BuildingPartList = {
-                    "BUILDING_PART_MARKET_BLUE_TENT",
-                    "BUILDING_PART_MARKET_FOOD_SIGN",
-                    "BUILDING_PART_FLOWER_YELLOW",
-                    "BUILDING_PART_FLOWER_BLUE"
-                }
-            }
-        },
-        RequiredPartList = {
-                {
-                    Category = "BARREL",
-                    Min = 1
-                },
-                {
-                    Category = "CRATE",
-                    Min = 1
-                }
-        }
+        BuildingPartSetList = buildingPartsList,
+        RequiredPartList = requiredPartsList,
     })
 end
 
 -- FUNCTION Register Monument List
 -- FUNCTIONAL INPUTS
 -- GAME EFFECT CALL
-function GP:registerMonumentList(monumentList) 
-    GP:logKeys("Registering Monuments",monumentList)
-    for buildingName, config in pairs(monumentList) do
-        GP:logKeys("Monument Config " .. buildingName,config)
-        GP:registerMonument(buildingName, config.Type, config.Function) 
+function GP:registerMonumentList(config) 
+    GP:logKeys("Registering Monuments",config.monuments)
+    for buildingName, buildingConfig in pairs(config.monuments) do
+        GP:logKeys("Monument Config " .. buildingName, buildingConfig)
+        GP:registerMonument(buildingName, config) 
     end
 end
