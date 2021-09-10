@@ -17,13 +17,11 @@ function GP:registerModelFiles(modelFiles)
 
         local modelFileName = "models" .. "/" .. modelFile .. ".fbx"
 
-        local categoryKeyList = GP:getKeys(categoryKeyArray)
-
         -- Register building part types for each category in the file.           
         GP:registerBuildingPartTypes(categoryKeyArray)
 
         -- Register prefabs for each category in the file.
-        for categoryKey in pairs(categoryKeyList) do
+        for index, categoryKey in pairs(categoryKeyArray) do
 
             -- Get a list of parts for the category.
             local categoryPartsList = GP.config.categories[categoryKey]
