@@ -37,14 +37,6 @@ local categories = {
             PathTypes = {DEFAULT = "Worker_1"}
         }
     },
-    FISH = {
-        Ahi = {},
-        Bass = {},
-        Choice = {},
-        Roughy = {},
-        Salmon = {},
-        Trout = {}
-    },
     CRATE = {
         Crate = {
             Function = "FISH_GENERATOR",
@@ -56,6 +48,14 @@ local categories = {
             PathNodes = pathList,
             PathTypes = {DEFAULT = "Transport"}
         }
+    },
+    FISH = {
+        Ahi = {},
+        Bass = {},
+        Choice = {},
+        Roughy = {},
+        Salmon = {},
+        Trout = {}
     },
     DECOR = {
         MARKET_BLUE_TENT = {AssetRegistered = true, BuildingRegistered = true},
@@ -75,9 +75,9 @@ local nodeTypes = {MINOR = {"FISH"}}
 local monuments = {
     FISH_BARREL = {
         Categories = {
-            FISH = {}, 
-            CRATE = {Min = 1}, 
             BARREL = {Min = 1}, 
+            CRATE = {Min = 1}, 
+            FISH = {}, 
             DECOR = {}
         },
         Type = "FOOD_PRODUCTION",
