@@ -2,7 +2,7 @@
 	"Name": "Barrel O'Fish",
 	"Author": "GarranPlum",
 	"Description": "Produces fish quickly from a barrel you can place anywhere. Creates a Fishmonger job. Transporters take your fish to a granary.",
-	"Version": "2.2.1",
+	"Version": "2.2.2",
 	
 	"Dependencies": []
 }
