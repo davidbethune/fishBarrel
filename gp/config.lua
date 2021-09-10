@@ -66,7 +66,7 @@ local categories = {
 }
 
 -- MY CONFIG Model Files
-local modelFiles = {[modName] = {"BARREL", "CRATE", "FISH", "DECOR"}}
+local modelFiles = {[modName] = {"CRATE", "DECOR" , "BARREL", "FISH"}}
 
 -- MY CONFIG Node Types
 local nodeTypes = {MINOR = {"FISH"}}
@@ -75,10 +75,10 @@ local nodeTypes = {MINOR = {"FISH"}}
 local monuments = {
     FISH_BARREL = {
         Categories = {
-            BARREL = {Min = 1}, 
-            CRATE = {Min = 1}, 
-            FISH = {}, 
-            DECOR = {}
+            BARREL = {Order = 1, Min = 1}, 
+            CRATE = {Order = 2, Min = 1}, 
+            FISH = {Order = 3}, 
+            DECOR = {Order = 4}
         },
         Type = "FOOD_PRODUCTION",
         Function = {}

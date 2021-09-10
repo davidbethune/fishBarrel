@@ -37,7 +37,7 @@ function GP:registerWorkplace(workplaceName, workplaceConfig)
     myMod:register({
         DataType = "BUILDING_FUNCTION_WORKPLACE",
         Id = workplaceName,
-        Name = workplaceConfig.Job,
+        Name = workplaceName .. "_WORKPLACE",
         WorkerCapacity = workplaceConfig.Positions,
         RelatedJob = {Job = workplaceConfig.Job, Behavior = "BEHAVIOR_WORK"},
         InputInventoryCapacity = resourceProducedList,

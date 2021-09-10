@@ -40,6 +40,11 @@
 			"FLOWER_YELLOW_DESC": "Mix and match these yellow flowers for extra flair."	
 		},
 
+		
+		"WORKPLACES": {
+			"BARREL_WORKPLACE": "Barrel O'Fish"
+		},
+
 		"JOBS": {
 			"FISHMONGER": "Fishmonger",
 			"FISHMONGER_DESC": "Tends a Barrel O'Fish and restocks it from a crate."

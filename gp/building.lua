@@ -21,7 +21,7 @@ function GP:registerModelFiles(modelFiles)
         GP:registerBuildingPartTypes(categoryKeyArray)
 
         -- Register prefabs for each category in the file.
-        for index, categoryKey in pairs(categoryKeyArray) do
+        for index, categoryKey in ipairs(categoryKeyArray) do
 
             -- Get a list of parts for the category.
             local categoryPartsList = GP.config.categories[categoryKey]
@@ -43,7 +43,7 @@ function GP:registerModelFiles(modelFiles)
         GP:registerAttachNodeTypes(GP.config.nodeTypes)
 
         -- Register all path nodes, path types, and building parts for each category.
-        for categoryKey in pairs(categoryKeyList) do
+        for index, categoryKey in ipairs(categoryKeyArray) do
 
             -- Get a list of parts for the category.
             local categoryPartsList = GP.config.categories[categoryKey]
@@ -126,11 +126,18 @@ end
 -- READS GP.config.categories
 -- GAME EFFECT
 function GP:registerAttachNodeTypes(nodeTypeList)
-    GP:logKeys("Registering Attach Node Types", nodeTypeList)
-    for nodeType, partsListKeyList in pairs(nodeTypeList) do
-        local partsListKeys = GP:getKeys(partsListKeyList)
-        for partsList, value in pairs(partsListKeys) do
-            local partsList = GP.config.categories[partsList]
+
+    -- For each node type...
+    for nodeType, categoryKeyList in pairs(nodeTypeList) do
+
+        -- For each category on that node type list...
+        for index, categoryKey in ipairs(categoryKeyList) do
+
+            -- Get the list of parts in that category.
+            local partsList = GP.config.categories[categoryKey]
+
+            -- Register the parts list to that node type.
+            GP:logKeys("Registering Attach Node Types", partsList)
             GP:registerAttachNodeType(nodeType, partsList)
         end
     end
@@ -162,7 +169,7 @@ end
 -- FUNCTIONAL INPUTS
 -- GAME EFFECT
 function GP:registerBuildingPartTypes(categoryArray)
-    for index, category in pairs(categoryArray) do
+    for index, category in ipairs(categoryArray) do
         GP:log("Registering Building Part Type", category)
         GP.mod:registerEnumValue("BUILDING_PART_TYPE", category)
     end
@@ -195,7 +202,7 @@ end
 -- FUNCTION Register Path Nodes
 -- PURE FUNCTIONAL
 function GP:registerPathNodes(modelFileName, partName, pathNodes)
-    for index, pathKey in pairs(pathNodes) do
+    for index, pathKey in ipairs(pathNodes) do
         local pathName = "Path" .. "_" .. GP:fbxName(partName) .. "_" .. pathKey
         local pathId = string.upper(pathName)
         local pathPath = GP:prefabPath(modelFileName, partName) .. pathName
@@ -231,37 +238,48 @@ function GP:registerPathTypes(modelFileName, partName, pathTypes)
 end
 
 -- FUNCTION Register Monument
--- FUNCTIONAL INPUTS
+-- REQUIRES GP Object
 -- GAME EFFECT
-function GP:registerMonument(buildingName, config)
+function GP:registerMonument(buildingName, buildingConfig)
     GP:log("Registering Monument:", buildingName)
 
     -- Build Parts Lists
     local buildingPartsList = {}
     local requiredPartsList = {}
 
+    -- Sort categories by Order
+    local orderedCategoryKeys = {}
+    for categoryKey, categoryConfig in pairs(buildingConfig.Categories) do
+        orderedCategoryKeys[categoryConfig.Order] = categoryKey
+    end
+
     -- For each category in the monument...
-    for categoryKey, categoryConfig in pairs(
-                                           config.monuments[buildingName]
-                                               .Categories) do
+    for index, categoryKey in ipairs(
+        orderedCategoryKeys) do
 
-        GP:log("Monument Category", categoryKey)
+        categoryConfig = GP.config.monuments[buildingName].Categories[categoryKey]     
 
-        local categoryPartsList = {
+        GP:log("Monument Category:", categoryKey)
+
+        -- Create a monument part set for the category
+        local categoryPartSet = {
             Name = "CATEGORY_" .. categoryKey,
             BuildingPartList = {}
         }
 
+        -- Get the parts in this category.
+        local categoryPartsList = GP.config.categories[categoryKey]
+
         -- For each part in the category...
-        for partKey, partConfig in pairs(config.categories[categoryKey]) do
+        for partKey, partConfig in pairs(categoryPartsList) do
 
             -- Add the part to the category parts list
-            table.insert(categoryPartsList.BuildingPartList,
+            table.insert(categoryPartSet.BuildingPartList,
                          "BUILDING_PART_" .. partKey)
         end
 
         -- Add the category parts list to the monument
-        table.insert(buildingPartsList, categoryPartsList)
+        table.insert(buildingPartsList, categoryPartSet)
 
         -- Add category part requirements, if any
         if (categoryConfig.Min) then
@@ -276,8 +294,8 @@ function GP:registerMonument(buildingName, config)
         Id = "BUILDING_" .. buildingName,
         Name = buildingName,
         Description = buildingName .. "_DESC",
-        BuildingType = config.monuments[buildingName].Type,
-        -- AssetBuildingFunction = config.monuments[buildingName].Function,
+        BuildingType = buildingConfig.Type,
+        -- AssetBuildingFunction = buildingConfig.Function,
         AssetCoreBuildingPart = "BUILDING_PART_MONUMENT_POLE",
         BuildingPartSetList = buildingPartsList,
         RequiredPartList = requiredPartsList
@@ -291,6 +309,6 @@ function GP:registerMonumentList(config)
     GP:logKeys("Registering Monuments", config.monuments)
     for buildingName, buildingConfig in pairs(config.monuments) do
         GP:logKeys("Monument Config " .. buildingName, buildingConfig)
-        GP:registerMonument(buildingName, config)
+        GP:registerMonument(buildingName, buildingConfig)
     end
 end
