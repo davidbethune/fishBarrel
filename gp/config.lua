@@ -24,7 +24,7 @@ local workplaces = {
         Job = "FISHMONGER",
         Positions = 1,
         Produces = {FISH = 5},
-        Requires = {FISH = 1},
+        Requires = {FISH = 0},
     }
 }
 
