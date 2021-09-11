@@ -19,11 +19,13 @@
 			"Salmon": "Salmon",
 			"Bass": "Sea Bass",
 			"Trout": "Trout",
+			"Grouper": "Red Grouper",
 			"Roughy": "Orange Roughy",
 			"Ahi": "Ahi Tuna",
 			"Choice": "Fisherman's Choice",
-			"FLOWER_BLUE": "Blue Azaleas",
-			"FLOWER_YELLOW": "Yellow Azaleas"	
+			"Flower_Blue": "Blue Azaleas",
+			"Flower_Yellow": "Yellow Azaleas",
+			"Flower_Orange": "Orange Azaleas"	
 		},
 		
 		"BUILDING_DESCRIPTIONS": {
@@ -36,8 +38,9 @@
 			"Roughy_DESC": "Treat your villagers to fresh orange roughy, a true delicacy.",
 			"Ahi_DESC": "Sushi grade ahi tuna, fit for your kingdom.",
 			"Choice_DESC": "The fishermen's choice of today's bountiful catch. Or yesterday's.",
-			"FLOWER_BLUE_DESC": "Lovely blue flowers help attract visitors and help reduce odors.",
-			"FLOWER_YELLOW_DESC": "Mix and match these yellow flowers for extra flair."	
+			"Flower_Blue_DESC": "Lovely blue flowers attract visitors and help reduce odors.",
+			"Flower_Yellow_DESC": "Mix and match these yellow flowers for extra flair.",
+			"Flower_Orange_DESC": "Imported by our traders just for you."		
 		},
 
 		

@@ -39,29 +39,33 @@ local categories = {
     },
     CRATE = {
         Crate = {
+            Order = 1,
             Function = "FISH_GENERATOR",
             PathNodes = pathList,
             PathTypes = {DEFAULT = "Transport"}
         },
         Crate_Stack = {
+            Order = 2,
             Function = "FISH_GENERATOR",
             PathNodes = pathList,
             PathTypes = {DEFAULT = "Transport"}
         }
     },
     FISH = {
-        Ahi = {},
-        Bass = {},
-        Choice = {},
-        Roughy = {},
-        Salmon = {},
-        Trout = {}
+        Ahi = {Order = 1},
+        Roughy = {Order = 2}, 
+        Grouper = {Order = 3},
+        Salmon = {Order = 4},
+        Bass = {Order = 5},
+        Trout = {Order = 6},
+        Choice = {Order = 7},
     },
     DECOR = {
-        MARKET_BLUE_TENT = {AssetRegistered = true, BuildingRegistered = true},
-        MARKET_FOOD_SIGN = {AssetRegistered = true, BuildingRegistered = true},
-        FLOWER_YELLOW = {AssetRegistered = true},
-        FLOWER_BLUE = {AssetRegistered = true}
+        MARKET_BLUE_TENT = {Order = 1, AssetRegistered = true, BuildingRegistered = true},
+        MARKET_FOOD_SIGN = {Order = 2, AssetRegistered = true, BuildingRegistered = true},
+        Flower_Yellow = {Order = 3},
+        Flower_Blue = {Order = 4},
+        Flower_Orange = {Order = 5},
     }
 }
 

@@ -195,6 +195,18 @@ function GP:registerBuildingPart(category, partName, partConfig)
         ConstructorData = {
             DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
             CoreObjectPrefab = prefabId
+        },
+        BuildingZone = {
+            ZoneEntryList = {
+                {
+                    Polygon = polygon.createCircle(1, {0, 0}, 6),
+                    Type = {
+                        DEFAULT = true,
+                        NAVIGABLE = false,
+                        GRASS_CLEAR = true,
+                    }
+                }
+            }
         }
     })
 end
@@ -250,7 +262,11 @@ function GP:registerMonument(buildingName, buildingConfig)
     -- Sort categories by Order
     local orderedCategoryKeys = {}
     for categoryKey, categoryConfig in pairs(buildingConfig.Categories) do
-        orderedCategoryKeys[categoryConfig.Order] = categoryKey
+        if (categoryConfig.Order) then
+            orderedCategoryKeys[categoryConfig.Order] = categoryKey
+        else
+            table.insert(orderedCategoryKeys, categoryKey)
+        end
     end
 
     -- For each category in the monument...
@@ -270,9 +286,22 @@ function GP:registerMonument(buildingName, buildingConfig)
         -- Get the parts in this category.
         local categoryPartsList = GP.config.categories[categoryKey]
 
-        -- For each part in the category...
+        -- Sort parts by Order
+        local orderedPartKeys = {}
         for partKey, partConfig in pairs(categoryPartsList) do
+            if (partConfig.Order) then
+                orderedPartKeys[partConfig.Order] = partKey
+            else   
+                table.insert(orderedPartKeys, partKey)
+            end
+        end
 
+        -- For each part in the category...
+        for index, partKey in ipairs(orderedPartKeys) do
+
+            -- Get the part config
+            partConfig = categoryPartsList[partKey]
+    
             -- Add the part to the category parts list
             table.insert(categoryPartSet.BuildingPartList,
                          "BUILDING_PART_" .. partKey)

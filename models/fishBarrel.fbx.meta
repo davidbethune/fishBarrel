@@ -18,9 +18,16 @@
 		<meta id="ba56eea8-cb06-41de-be3b-b0d1e70abcb0" name="Color.Turquoise.016"/>
 		<meta id="6149e4c4-1d82-43d8-aca3-46be43233f29" name="salmonScalesNew"/>
 		<meta id="7741ca29-94c1-4628-993b-41a453d1e521" name="troutScalesNew"/>
-		<meta id="135c7653-58e1-4ea7-b3ad-6577d5ec10bd" name="roughyScalesNew"/>
 		<meta id="4629eac6-1091-483b-8e77-336688286f43" name="ahiScalesNew"/>
 		<meta id="5f4b8aa9-64d3-41f1-96bb-22e1f9de28cb" name="bassScalesNew"/>
+		<meta id="345dbadc-ea5d-42b8-a4d6-069ffbeb33d4" name="roughyScales"/>
+		<meta id="3d59f502-1bbb-4020-8a7c-60fd0b45a9a5" name="grouperScales"/>
+		<meta id="18d9badf-ae28-4921-9a27-77b2b2f4353f" name="colors"/>
+		<meta id="d08524e1-07a4-4401-bc88-c4c440357704" name="leaf"/>
+		<meta id="0501a5bd-9aeb-4d32-ba01-c681e727cbf8" name="colors.001"/>
+		<meta id="4e4f83f2-e76c-4ee1-918d-028723e9e32e" name="leaf.001"/>
+		<meta id="a8d00f93-4abf-4ee8-85a1-fb005537aa50" name="colors.002"/>
+		<meta id="a06726de-b730-4e64-bd89-78f67775489e" name="leaf.002"/>
 	</meta>
 	<meta id="ec242d93-7c46-4ade-80ab-3d9562c13eb3" type="group" folder="true" name="Meshes">
 		<meta id="36e14387-f6c7-4041-bd3d-68ab3ed26884" name="top.002_wood.003"/>
@@ -43,10 +50,6 @@
 		<meta id="8ee0bc3c-f63e-45ca-b84d-d58aa34cd31c" name="Trout.001_troutScalesNew"/>
 		<meta id="ad0d7a27-81d0-49d4-bd9c-795a28f7c6ef" name="Trout.002_troutScalesNew"/>
 		<meta id="42c1ce23-5086-4c08-88a9-200ddf097cd8" name="Trout.003_troutScalesNew"/>
-		<meta id="02710b0d-1e12-4a8a-9499-ecbf715bfbf1" name="Roughy.003_roughyScalesNew"/>
-		<meta id="f5805dfe-0aee-4200-a61a-2b6f39351c90" name="Roughy.002_roughyScalesNew"/>
-		<meta id="e89e73d7-6779-4abb-b31b-b2c995089fbc" name="Roughy.001_roughyScalesNew"/>
-		<meta id="16a3581f-1d3a-482d-8446-1769c0cc4ce5" name="Roughy.004_roughyScalesNew"/>
 		<meta id="e43ee179-4980-4f29-91ce-c4c42d5cbf0d" name="Ahi.003_ahiScalesNew"/>
 		<meta id="21bd039a-c7aa-4e58-b4b0-704b1b702e6e" name="Ahi.002_ahiScalesNew"/>
 		<meta id="f4ce71ce-0b52-467c-bffb-c0a3cc891afa" name="Choice.003_bassScalesNew"/>
@@ -57,6 +60,27 @@
 		<meta id="4f01c228-7f20-4c3c-bef3-ba461f3f62a0" name="Bass.003_bassScalesNew"/>
 		<meta id="1cb5a008-b895-44d7-93fa-1ea0163e5fef" name="Bass.001_bassScalesNew"/>
 		<meta id="40f5770f-1853-4fb5-be3a-da295f64f73d" name="Bass.002_bassScalesNew"/>
+		<meta id="0793924c-db44-4a36-be79-07a88ed6cbbd" name="Roughy.003_roughyScales"/>
+		<meta id="d0247163-f445-40c8-ab76-081aba41d873" name="Roughy.002_roughyScales"/>
+		<meta id="ce07b517-f52d-43e2-85b4-ab55e1c3c4ca" name="Roughy.001_roughyScales"/>
+		<meta id="6e72e29b-a1a9-4b48-a812-e56dfbe20d7b" name="Roughy.004_roughyScales"/>
+		<meta id="37dcb287-b49c-4964-9281-60ead6f38de4" name="Grouper.001_Color.Turquoise.013"/>
+		<meta id="e96cd006-a8c2-48e7-bd1e-731850f622d1" name="Grouper.001_grouperScales"/>
+		<meta id="d17fcaf9-00f3-445f-a117-7a9ea31c1312" name="Grouper.002_Color.Turquoise.013"/>
+		<meta id="686efbb1-c349-42a0-89ce-6244edbd00fa" name="Grouper.002_grouperScales"/>
+		<meta id="9a35dd7f-203c-4984-8319-b78b33a922a4" name="Grouper.003_Color.Turquoise.013"/>
+		<meta id="10ca2784-b3f2-42be-a3e5-d1a15e6bc3e3" name="Grouper.003_grouperScales"/>
+		<meta id="294d3860-fcbc-41eb-9700-786192d4288f" name="Grouper.004_Color.Turquoise.013"/>
+		<meta id="8d55cfce-7aa6-41e0-8588-727c2ede3b08" name="Grouper.004_grouperScales"/>
+		<meta id="1a3a23cf-66fd-4872-ae44-ab0ef01fe2ea" name="Flower_Blue_Part_LOD_01.6_colors"/>
+		<meta id="7fac6b6c-fac9-47f3-ad62-f49b133d78c5" name="Flower_Blue_Part_LOD_01.6_leaf"/>
+		<meta id="565ddbea-bc65-449f-be12-ca987639c476" name="Flower_Blue_Part_LOD_23.6_colors"/>
+		<meta id="2e8ea60f-e8aa-4929-bb83-cd4df053d277" name="Flower_Orange_Part_LOD_01.7_colors.001"/>
+		<meta id="9997fd3e-c0e8-4a72-b821-d645c7ac5a8d" name="Flower_Orange_Part_LOD_01.7_leaf.001"/>
+		<meta id="c10b6154-7675-414b-8af8-ab8dacac0049" name="Flower_Orange_Part_LOD_23.7_colors.001"/>
+		<meta id="efbaf32a-f69a-4229-bb47-787bdbfddd1e" name="Flower_Yellow_Part_LOD_01.75_colors.002"/>
+		<meta id="9d1ebe3d-2786-4997-b7b7-756877828fed" name="Flower_Yellow_Part_LOD_01.75_leaf.002"/>
+		<meta id="e85bbab8-6e01-45f8-b10b-30259072c328" name="Flower_Yellow_Part_LOD_23.75_colors.002"/>
 	</meta>
 	<meta id="a453115c-afa2-462e-8ccb-4a9da02910d3" name="Prefab">
 		<meta id="0787c8fb-1bf2-49aa-a6ad-d8c30b42a78b" name="Crate_Part">
@@ -93,6 +117,8 @@
 			<meta id="25e3df25-12ec-4324-94d0-094532a34e72" name="Path_Crate_Stack_Part_Visitor"/>
 			<meta id="79a225c3-86bb-453d-b456-49921070b9f2" name="Path_Crate_Stack_Part_Worker_1"/>
 			<meta id="34e066d6-7b46-4561-be1e-de78cd99f39d" name="Path_Crate_Stack_Part_Worker_2"/>
+			<meta id="2463afea-ccf0-4647-85a5-9bb393352326" name="Attach_minor_81"/>
+			<meta id="37579918-a8de-4890-886d-f1f8dd451aa1" name="Attach_minor_82"/>
 		</meta>
 		<meta id="0207a469-0e26-4836-827f-e1dec2d7281d" name="Salmon_Part">
 			<meta id="fc1d4d7b-693d-411f-8100-ffe76b7b60b6" name="Attach_minor_13"/>
@@ -192,10 +218,52 @@
 				<meta id="2b08a362-9787-4464-a915-4419f1ae06da" name="Bass.002_1"/>
 			</meta>
 		</meta>
+		<meta id="8e2e1788-290e-4332-9024-269578169b5a" name="Grouper_Part">
+			<meta id="f11c73dc-ea93-48a8-b911-13364ac679dd" name="Attach_minor_37"/>
+			<meta id="5b4133f8-e609-4a29-a729-54825d9528ec" name="Grouper.001">
+				<meta id="e92d0d2a-7882-42af-b690-e6c3f933323c" name="Grouper.001_0"/>
+				<meta id="0862432f-73b0-4904-a87a-0c2ca4731c3b" name="Grouper.001_1"/>
+			</meta>
+			<meta id="fd023f14-d576-4fe3-a27b-9ef00f64b504" name="Grouper.002">
+				<meta id="8b02fe93-c4e8-4b02-9a2c-dc88db877fb3" name="Grouper.002_0"/>
+				<meta id="671b7834-724d-42a4-87a3-68ee7b8fa897" name="Grouper.002_1"/>
+			</meta>
+			<meta id="be70dbd5-3e38-448c-ae2c-8167a3f47f91" name="Grouper.003">
+				<meta id="886ca7d2-2153-490f-a4c7-56879c2b0eb7" name="Grouper.003_0"/>
+				<meta id="a4fe2b70-cb8d-4fa2-977a-7bf35add924d" name="Grouper.003_1"/>
+			</meta>
+			<meta id="031c6556-61d2-4c8c-b7bf-d3ce66812d78" name="Grouper.004">
+				<meta id="fdd066b3-5d18-4596-a0ff-d58cb249ee00" name="Grouper.004_0"/>
+				<meta id="92f6d570-dce4-4292-a22d-92435ba694a8" name="Grouper.004_1"/>
+			</meta>
+		</meta>
+		<meta id="b8dc864b-214c-403f-aa94-20fad98ea34a" name="Flower_Blue_Part">
+			<meta id="4f8829a9-5c67-47fd-a86b-d2709bc6f097" name="Attach_Left.002"/>
+			<meta id="a269eef6-850e-4e82-804a-6ca3661643a0" name="Flower_Blue_Part_0"/>
+			<meta id="12ef9528-b45e-47a5-8536-4ff158cfdd32" name="Flower_Blue_Part_1"/>
+		</meta>
+		<meta id="d3897946-c00b-495a-982c-4f7c28aa03dd" name="Flower_Orange_Part">
+			<meta id="8bf2447f-7cbd-4fc5-bbc0-14999476aae8" name="Attach_Left.003"/>
+			<meta id="c7f11ccd-694a-409f-b33f-e76e84ec34cc" name="Flower_Orange_Part_0"/>
+			<meta id="73b99b34-86f3-4275-b0a5-22335b72439f" name="Flower_Orange_Part_1"/>
+		</meta>
+		<meta id="15603f31-f7bc-4827-ad2d-a2817d72397e" name="Flower_Yellow_Part">
+			<meta id="ec447c9d-ded7-4753-8975-dae74675eec1" name="Attach_Left.019"/>
+			<meta id="934ea97f-ba1f-4bca-b5e2-cef58706971c" name="Flower_Yellow_Part_0"/>
+			<meta id="710eecbe-dde1-4424-977e-76c236c3c5c8" name="Flower_Yellow_Part_1"/>
+		</meta>
+	</meta>
+	<meta id="026ea869-0adb-4d13-8e4c-911d98622305" type="group" folder="true" name="LOD">
+		<meta id="91864c81-187e-488d-ae48-f4586d3ac699" name="Flower_Blue_Part_0"/>
+		<meta id="1bf9bf31-68ae-4988-81b4-39f006d3c4f2" name="Flower_Blue_Part_1"/>
+		<meta id="8dec8696-c657-4d1f-ac0f-4c3bb7bbbbf0" name="Flower_Orange_Part_0"/>
+		<meta id="920483c8-1f57-4a1e-8359-9f8fb41f4f14" name="Flower_Orange_Part_1"/>
+		<meta id="8ae96b32-3d6c-460a-9715-d4bcbdcc1a1d" name="Flower_Yellow_Part_0"/>
+		<meta id="e0152724-fcfb-416d-b694-a0b084be568e" name="Flower_Yellow_Part_1"/>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
-	<Md5Checksum value="ee5a6079212c058ff65ee89afc2932aa"/>
+	<Md5Checksum value="f29b91e93333986c141ed1479b17be51"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
 	<UniqueNodeName value="false"/>
@@ -363,6 +431,16 @@
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
 						<NodeName value="Path_Crate_Stack_Part_Worker_2"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_minor_81"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_minor_82"/>
 					</Item>
 				</ChildList>
 				<NodeName value="Crate_Stack_Part"/>
@@ -753,6 +831,144 @@
 				</ChildList>
 				<NodeName value="Bass_Part"/>
 			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_minor_37"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Grouper.001_0"/>
+							</Item>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Grouper.001_1"/>
+							</Item>
+						</ChildList>
+						<NodeName value="Grouper.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Grouper.002_0"/>
+							</Item>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Grouper.002_1"/>
+							</Item>
+						</ChildList>
+						<NodeName value="Grouper.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Grouper.003_0"/>
+							</Item>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Grouper.003_1"/>
+							</Item>
+						</ChildList>
+						<NodeName value="Grouper.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Grouper.004_0"/>
+							</Item>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Grouper.004_1"/>
+							</Item>
+						</ChildList>
+						<NodeName value="Grouper.004"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Grouper_Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Left.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Flower_Blue_Part_0"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Flower_Blue_Part_1"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Flower_Blue_Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Left.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Flower_Orange_Part_0"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Flower_Orange_Part_1"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Flower_Orange_Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Left.019"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Flower_Yellow_Part_0"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Flower_Yellow_Part_1"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Flower_Yellow_Part"/>
+			</Item>
 		</ChildList>
 		<NodeName value="Prefab"/>
 	</NodeConfig>
@@ -802,8 +1018,36 @@
 			<MaterialName value="bassScalesNew"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="18d9badf-ae28-4921-9a27-77b2b2f4353f"/>
+			<MaterialName value="colors"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="0501a5bd-9aeb-4d32-ba01-c681e727cbf8"/>
+			<MaterialName value="colors.001"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="a8d00f93-4abf-4ee8-85a1-fb005537aa50"/>
+			<MaterialName value="colors.002"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="abb93caa-b45f-4b6f-abfb-b4fc309858e4"/>
 			<MaterialName value="food.001"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="3d59f502-1bbb-4020-8a7c-60fd0b45a9a5"/>
+			<MaterialName value="grouperScales"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="d08524e1-07a4-4401-bc88-c4c440357704"/>
+			<MaterialName value="leaf"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="4e4f83f2-e76c-4ee1-918d-028723e9e32e"/>
+			<MaterialName value="leaf.001"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="a06726de-b730-4e64-bd89-78f67775489e"/>
+			<MaterialName value="leaf.002"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="b239cb3c-4920-418a-992b-a88067e1ce5b"/>
@@ -822,8 +1066,8 @@
 			<MaterialName value="planks.002"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="135c7653-58e1-4ea7-b3ad-6577d5ec10bd"/>
-			<MaterialName value="roughyScalesNew"/>
+			<MaterialGuid value="345dbadc-ea5d-42b8-a4d6-069ffbeb33d4"/>
+			<MaterialName value="roughyScales"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="6149e4c4-1d82-43d8-aca3-46be43233f29"/>

@@ -30,7 +30,7 @@
 -- Mod Main Entrypoint & Loader
 
 -- GP OBJECT
-GP = {version = "2.2.2",}
+GP = {version = "2.4.0",}
 
 -- FUNCTION REGISTERMOD
 -- Register mod to the GP object.
