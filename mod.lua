@@ -41,35 +41,44 @@ function GP:registerMod()
 end
 
 -- REGISTER MOD
--- Register this mod with Foundation and the GP object.
+-- Registers this mod with Foundation and the GP object.
 GP.registerMod()
 
--- GLOBAL UTILITIES
--- Setup utility functions used by all GP mods.
+-- GLOBAL UTILITY FUNCTIONS
+-- Defines utility functions used by all GP mods.
 GP.mod:dofile("gp/utility.lua", GP)
 
 -- GLOBAL BUILDING FUNCTIONS
+-- Defines building functions used by all GP mods.
 GP:load("gp/building.lua")
 
--- CONFIG
--- Load custom building information.
+-- CONFIG DECLARATIONS
+-- Sets and loads custom settings for this individual mod.
 GP:load("gp/config.lua")
 
--- JOBS
+-- JOB FUNCTIONS
+-- Defines all jobs named in the config.
 GP:load("gp/jobs.lua")
 
--- GENERATORS
+-- GENERATOR FUNCTIONS
+-- Defines all generator functions named in the config.
 GP:load("gp/generators.lua")
 
--- WORKPLACES
+-- WORKPLACE FUNCTIONS
+-- Defines all workplace functions named in the config.
 GP:load("gp/workplaces.lua")
 
--- STARTUP
--- Register custom buildings using GP object functions.
+-- STARTUP FUNCTION
+-- Defines the startup sequence for this mod.
 GP:load("gp/startup.lua")
 
+-- START MOD
+-- Calls the defined functions in sequence to start the mod.
+GP:startMod(GP.config)
+
 -- OVERRIDES
+-- Applies custom overrides to any built-in or defined objects.
 GP:load("scripts/overrides.lua")
 
 -- DONE LOADING
-GP:log("Finished Loading",GP.config.modName,GP.version)
+GP:log("Finished Loading", GP.config.modName, GP.version)
