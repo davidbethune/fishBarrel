@@ -25,6 +25,10 @@ local workplaces = {
         Positions = 1,
         Produces = {FISH = 5},
         Requires = {FISH = 0},
+    },
+    FISH_GENERATOR = {
+        Produces = {FISH = 5},
+        Rate = 0.03125,
     }
 }
 

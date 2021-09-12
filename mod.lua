@@ -30,7 +30,7 @@
 -- Mod Main Entrypoint & Loader
 
 -- GP OBJECT
-GP = {version = "2.4.0",}
+GP = {version = "2.5.0",}
 
 -- FUNCTION REGISTERMOD
 -- Register mod to the GP object.
@@ -57,6 +57,9 @@ GP:load("gp/config.lua")
 
 -- JOBS
 GP:load("gp/jobs.lua")
+
+-- GENERATORS
+GP:load("gp/generators.lua")
 
 -- WORKPLACES
 GP:load("gp/workplaces.lua")
