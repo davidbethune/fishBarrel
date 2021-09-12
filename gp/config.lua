@@ -64,6 +64,11 @@ local categories = {
         Trout = {Order = 6},
         Choice = {Order = 7},
     },
+    FRIENDS = {
+        Black_Cat = {},
+        Boxer_Dog = {},
+        Collie_Dog = {},
+    },
     DECOR = {
         MARKET_BLUE_TENT = {Order = 1, AssetRegistered = true, BuildingRegistered = true},
         MARKET_FOOD_SIGN = {Order = 2, AssetRegistered = true, BuildingRegistered = true},
@@ -74,7 +79,10 @@ local categories = {
 }
 
 -- MY CONFIG Model Files
-local modelFiles = {[modName] = {"CRATE", "DECOR" , "BARREL", "FISH"}}
+local modelFiles = {
+    [modName] = {"CRATE", "DECOR" , "BARREL", "FISH"},
+    friends = {"FRIENDS"},
+}
 
 -- MY CONFIG Node Types
 local nodeTypes = {MINOR = {"FISH"}}
@@ -85,8 +93,9 @@ local monuments = {
         Categories = {
             BARREL = {Order = 1, Min = 1}, 
             CRATE = {Order = 2, Min = 1}, 
-            FISH = {Order = 3}, 
-            DECOR = {Order = 4}
+            FISH = {Order = 3},
+            FRIENDS = {Order = 4}, 
+            DECOR = {Order = 5}
         },
         Type = "FOOD_PRODUCTION",
         Function = {}

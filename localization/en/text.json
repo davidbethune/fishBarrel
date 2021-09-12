@@ -8,6 +8,8 @@
 			"CATEGORY_CRATE_SING": "Crate",
 			"CATEGORY_FISH": "Fresh Catch",
 			"CATEGORY_FISH_SING": "Fish",
+			"CATEGORY_FRIENDS": "Animal Friends",
+			"CATEGORY_FRIENDS_SING": "Friend",
 			"CATEGORY_DECOR": "Décor",
 			"CATEGORY_DECOR_SING": "Décor"
 		},
@@ -23,6 +25,9 @@
 			"Roughy": "Orange Roughy",
 			"Ahi": "Ahi Tuna",
 			"Choice": "Fisherman's Choice",
+			"Black_Cat": "Shiva",
+			"Boxer_Dog": "Sam",
+			"Collie_Dog": "Woody",
 			"Flower_Blue": "Blue Azaleas",
 			"Flower_Yellow": "Yellow Azaleas",
 			"Flower_Orange": "Orange Azaleas"	
@@ -38,6 +43,9 @@
 			"Roughy_DESC": "Treat your villagers to fresh orange roughy, a true delicacy.",
 			"Ahi_DESC": "Sushi grade ahi tuna, fit for your kingdom.",
 			"Choice_DESC": "The fishermen's choice of today's bountiful catch. Or yesterday's.",
+			"Black_Cat_DESC": "The fishmonger's best friend. Keeps away rats, too.",
+			"Boxer_Dog_DESC": "Good with cats and guarding crates. Not great with strangers.",
+			"Collie_Dog_DESC": "A new friend that just arrived in the village. Likes cats.",
 			"Flower_Blue_DESC": "Lovely blue flowers attract visitors and help reduce odors.",
 			"Flower_Yellow_DESC": "Mix and match these yellow flowers for extra flair.",
 			"Flower_Orange_DESC": "Imported by our traders just for you."		
