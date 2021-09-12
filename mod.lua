@@ -76,7 +76,7 @@ GP:load("gp/startup.lua")
 -- Calls the defined functions in sequence to start the mod.
 GP:startMod(GP.config)
 
--- OVERRIDES
+-- APPLY OVERRIDES
 -- Applies custom overrides to any built-in or defined objects.
 GP:load("scripts/overrides.lua")
 

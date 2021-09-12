@@ -8,7 +8,11 @@ local myMod, GP = ...
 
 GP:log("Workplaces", GP.version)
 
-function GP:registerAllWorkplaces(workplaceList)
+function GP:registerAllWorkplaces(config)
+
+    -- Sugar for config.workplaces
+    local workplaceList = config.workplaces
+
     for workplaceName, workplaceConfig in pairs(workplaceList) do
 
         if (workplaceConfig.Job) then

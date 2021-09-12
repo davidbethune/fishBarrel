@@ -11,7 +11,11 @@ GP:log("Building Registration", GP.version)
 
 -- GP FUNCTION Register Model Files
 -- GP & GAME EFFECT CALL
-function GP:registerModelFiles(modelFiles)
+function GP:registerModelFiles(config)
+
+    -- Sugar for config.modelFiles
+    local modelFiles = config.modelFiles
+
     GP:logKeys("Registering Model Files", modelFiles)
     for modelFile, categoryKeyArray in pairs(modelFiles) do
 
