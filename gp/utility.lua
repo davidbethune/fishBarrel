@@ -152,3 +152,6 @@ function GP:trim (incomingString, amount)
     end
     return string.sub(incomingString, 1, string.len(incomingString) - amount)
 end
+
+
+

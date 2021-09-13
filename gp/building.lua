@@ -28,13 +28,13 @@ function GP:registerModelFiles(config)
         for index, categoryKey in ipairs(categoryKeyArray) do
 
             -- Get a list of parts for the category.
-            local categoryPartsList = GP.config.categories[categoryKey]
+            local categoryPartsList = config.categories[categoryKey]
             GP:logKeys("Retrieved prefab parts list for " .. categoryKey,
                        categoryPartsList)
 
             -- Register all prefabs in the category.
             GP:registerCategoryPrefabs(modelFileName, categoryKey,
-                                       categoryPartsList)
+                                       config)
         end
 
         -- Register one asset processor for the entire file.
@@ -44,18 +44,18 @@ function GP:registerModelFiles(config)
                                       {DataType = "BUILDING_ASSET_PROCESSOR"})
 
         -- Register all attach node types in entire mod.
-        GP:registerAttachNodeTypes(GP.config.nodeTypes)
+        GP:registerAttachNodeTypes(config)
 
         -- Register all path nodes, path types, and building parts for each category.
         for index, categoryKey in ipairs(categoryKeyArray) do
 
             -- Get a list of parts for the category.
-            local categoryPartsList = GP.config.categories[categoryKey]
+            local categoryPartsList = config.categories[categoryKey]
             GP:logKeys("Retrieved path parts list for " .. categoryKey,
                        categoryPartsList)
 
             -- Register all path nodes and types to all parts in the category.
-            GP:registerPartPaths(modelFileName, categoryKey)
+            GP:registerPartPaths(modelFileName, categoryKey, config)
 
             -- Register all building parts in the category.
             GP:registerCategoryBuildingParts(modelFileName, categoryKey,
@@ -66,10 +66,14 @@ end
 
 -- GP FUNCTION Register Category Prefabs
 -- GP EFFECT CALL, GAME EFFECT CALL
-function GP:registerCategoryPrefabs(modelFileName, category, categoryPartsList)
+function GP:registerCategoryPrefabs(modelFileName, category, config)
+
+    -- Sugar for config.categories[category]
+    local categoryPartsList = config.categories[category]
+
     GP:logKeys("Registering Prefabs", categoryPartsList)
     for partName in pairs(categoryPartsList) do
-        local partConfig = GP.config.categories[category][partName]
+        local partConfig = categoryPartsList[partName]
         if (partConfig.AssetRegistered) then
             GP:log("Using Existing Prefab:", string.upper(GP:prefabId(partName)))
         else
@@ -93,13 +97,13 @@ end
 -- GP FUNCTION Register Part Paths
 -- REQUIRES GP Object
 -- GP EFFECT CALL, GAME EFFECT CALL
-function GP:registerPartPaths(modelFileName, categoryKey)
+function GP:registerPartPaths(modelFileName, categoryKey, config)
 
-    -- Get the parts in the category
-    local categoryPart = GP.config.categories[categoryKey]
+    -- Sugar for config.categories[categoryKey]
+    local categoryPartList = config.categories[categoryKey]
 
     -- For each part in the category...
-    for partName, partConfig in pairs(categoryPart) do
+    for partName, partConfig in pairs(categoryPartList) do
 
         -- If the part has path nodes, register them.
         if (partConfig.PathNodes) then
@@ -127,9 +131,13 @@ function GP:registerPrefab(modelFileName, partName)
 end
 
 -- GP FUNCTION Register Attach Node Types
--- READS GP.config.categories
 -- GAME EFFECT
-function GP:registerAttachNodeTypes(nodeTypeList)
+function GP:registerAttachNodeTypes(config)
+
+GP:logKeys("Attach Node Types Config", config)
+
+    -- Sugar for config.nodeTypes
+    local nodeTypeList = config.nodeTypes
 
     -- For each node type...
     for nodeType, categoryKeyList in pairs(nodeTypeList) do
@@ -138,10 +146,10 @@ function GP:registerAttachNodeTypes(nodeTypeList)
         for index, categoryKey in ipairs(categoryKeyList) do
 
             -- Get the list of parts in that category.
-            local partsList = GP.config.categories[categoryKey]
+            local partsList = config.categories[categoryKey]
 
             -- Register the parts list to that node type.
-            GP:logKeys("Registering Attach Node Types", partsList)
+            GP:logKeys("Registering " .. nodeType .. " Parts", partsList)
             GP:registerAttachNodeType(nodeType, partsList)
         end
     end
@@ -256,7 +264,12 @@ end
 -- FUNCTION Register Monument
 -- REQUIRES GP Object
 -- GAME EFFECT
-function GP:registerMonument(buildingName, buildingConfig)
+function GP:registerMonument(buildingName, config)
+
+    -- Sugar for buildingConfig
+    local buildingConfig = config.monuments[buildingName]
+
+    -- Sugar for config.
     GP:log("Registering Monument:", buildingName)
 
     -- Build Parts Lists
@@ -277,7 +290,7 @@ function GP:registerMonument(buildingName, buildingConfig)
     for index, categoryKey in ipairs(
         orderedCategoryKeys) do
 
-        categoryConfig = GP.config.monuments[buildingName].Categories[categoryKey]     
+        categoryConfig = config.monuments[buildingName].Categories[categoryKey]     
 
         GP:log("Monument Category:", categoryKey)
 
@@ -288,7 +301,7 @@ function GP:registerMonument(buildingName, buildingConfig)
         }
 
         -- Get the parts in this category.
-        local categoryPartsList = GP.config.categories[categoryKey]
+        local categoryPartsList = config.categories[categoryKey]
 
         -- Sort parts by Order
         local orderedPartKeys = {}
@@ -342,6 +355,6 @@ function GP:registerMonumentList(config)
     GP:logKeys("Registering Monuments", config.monuments)
     for buildingName, buildingConfig in pairs(config.monuments) do
         GP:logKeys("Monument Config " .. buildingName, buildingConfig)
-        GP:registerMonument(buildingName, buildingConfig)
+        GP:registerMonument(buildingName, config)
     end
 end

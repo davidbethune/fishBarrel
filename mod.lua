@@ -53,8 +53,12 @@ GP.mod:dofile("gp/utility.lua", GP)
 GP:load("gp/building.lua")
 
 -- CONFIG DECLARATIONS
--- Sets and loads custom settings for this individual mod.
-GP:load("gp/config.lua")
+-- Declares custom settings for this individual mod.
+GP:load("settings/config.lua")
+
+-- LOAD CUSTOM CONFIG
+-- Loads custom settings from config.lua.
+local config = GP:loadConfig()
 
 -- JOB FUNCTIONS
 -- Defines all jobs named in the config.
@@ -74,11 +78,11 @@ GP:load("gp/startup.lua")
 
 -- START MOD
 -- Calls the defined functions in sequence to start the mod.
-GP:startMod(GP.config)
+GP:startMod(config)
 
 -- APPLY OVERRIDES
 -- Applies custom overrides to any built-in or defined objects.
 GP:load("scripts/overrides.lua")
 
 -- DONE LOADING
-GP:log("Finished Loading", GP.config.modName, GP.version)
+GP:log("Finished Loading", config.modName, GP.version)

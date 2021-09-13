@@ -10,17 +10,15 @@ local myMod, GP = ...
 function GP:startMod(config)
 
     GP:log("Starting", config.modName, GP.version)
+    GP:logKeys("Found",config)
 
     -- STARTUP Register Model Files
-    -- GP:registerModelFiles(config.modelFiles)
     GP:registerModelFiles(config)
     
     -- STARTUP Register Jobs
-    -- GP:registerAllJobs(config.jobs)
     GP:registerAllJobs(config)
     
     -- STARTUP Register Workplaces
-    -- GP:registerAllWorkplaces(config.workplaces)
     GP:registerAllWorkplaces(config)
     
     -- STARTUP Register Monument

@@ -5,7 +5,7 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
-GP:log("Config", GP.version)
+GP:log("My Config", GP.version)
 
 -- MY CONFIG Mod Name
 local modName = "fishBarrel"
@@ -24,12 +24,9 @@ local workplaces = {
         Job = "FISHMONGER",
         Positions = 1,
         Produces = {FISH = 5},
-        Requires = {FISH = 0},
+        Requires = {FISH = 0}
     },
-    FISH_GENERATOR = {
-        Produces = {FISH = 5},
-        Rate = 0.03125,
-    }
+    FISH_GENERATOR = {Produces = {FISH = 5}, Rate = 0.03125}
 }
 
 -- MY CONFIG Categories
@@ -57,31 +54,35 @@ local categories = {
     },
     FISH = {
         Ahi = {Order = 1},
-        Roughy = {Order = 2}, 
+        Roughy = {Order = 2},
         Grouper = {Order = 3},
         Salmon = {Order = 4},
         Bass = {Order = 5},
         Trout = {Order = 6},
-        Choice = {Order = 7},
+        Choice = {Order = 7}
     },
-    FRIENDS = {
-        Black_Cat = {},
-        Boxer_Dog = {},
-        Collie_Dog = {},
-    },
+    FRIENDS = {Black_Cat = {}, Boxer_Dog = {}, Collie_Dog = {}},
     DECOR = {
-        MARKET_BLUE_TENT = {Order = 1, AssetRegistered = true, BuildingRegistered = true},
-        MARKET_FOOD_SIGN = {Order = 2, AssetRegistered = true, BuildingRegistered = true},
+        MARKET_BLUE_TENT = {
+            Order = 1,
+            AssetRegistered = true,
+            BuildingRegistered = true
+        },
+        MARKET_FOOD_SIGN = {
+            Order = 2,
+            AssetRegistered = true,
+            BuildingRegistered = true
+        },
         Flower_Yellow = {Order = 3},
         Flower_Blue = {Order = 4},
-        Flower_Orange = {Order = 5},
+        Flower_Orange = {Order = 5}
     }
 }
 
 -- MY CONFIG Model Files
 local modelFiles = {
-    [modName] = {"CRATE", "DECOR" , "BARREL", "FISH"},
-    friends = {"FRIENDS"},
+    [modName] = {"CRATE", "DECOR", "BARREL", "FISH"},
+    friends = {"FRIENDS"}
 }
 
 -- MY CONFIG Node Types
@@ -91,10 +92,10 @@ local nodeTypes = {MINOR = {"FISH"}}
 local monuments = {
     FISH_BARREL = {
         Categories = {
-            BARREL = {Order = 1, Min = 1}, 
-            CRATE = {Order = 2, Min = 1}, 
+            BARREL = {Order = 1, Min = 1},
+            CRATE = {Order = 2, Min = 1},
             FISH = {Order = 3},
-            FRIENDS = {Order = 4}, 
+            FRIENDS = {Order = 4},
             DECOR = {Order = 5}
         },
         Type = "FOOD_PRODUCTION",
@@ -102,13 +103,20 @@ local monuments = {
     }
 }
 
--- Create config object
-GP.config = {
-    modName = modName,
-    modelFiles = modelFiles,
-    categories = categories,
-    nodeTypes = nodeTypes,
-    jobs = jobs,
-    workplaces = workplaces,
-    monuments = monuments
-}
+function GP:loadConfig()
+
+    GP:log("Load Config", GP.version)
+
+    -- Create config object
+    local config = {
+        modName = modName,
+        modelFiles = modelFiles,
+        categories = categories,
+        nodeTypes = nodeTypes,
+        jobs = jobs,
+        workplaces = workplaces,
+        monuments = monuments
+    }
+    return config
+end
+
