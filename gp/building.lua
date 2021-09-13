@@ -10,7 +10,7 @@ local myMod, GP = ...
 GP:log("Building Registration", GP:version())
 
 -- GP FUNCTION Register Model Files
--- GP & GAME EFFECT CALL
+-- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerModelFiles()
 
     -- Sugar for GP:config()
@@ -68,7 +68,7 @@ function GP:registerModelFiles()
 end
 
 -- GP FUNCTION Register Category Prefabs
--- GP EFFECT CALL, GAME EFFECT CALL
+-- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerCategoryPrefabs(modelFileName, category, config)
 
     -- Sugar for config.categories[category]
@@ -86,7 +86,7 @@ function GP:registerCategoryPrefabs(modelFileName, category, config)
 end
 
 -- GP FUNCTION Register Category Buildings
--- GP EFFECT CALL, GAME EFFECT CALL
+-- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerCategoryBuildingParts(modelFileName, category, categoryParts)
     for partName, partConfig in pairs(categoryParts) do
         if (partConfig.BuildingRegistered) then
@@ -99,7 +99,7 @@ end
 
 -- GP FUNCTION Register Part Paths
 -- REQUIRES GP Object
--- GP EFFECT CALL, GAME EFFECT CALL
+-- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerPartPaths(modelFileName, categoryKey, config)
 
     -- Sugar for config.categories[categoryKey]
@@ -124,8 +124,7 @@ function GP:registerPartPaths(modelFileName, categoryKey, config)
 end
 
 -- GP FUNCTION Register Prefab
--- FUNCTIONAL INPUTS
--- GAME EFFECT
+-- FUNCTIONAL, GAME EFFECT
 function GP:registerPrefab(modelFileName, partName)
     GP:log("Registering Prefab", GP:prefabPath(modelFileName, partName), "to",
            GP:prefabId(partName))
@@ -134,7 +133,7 @@ function GP:registerPrefab(modelFileName, partName)
 end
 
 -- GP FUNCTION Register Attach Node Types
--- GAME EFFECT
+-- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerAttachNodeTypes(config)
 
 GP:logKeys("Attach Node Types Config", config)
@@ -159,8 +158,7 @@ GP:logKeys("Attach Node Types Config", config)
 end
 
 -- FUNCTION Register Attach Node Type
--- FUNCTIONAL INPUTS
--- GAME EFFECT CALL
+-- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerAttachNodeType(nodeType, partList)
     GP:logKeys("Registering " .. nodeType .. " Parts", partList)
     for partName in pairs(partList) do
@@ -169,8 +167,7 @@ function GP:registerAttachNodeType(nodeType, partList)
 end
 
 -- FUNCTION Register Attach Node Part
--- FUNCTIONAL INPUTS
--- GAME EFFECT
+-- FUNCTIONAL, GAME EFFECT
 function GP:registerAttachNodePart(partName, nodeType)
     local prefabId = GP:prefabId(partName)
     GP:log("Registering", prefabId, "to node type", nodeType)
@@ -181,8 +178,7 @@ function GP:registerAttachNodePart(partName, nodeType)
 end
 
 -- FUNCTION Register Building Part Types
--- FUNCTIONAL INPUTS
--- GAME EFFECT
+-- FUNCTIONAL, GAME EFFECT
 function GP:registerBuildingPartTypes(categoryArray)
     for index, category in ipairs(categoryArray) do
         GP:log("Registering Building Part Type", category)
