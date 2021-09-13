@@ -8,7 +8,10 @@ local myMod, GP = ...
 
 GP:log("Jobs",GP:version())
 
-function GP:registerAllJobs(config)
+function GP:registerAllJobs()
+
+    -- Sugar for GP:config()
+    local config = GP:config()
 
     -- Sugar for config.jobsList
     local jobsList = config.jobs

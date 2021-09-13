@@ -19,7 +19,7 @@ function GP:startMod()
     GP:registerModelFiles()
     
     -- STARTUP Register Jobs
-    GP:registerAllJobs(config)
+    GP:registerAllJobs()
     
     -- STARTUP Register Workplaces
     GP:registerAllWorkplaces(config)
