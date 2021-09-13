@@ -103,9 +103,7 @@ local monuments = {
     }
 }
 
-function GP:loadConfig()
-
-    GP:log("Load Config", GP:version())
+function GP:config()
 
     -- Create config object
     local config = {

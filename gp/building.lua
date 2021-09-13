@@ -11,7 +11,10 @@ GP:log("Building Registration", GP:version())
 
 -- GP FUNCTION Register Model Files
 -- GP & GAME EFFECT CALL
-function GP:registerModelFiles(config)
+function GP:registerModelFiles()
+
+    -- Sugar for GP:config()
+    local config = GP:config()
 
     -- Sugar for config.modelFiles
     local modelFiles = config.modelFiles

@@ -5,6 +5,9 @@
 -- 
 -- FUNCTION ASSIGNMENTS
 
+-- IMPORT GP OBJECT
+local myMod, GP = ... 
+
 -- GP UTILITY FUNCTION fbx Name
 -- PURE LUA
 -- MAGIC WORDS

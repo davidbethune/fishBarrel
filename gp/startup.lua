@@ -7,13 +7,16 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ... 
 
-function GP:startMod(config)
+function GP:startMod()
+
+    -- Sugar for GP:config()
+    local config = GP:config()
 
     GP:log("Starting", config.modName, GP:version())
     GP:logKeys("Found",config)
 
     -- STARTUP Register Model Files
-    GP:registerModelFiles(config)
+    GP:registerModelFiles()
     
     -- STARTUP Register Jobs
     GP:registerAllJobs(config)

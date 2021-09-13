@@ -32,6 +32,9 @@
 -- GPS VERSION
 local version = "2.5.0"
 
+-- GP OBJECT
+local GP = {}
+
 -- FUNCTION VERSION
 -- Return version number inside GP functions.
 function GP:version() 
@@ -46,25 +49,26 @@ function GP:registerMod()
     GP.mod:log("GP | " .. "https://mod.io/members/garranplum")
 end
 
+
 -- REGISTER MOD
 -- Registers this mod with Foundation.
-GP.registerMod()
-
--- GLOBAL UTILITY FUNCTIONS
--- Defines general Lua functions used by all GP mods.
-GP.mod:dofile("gp/utility.lua", GP)
+GP:registerMod()
 
 -- GLOBAL FOUNDATION FUNCTIONS
 -- Defines Foundation-specific functions used by all GP mods.
 GP.mod:dofile("gp/foundation.lua", GP)
 
+-- GLOBAL UTILITY FUNCTIONS
+-- Defines general Lua functions used by all GP mods.
+GP:load("gp/utility.lua")
+
 -- GLOBAL MAGIC WORD FUNCTIONS
 -- Defines functions that return string literals used by all GP mods.
-GP.mod:dofile("gp/magic.lua", GP)
+GP:load("gp/magic.lua")
 
 -- GLOBAL UTILITY FUNCTIONS
 -- Defines utility functions used by all GP mods.
-GP.mod:dofile("gp/utility.lua", GP)
+GP:load("gp/utility.lua")
 
 -- GLOBAL BUILDING FUNCTIONS
 -- Defines building functions used by all GP mods.
@@ -73,10 +77,6 @@ GP:load("gp/building.lua")
 -- CONFIG DECLARATIONS
 -- Declares custom settings for this individual mod.
 GP:load("settings/config.lua")
-
--- LOAD CUSTOM CONFIG
--- Loads custom settings from config.lua.
-local config = GP:loadConfig()
 
 -- JOB FUNCTIONS
 -- Defines all jobs named in the config.
@@ -96,11 +96,11 @@ GP:load("gp/startup.lua")
 
 -- START MOD
 -- Calls the defined functions in sequence to start the mod.
-GP:startMod(config)
+GP:startMod()
 
 -- APPLY OVERRIDES
 -- Applies custom overrides to any built-in or defined objects.
 GP:load("scripts/overrides.lua")
 
 -- DONE LOADING
-GP:log("Finished Loading", config.modName, GP:version())
+GP:log("Finished Loading", GP:config().modName, GP:version())

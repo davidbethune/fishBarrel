@@ -5,8 +5,11 @@
 -- 
 -- FUNCTION ASSIGNMENTS
 
--- GP FOUNDATION FUNCTION load
--- UKNOWN EFFECTS (FILE LOAD)
+-- IMPORT GP OBJECT
+local myMod, GP = ... 
+
+-- GP FOUNDATION FUNCTION Load
+-- UKNOWN EFFECTS (FILE LOAD & EXECUTE)
 function GP:load(file)
     GP:log("Loading:",[["]] .. file .. [["]])
     GP.mod:dofile(file, GP)
