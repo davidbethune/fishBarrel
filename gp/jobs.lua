@@ -8,6 +8,8 @@ local myMod, GP = ...
 
 GP:log("Jobs",GP:version())
 
+-- FUNCTION Register All Jobs
+-- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerAllJobs()
 
     -- Sugar for GP:config()
@@ -21,6 +23,8 @@ function GP:registerAllJobs()
     end
 end
 
+-- FUNCTION Register Job
+-- FUNCTIONAL, GAME EFFECT
 function GP:registerJob(jobName, jobConfig) 
     
 myMod:register({

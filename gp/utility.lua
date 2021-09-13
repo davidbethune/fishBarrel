@@ -10,8 +10,8 @@ local myMod, GP = ...
 
 GP.mod:log("GP | Utility Functions " .. GP:version())
 
-
 -- GP UTILITY FUNCTION Ternary
+-- Returns ifTrue if test is true. Returns ifFalse if test is false.
 -- PURE FUNCTIONAL
 function GP:ternary (test, ifTrue, ifFalse)
     local returnValue
@@ -24,6 +24,7 @@ function GP:ternary (test, ifTrue, ifFalse)
 end
 
 -- GP UTILITY FUNCTION Split
+-- Splits delimitedString into an array (resultTable) on delimiter. Default `,`.
 -- PURE FUNCTIONAL
 function GP:split(delimitedString, delimiter)
     if (not delimiter) then
@@ -37,6 +38,7 @@ function GP:split(delimitedString, delimiter)
 end
 
 -- GP UTILITY FUNCTION Table Length
+-- Returns the length of a table or array (incomingTable).
 -- PURE FUNCTIONAL
 function GP:tableLength (incomingTable)
     local count = 0
@@ -47,6 +49,8 @@ function GP:tableLength (incomingTable)
 end
 
 -- GP UTILITY FUNCTION Array Keys
+-- Returns a table with one key for each value in array. Key values are empty.
+-- Turns array into table.
 -- PURE FUNCTIONAL
 function GP:getKeys (array)
     local keysObject = {}
@@ -57,7 +61,8 @@ function GP:getKeys (array)
 end
 
 -- GP UTILITY FUNCTION Table Keys
--- PURE FUNCTIONAL
+-- Returns a delimited string of all keys in a table. Default delimiter is `,`.
+-- PURE LUA, PURE FUNCTIONAL
 function GP:tableKeys (incomingTable, delimiter)
     local keyListString = ""
     if (not delimiter) then
@@ -70,8 +75,8 @@ function GP:tableKeys (incomingTable, delimiter)
 end
 
 -- GP UTILITY FUNCTION Trim
--- PURE LUA
--- PURE FUNCTIONAL
+-- Trims amount number of characters from end of incomingString. Default is 1.
+-- PURE LUA, PURE FUNCTIONAL
 function GP:trim (incomingString, amount)
     if (not amount) then
         amount = 1

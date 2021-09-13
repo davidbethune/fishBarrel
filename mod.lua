@@ -29,78 +29,74 @@
 -- MODULE MOD.LUA
 -- Mod Main Entrypoint & Loader
 
--- GPS VERSION
+-- DECLARE: GPS Version
 local version = "2.5.0"
 
--- GP OBJECT
+-- DECLARE: GP Object
 local GP = {}
 
--- FUNCTION VERSION
--- Return version number inside GP functions.
+-- FUNCTION: Version
+-- Return GPS version number inside GP functions.
 function GP:version() 
     return version
 end
 
--- FUNCTION REGISTERMOD
--- Register mod to the GP object.
+-- FUNCTION: Register Mod
+-- Registers a mod with Foundation.
+-- FUNCTIONAL, GAME EFFECT
 function GP:registerMod()
     GP.mod = foundation.createMod()
     GP.mod:log("GPS " .. GP:version() .. " by Garran Plum")
     GP.mod:log("GP | " .. "https://mod.io/members/garranplum")
 end
 
-
--- REGISTER MOD
+-- CALL: Register Mod
 -- Registers this mod with Foundation.
 GP:registerMod()
 
--- GLOBAL FOUNDATION FUNCTIONS
+-- EXECUTE FILE: Global Foundation Functions
 -- Defines Foundation-specific functions used by all GP mods.
 GP.mod:dofile("gp/foundation.lua", GP)
 
--- GLOBAL UTILITY FUNCTIONS
+-- EXECUTE FILE: Global Utility Functions
 -- Defines general Lua functions used by all GP mods.
 GP:load("gp/utility.lua")
 
--- GLOBAL MAGIC WORD FUNCTIONS
+-- EXECUTE FILE: Global Magic Word Functions
 -- Defines functions that return string literals used by all GP mods.
 GP:load("gp/magic.lua")
 
--- GLOBAL UTILITY FUNCTIONS
--- Defines utility functions used by all GP mods.
-GP:load("gp/utility.lua")
-
--- GLOBAL BUILDING FUNCTIONS
+-- EXECUTE FILE: Global Building Functions
 -- Defines building functions used by all GP mods.
 GP:load("gp/building.lua")
 
--- CONFIG DECLARATIONS
+-- EXECUTE FILE: Custom Configuration
 -- Declares custom settings for this individual mod.
 GP:load("settings/config.lua")
 
--- JOB FUNCTIONS
--- Defines all jobs named in the config.
+-- EXECUTE FILE: Job Registration Functions
+-- Registers all jobs named in the config.
 GP:load("gp/jobs.lua")
 
--- GENERATOR FUNCTIONS
--- Defines all generator functions named in the config.
+-- EXECUTE FILE: Resource Generator Registration Functions
+-- Registers all generator functions named in the config.
 GP:load("gp/generators.lua")
 
--- WORKPLACE FUNCTIONS
+-- EXECUTE FILE: Workplace Registration Functions
 -- Defines all workplace functions named in the config.
 GP:load("gp/workplaces.lua")
 
--- STARTUP FUNCTION
+-- EXECUTE FILE: Startup Sequence
 -- Defines the startup sequence for this mod.
 GP:load("gp/startup.lua")
 
--- START MOD
+-- CALL: Start your engines!
 -- Calls the defined functions in sequence to start the mod.
 GP:startMod()
 
--- APPLY OVERRIDES
+-- EXECUTE FILE: Apply Custom Overrides
 -- Applies custom overrides to any built-in or defined objects.
 GP:load("scripts/overrides.lua")
 
--- DONE LOADING
+-- CALL: Log Finished Loading
 GP:log("Finished Loading", GP:config().modName, GP:version())

@@ -8,6 +8,8 @@ local myMod, GP = ...
 
 GP:log("Workplaces", GP:version())
 
+-- FUNCTION Register All Workplaces
+-- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerAllWorkplaces()
 
     -- Sugar for GP:config()
@@ -27,6 +29,8 @@ function GP:registerAllWorkplaces()
     end
 end
 
+-- FUNCTION Register Workplace
+-- FUNCTIONAL, GAME EFFECT
 function GP:registerWorkplace(workplaceName, workplaceConfig)
 
     local resourceProducedList = {}

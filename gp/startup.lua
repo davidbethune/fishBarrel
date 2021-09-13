@@ -7,13 +7,15 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ... 
 
+-- FUNCTION Start Mod
+-- FUNCTIONAL, GAME EFFECT CALL
 function GP:startMod()
 
     -- Sugar for GP:config()
     local config = GP:config()
 
     GP:log("Starting", config.modName, GP:version())
-    GP:logKeys("Found",config)
+    GP:logKeys("Found", config)
 
     -- STARTUP Register Model Files
     GP:registerModelFiles()

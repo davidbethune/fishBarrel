@@ -9,6 +9,7 @@
 local myMod, GP = ... 
 
 -- GP FOUNDATION FUNCTION Load
+-- Loads and executes a Lua file from disk.
 -- UKNOWN EFFECTS (FILE LOAD & EXECUTE)
 function GP:load(file)
     GP:log("Loading:",[["]] .. file .. [["]])
@@ -16,6 +17,7 @@ function GP:load(file)
 end
 
 -- GP FOUNDATION FUNCTION Log
+-- Writes to the `foundation.log` file.
 -- GAME EFFECTS
 function GP:log (...)
     local messages = {...}
@@ -27,6 +29,7 @@ function GP:log (...)
 end
 
 -- GP FOUNDATION FUNCTION Log Keys
+-- Logs all the keys in incomingTable. Default label is `keys`.
 -- GAME EFFECT CALL
 function GP:logKeys (label, incomingTable)
     if (not incomingTable) then

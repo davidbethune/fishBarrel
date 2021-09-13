@@ -104,7 +104,6 @@ local monuments = {
 }
 
 function GP:config()
-
     -- Create config object
     local config = {
         version = GP:version(),

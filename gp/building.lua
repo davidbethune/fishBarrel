@@ -10,6 +10,7 @@ local myMod, GP = ...
 GP:log("Building Registration", GP:version())
 
 -- GP FUNCTION Register Model Files
+-- Register all model files in config.models.
 -- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerModelFiles()
 
@@ -68,6 +69,7 @@ function GP:registerModelFiles()
 end
 
 -- GP FUNCTION Register Category Prefabs
+-- Register all the prefabs in a single category in a model file.
 -- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerCategoryPrefabs(modelFileName, category, config)
 
@@ -86,6 +88,7 @@ function GP:registerCategoryPrefabs(modelFileName, category, config)
 end
 
 -- GP FUNCTION Register Category Buildings
+-- Register all the building parts in a single category in a model file.
 -- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerCategoryBuildingParts(modelFileName, category, categoryParts)
     for partName, partConfig in pairs(categoryParts) do
@@ -98,7 +101,7 @@ function GP:registerCategoryBuildingParts(modelFileName, category, categoryParts
 end
 
 -- GP FUNCTION Register Part Paths
--- REQUIRES GP Object
+-- Register path nodes and types for all parts in a single category in a model file.
 -- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerPartPaths(modelFileName, categoryKey, config)
 
@@ -124,6 +127,7 @@ function GP:registerPartPaths(modelFileName, categoryKey, config)
 end
 
 -- GP FUNCTION Register Prefab
+-- Register a single prefab in a model file.
 -- FUNCTIONAL, GAME EFFECT
 function GP:registerPrefab(modelFileName, partName)
     GP:log("Registering Prefab", GP:prefabPath(modelFileName, partName), "to",
@@ -133,6 +137,7 @@ function GP:registerPrefab(modelFileName, partName)
 end
 
 -- GP FUNCTION Register Attach Node Types
+-- Register all the attach node types in config.nodeTypes
 -- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerAttachNodeTypes(config)
 
@@ -158,6 +163,7 @@ GP:logKeys("Attach Node Types Config", config)
 end
 
 -- FUNCTION Register Attach Node Type
+-- Register all the parts of a single attach node type.
 -- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerAttachNodeType(nodeType, partList)
     GP:logKeys("Registering " .. nodeType .. " Parts", partList)
@@ -167,6 +173,7 @@ function GP:registerAttachNodeType(nodeType, partList)
 end
 
 -- FUNCTION Register Attach Node Part
+-- Register a single part to an attach node type.
 -- FUNCTIONAL, GAME EFFECT
 function GP:registerAttachNodePart(partName, nodeType)
     local prefabId = GP:prefabId(partName)
@@ -178,6 +185,7 @@ function GP:registerAttachNodePart(partName, nodeType)
 end
 
 -- FUNCTION Register Building Part Types
+-- Register all the buildling part types in a category.
 -- FUNCTIONAL, GAME EFFECT
 function GP:registerBuildingPartTypes(categoryArray)
     for index, category in ipairs(categoryArray) do
@@ -187,8 +195,8 @@ function GP:registerBuildingPartTypes(categoryArray)
 end
 
 -- FUNCTION Register Building Part
--- FUNCTIONAL INPUTS
--- GAME EFFECT
+-- Register a single building part within a category.
+-- FUNCTIONAL, GAME EFFECT
 function GP:registerBuildingPart(category, partName, partConfig)
     local partId = GP:partId(partName)
     local prefabId = GP:prefabId(partName)
@@ -223,6 +231,7 @@ function GP:registerBuildingPart(category, partName, partConfig)
 end
 
 -- FUNCTION Register Path Nodes
+-- Register all the path nodes in single part in a model file.
 -- PURE FUNCTIONAL
 function GP:registerPathNodes(modelFileName, partName, pathNodes)
     for index, pathKey in ipairs(pathNodes) do
@@ -236,6 +245,8 @@ function GP:registerPathNodes(modelFileName, partName, pathNodes)
 end
 
 -- FUNCTION Register Path Types
+-- Register a single path type on a single part in a model file.
+-- FUNCTIONAL, GAME EFFECT
 function GP:registerPathTypes(modelFileName, partName, pathTypes)
     GP:logKeys("Registering Path Types for " .. partName, pathTypes)
 
@@ -261,8 +272,8 @@ function GP:registerPathTypes(modelFileName, partName, pathTypes)
 end
 
 -- FUNCTION Register Monument
--- REQUIRES GP Object
--- GAME EFFECT
+-- Register a single monument building.
+-- FUNCTIONAL, GAME EFFECT
 function GP:registerMonument(buildingName, config)
 
     -- Sugar for buildingConfig
@@ -348,8 +359,8 @@ function GP:registerMonument(buildingName, config)
 end
 
 -- FUNCTION Register Monument List
--- FUNCTIONAL INPUTS
--- GAME EFFECT CALL
+-- Register all the monuments in the config.
+-- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerMonumentList()
 
     -- Sugar for GP:config()
