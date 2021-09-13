@@ -22,10 +22,10 @@ function GP:startMod()
     GP:registerAllJobs()
     
     -- STARTUP Register Workplaces
-    GP:registerAllWorkplaces(config)
+    GP:registerAllWorkplaces()
     
     -- STARTUP Register Monument
-    GP:registerMonumentList(config)
+    GP:registerMonumentList()
 
 end
 

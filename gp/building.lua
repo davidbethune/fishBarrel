@@ -354,7 +354,11 @@ end
 -- FUNCTION Register Monument List
 -- FUNCTIONAL INPUTS
 -- GAME EFFECT CALL
-function GP:registerMonumentList(config)
+function GP:registerMonumentList()
+
+    -- Sugar for GP:config()
+    local config = GP:config()
+
     GP:logKeys("Registering Monuments", config.monuments)
     for buildingName, buildingConfig in pairs(config.monuments) do
         GP:logKeys("Monument Config " .. buildingName, buildingConfig)
