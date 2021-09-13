@@ -29,20 +29,38 @@
 -- MODULE MOD.LUA
 -- Mod Main Entrypoint & Loader
 
--- GP OBJECT
-GP = {version = "2.5.0",}
+-- GPS VERSION
+local version = "2.5.0"
+
+-- FUNCTION VERSION
+-- Return version number inside GP functions.
+function GP:version() 
+    return version
+end
 
 -- FUNCTION REGISTERMOD
 -- Register mod to the GP object.
 function GP:registerMod()
     GP.mod = foundation.createMod()
-    GP.mod:log("GPS " .. GP.version .. " by Garran Plum")
+    GP.mod:log("GPS " .. GP:version() .. " by Garran Plum")
     GP.mod:log("GP | " .. "https://mod.io/members/garranplum")
 end
 
 -- REGISTER MOD
--- Registers this mod with Foundation and the GP object.
+-- Registers this mod with Foundation.
 GP.registerMod()
+
+-- GLOBAL UTILITY FUNCTIONS
+-- Defines general Lua functions used by all GP mods.
+GP.mod:dofile("gp/utility.lua", GP)
+
+-- GLOBAL FOUNDATION FUNCTIONS
+-- Defines Foundation-specific functions used by all GP mods.
+GP.mod:dofile("gp/foundation.lua", GP)
+
+-- GLOBAL MAGIC WORD FUNCTIONS
+-- Defines functions that return string literals used by all GP mods.
+GP.mod:dofile("gp/magic.lua", GP)
 
 -- GLOBAL UTILITY FUNCTIONS
 -- Defines utility functions used by all GP mods.
@@ -85,4 +103,4 @@ GP:startMod(config)
 GP:load("scripts/overrides.lua")
 
 -- DONE LOADING
-GP:log("Finished Loading", config.modName, GP.version)
+GP:log("Finished Loading", config.modName, GP:version())

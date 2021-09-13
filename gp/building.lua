@@ -7,7 +7,7 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
-GP:log("Building Registration", GP.version)
+GP:log("Building Registration", GP:version())
 
 -- GP FUNCTION Register Model Files
 -- GP & GAME EFFECT CALL

@@ -9,7 +9,7 @@ local myMod, GP = ...
 
 function GP:startMod(config)
 
-    GP:log("Starting", config.modName, GP.version)
+    GP:log("Starting", config.modName, GP:version())
     GP:logKeys("Found",config)
 
     -- STARTUP Register Model Files

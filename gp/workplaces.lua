@@ -6,7 +6,7 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
-GP:log("Workplaces", GP.version)
+GP:log("Workplaces", GP:version())
 
 function GP:registerAllWorkplaces(config)
 

@@ -5,7 +5,7 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
-GP:log("My Config", GP.version)
+GP:log("My Config", GP:version())
 
 -- MY CONFIG Mod Name
 local modName = "fishBarrel"
@@ -105,10 +105,11 @@ local monuments = {
 
 function GP:loadConfig()
 
-    GP:log("Load Config", GP.version)
+    GP:log("Load Config", GP:version())
 
     -- Create config object
     local config = {
+        version = GP:version(),
         modName = modName,
         modelFiles = modelFiles,
         categories = categories,
