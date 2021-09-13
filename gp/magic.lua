@@ -8,35 +8,46 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ... 
 
+local magicWords = {
+    part = {
+        separator = "_Part",
+        idPrefix = "BUILDING_PART_"
+    },
+    prefab = {
+        folder = "Prefab",
+        idPrefix = "PREFAB_"
+    }
+}
+
+function GP:magicWords()
+    return magicWords 
+end
+
 -- GP UTILITY FUNCTION fbx Name
 -- PURE LUA
--- MAGIC WORDS
--- PURE FUNCTIONAL
+-- PURE FUNCTIONAL, MAGIC WORDS
 function GP:fbxName (partName) 
-    return partName .. "_Part"
+    return partName .. GP:magicWords().part.separator
 end
 
 -- GP UTILITY FUNCTION Prefab Path
 -- PURE LUA
--- MAGIC WORDS
--- PURE FUNCTIONAL
+-- PURE FUNCTIONAL, MAGIC WORDS
 function GP:prefabPath (modelFile, partName)
-    local prefabPath = "/" .. modelFile .. "/" .. "Prefab" .. "/" .. GP:fbxName(partName) .. "/" 
+    local prefabPath = "/" .. modelFile .. "/" .. GP:magicWords().prefab.folder .. "/" .. GP:fbxName(partName) .. "/" 
     return prefabPath
 end
 
 -- GP UTILITY FUNCTION Prefab ID
 -- PURE LUA
--- MAGIC WORDS
--- PURE FUNCTIONAL
+-- PURE FUNCTIONAL, MAGIC WORDS
 function GP:prefabId (partName) 
-    return "PREFAB_" .. GP:fbxName(partName)
+    return GP:magicWords().prefab.idPrefix .. GP:fbxName(partName)
 end
 
 -- GP UTILITY FUNCTION Part ID
 -- PURE LUA
--- MAGIC WORDS
--- PURE FUNCTIONAL
+-- PURE FUNCTIONAL, MAGIC WORDS
 function GP:partId (partName) 
-    return "BUILDING_PART_" .. partName
+    return GP:magicWords().part.idPrefix .. partName
 end

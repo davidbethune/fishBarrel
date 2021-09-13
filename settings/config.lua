@@ -61,7 +61,12 @@ local categories = {
         Trout = {Order = 6},
         Choice = {Order = 7}
     },
-    FRIENDS = {Black_Cat = {}, Boxer_Dog = {}, Collie_Dog = {}},
+    FRIENDS = {
+        Black_Cat = {}, 
+        Coon_Cat = {}, 
+        Boxer_Dog = {}, 
+        Collie_Dog = {}
+    },
     DECOR = {
         MARKET_BLUE_TENT = {
             Order = 1,

@@ -16,6 +16,7 @@
 		<meta id="dbd3f201-16b0-4b04-a83b-1c350be0a7fc" name="a"/>
 		<meta id="31883149-51db-4cd9-8bbc-ee489f10f683" name="bianco"/>
 		<meta id="106ed391-5b6d-4dce-92f9-7405370d09d2" name="zampa"/>
+		<meta id="c1272ad9-c8db-4516-afe4-2b3af73920fe" name="wire_134110008"/>
 	</meta>
 	<meta id="11a64c7e-e103-4c44-bfcd-f2ca8c616dae" type="group" folder="true" name="Meshes">
 		<meta id="7fec84c0-db9e-415b-86a0-580788603885" name="Collie_pelo"/>
@@ -31,15 +32,16 @@
 		<meta id="28622130-ca81-48c2-a848-d1589bda6e32" name="Collie_bianco"/>
 		<meta id="9845e728-7a0e-45ed-9013-1ff35acc60e8" name="Collie_zampa"/>
 		<meta id="f0f260d3-49f7-4ec9-a5de-9afb3c10734d" name="Boxer_volk.001"/>
-		<meta id="c332c9f8-1f98-4758-9555-898f88ce902a" name="Cat_body"/>
-		<meta id="79bd8786-c159-4ff6-b3d7-e895118bebc8" name="Cat_Cornea"/>
+		<meta id="a093d371-7260-4d98-931d-9caf0b938a8e" name="Black Cat_body"/>
+		<meta id="cf97dc20-e924-4e20-a1d3-102820e4a71d" name="Black Cat_Cornea"/>
+		<meta id="2e16fa35-af73-4628-8b91-0791748251d5" name="Coon_wire_134110008"/>
 	</meta>
 	<meta id="83437804-64a3-4015-9587-bc6153b14583" name="Prefab">
 		<meta id="86314512-8236-4d08-a236-a7d3b4e90939" name="Black_Cat_Part">
 			<meta id="ece166ec-c2bc-4534-a397-295317af2f15" name="Attach_minor.001"/>
-			<meta id="3e97b619-e3d3-4246-9433-2a622738f6ca" name="Cat">
-				<meta id="a14ded82-e2ab-4cd1-b8a9-70a6d8bb2ffd" name="Cat_0"/>
-				<meta id="39261cdf-9a73-434e-b19c-40e085a4a830" name="Cat_1"/>
+			<meta id="de6ecd8a-302e-428e-b20f-a4e4869a0954" name="Black Cat">
+				<meta id="f944a2bb-b2e8-4f1a-93ec-91bf87587a73" name="Black Cat_0"/>
+				<meta id="61236594-474f-4f00-adc4-2671b02e97ad" name="Black Cat_1"/>
 			</meta>
 		</meta>
 		<meta id="4bbd5d2a-e58e-47f1-898a-02d4bfca7871" name="Boxer_Dog_Part">
@@ -63,10 +65,13 @@
 			</meta>
 			<meta id="f860a01d-34db-49cd-85a3-3bb27b82f7d9" name="Attach_minor.003"/>
 		</meta>
+		<meta id="86644957-5cec-4d66-ba1a-41ec582d4f95" name="Coon_Cat_Part">
+			<meta id="626ce22c-ae2f-4819-8162-25878004b85e" name="Coon"/>
+		</meta>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
-	<Md5Checksum value="3a40ffd931000babc0785974e6ac57bd"/>
+	<Md5Checksum value="1bceb8bb51288d9eab83bda588663039"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
 	<UniqueNodeName value="false"/>
@@ -93,15 +98,15 @@
 							<Item type="GenCFbxNodeConfig">
 								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 								<ChildList/>
-								<NodeName value="Cat_0"/>
+								<NodeName value="Black Cat_0"/>
 							</Item>
 							<Item type="GenCFbxNodeConfig">
 								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 								<ChildList/>
-								<NodeName value="Cat_1"/>
+								<NodeName value="Black Cat_1"/>
 							</Item>
 						</ChildList>
-						<NodeName value="Cat"/>
+						<NodeName value="Black Cat"/>
 					</Item>
 				</ChildList>
 				<NodeName value="Black_Cat_Part"/>
@@ -199,6 +204,17 @@
 				</ChildList>
 				<NodeName value="Collie_Dog_Part"/>
 			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Coon"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Coon_Cat_Part"/>
+			</Item>
 		</ChildList>
 		<NodeName value="Prefab"/>
 	</NodeConfig>
@@ -250,6 +266,10 @@
 		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="52b340ea-e7fd-4532-99f0-59f00453ec59"/>
 			<MaterialName value="volk.001"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="c1272ad9-c8db-4516-afe4-2b3af73920fe"/>
+			<MaterialName value="wire_134110008"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="4882f0b5-f110-4e9a-913e-9ac522a91486"/>
