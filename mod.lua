@@ -30,7 +30,7 @@
 -- Mod Main Entrypoint & Loader
 
 -- DECLARE: GPS Version
-local version = "2.5.0"
+local version = "2.6.0"
 
 -- DECLARE: GP Object
 local GP = {}

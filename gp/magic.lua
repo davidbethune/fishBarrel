@@ -9,13 +9,28 @@
 local myMod, GP = ... 
 
 local magicWords = {
+    building = {
+        idPrefix = "BUILDING_",
+        descSuffix = "_DESC",
+    },
     part = {
         separator = "_Part",
-        idPrefix = "BUILDING_PART_"
+        idPrefix = "BUILDING_PART_",
+        descSuffix = "_DESC",
     },
     prefab = {
         folder = "Prefab",
-        idPrefix = "PREFAB_"
+        idPrefix = "PREFAB_",
+    },
+    model = {
+        folder = "models",
+        extension = ".fbx",
+    },
+    path = {
+        namePrefix = "Path_",
+    },
+    category = {
+        namePrefix = "CATEGORY_",
     }
 }
 

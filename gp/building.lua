@@ -23,7 +23,7 @@ function GP:registerModelFiles()
     GP:logKeys("Registering Model Files", modelFiles)
     for modelFile, categoryKeyArray in pairs(modelFiles) do
 
-        local modelFileName = "models" .. "/" .. modelFile .. ".fbx"
+        local modelFileName = GP:magicWords().model.folder .. "/" .. modelFile .. GP:magicWords().model.extension
 
         -- Register building part types for each category in the file.           
         GP:registerBuildingPartTypes(categoryKeyArray)
@@ -208,7 +208,7 @@ function GP:registerBuildingPart(category, partName, partConfig)
         Id = partId,
         AssetBuildingFunction = buildingFunction,
         Name = partName,
-        Description = partName .. "_DESC",
+        Description = partName .. GP:magicWords().part.descSuffix,
         Category = category,
         IsMovableWhenBuilt = true,
         ConstructorData = {
@@ -235,7 +235,7 @@ end
 -- PURE FUNCTIONAL
 function GP:registerPathNodes(modelFileName, partName, pathNodes)
     for index, pathKey in ipairs(pathNodes) do
-        local pathName = "Path" .. "_" .. GP:fbxName(partName) .. "_" .. pathKey
+        local pathName = GP:magicWords().path.namePrefix .. GP:fbxName(partName) .. "_" .. pathKey
         local pathId = string.upper(pathName)
         local pathPath = GP:prefabPath(modelFileName, partName) .. pathName
         GP:log("Registering path path", pathPath, "to", pathId)
@@ -253,7 +253,7 @@ function GP:registerPathTypes(modelFileName, partName, pathTypes)
     local pathNodeList = {}
 
     for typeName, nodeName in pairs(pathTypes) do
-        local pathName = "Path" .. "_" .. GP:fbxName(partName) .. "_" ..
+        local pathName = GP:magicWords().path.namePrefix .. GP:fbxName(partName) .. "_" ..
                              nodeName
         local pathId = string.upper(pathName)
         GP:log("Adding type", typeName .. ":", pathId, "to", partName)
@@ -306,7 +306,7 @@ function GP:registerMonument(buildingName, config)
 
         -- Create a monument part set for the category
         local categoryPartSet = {
-            Name = "CATEGORY_" .. categoryKey,
+            Name = GP:magicWords().category.namePrefix .. categoryKey,
             BuildingPartList = {}
         }
 
@@ -331,7 +331,7 @@ function GP:registerMonument(buildingName, config)
     
             -- Add the part to the category parts list
             table.insert(categoryPartSet.BuildingPartList,
-                         "BUILDING_PART_" .. partKey)
+                         GP:magicWords().part.idPrefix .. partKey)
         end
 
         -- Add the category parts list to the monument
@@ -347,9 +347,9 @@ function GP:registerMonument(buildingName, config)
 
     myMod:register({
         DataType = "BUILDING",
-        Id = "BUILDING_" .. buildingName,
+        Id = GP:magicWords().building.idPrefix .. buildingName,
         Name = buildingName,
-        Description = buildingName .. "_DESC",
+        Description = buildingName .. GP:magicWords().building.descSuffix,
         BuildingType = buildingConfig.Type,
         -- AssetBuildingFunction = buildingConfig.Function,
         AssetCoreBuildingPart = "BUILDING_PART_MONUMENT_POLE",

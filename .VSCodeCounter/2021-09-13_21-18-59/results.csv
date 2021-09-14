@@ -1,0 +1,18 @@
+"filename", "language", "Lua", "JSON", "Markdown", "comment", "blank", "total"
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\LICENSE.md", "Markdown", 0, 0, 17, 0, 6, 23
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\README.md", "Markdown", 0, 0, 26, 0, 1, 27
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\generated_ids.lua", "Lua", 156, 0, 0, 2, 3, 161
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\gp\building.lua", "Lua", 224, 0, 0, 86, 65, 375
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\gp\foundation.lua", "Lua", 19, 0, 0, 16, 4, 39
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\gp\generators.lua", "Lua", 45, 0, 0, 11, 14, 70
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\gp\jobs.lua", "Lua", 39, 0, 0, 13, 12, 64
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\gp\magic.lua", "Lua", 27, 0, 0, 19, 7, 53
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\gp\startup.lua", "Lua", 10, 0, 0, 13, 15, 38
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\gp\utility.lua", "Lua", 51, 0, 0, 26, 8, 85
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\gp\workplaces.lua", "Lua", 40, 0, 0, 12, 15, 67
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\localization\en\text.json", "JSON", 0, 60, 0, 0, 6, 66
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\mod.json", "JSON", 0, 7, 0, 0, 3, 10
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\mod.lua", "Lua", 23, 0, 0, 60, 19, 102
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\scripts\overrides.lua", "Lua", 31, 0, 0, 7, 5, 43
+"c:\Users\David\Documents\Polymorph Games\Foundation\mods\fishBarrel\settings\config.lua", "Lua", 100, 0, 0, 14, 12, 126
+"Total", "-", 765, 67, 43, 279, 195, 1349

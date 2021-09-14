@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <meta id="eec321d9-965d-4751-b7eb-d7242544a893">
 	<meta id="1757f137-6c32-413a-8955-fa8ad53d3db2" type="group" folder="true" name="Materials">
-		<meta id="3c9b97ba-467f-43cc-95f7-b1d3332dd783" name="body"/>
-		<meta id="e1f47faf-b1f4-4fe1-bd4b-49225ef0be9e" name="Cornea"/>
-		<meta id="52b340ea-e7fd-4532-99f0-59f00453ec59" name="volk.001"/>
 		<meta id="46a3ea1e-22a0-4d2f-844b-c91fb9dc5cdd" name="pelo"/>
 		<meta id="dc2f1ab7-8625-495d-a576-5b3012fd292a" name="g"/>
 		<meta id="8f4ea8b1-904d-404a-b04c-034b0451e9c2" name="h"/>
@@ -16,7 +13,10 @@
 		<meta id="dbd3f201-16b0-4b04-a83b-1c350be0a7fc" name="a"/>
 		<meta id="31883149-51db-4cd9-8bbc-ee489f10f683" name="bianco"/>
 		<meta id="106ed391-5b6d-4dce-92f9-7405370d09d2" name="zampa"/>
-		<meta id="c1272ad9-c8db-4516-afe4-2b3af73920fe" name="wire_134110008"/>
+		<meta id="0a4a1568-e192-4d17-bccb-0cb66c184abb" name="BoxerFur"/>
+		<meta id="cba01959-9d87-4e6b-b4a0-c7b969ce2e41" name="BlackCatFur"/>
+		<meta id="494834c1-1d1b-4354-bce4-58f275c877d8" name="CatEyes"/>
+		<meta id="d2dd64a2-cb04-470d-a582-615bead90267" name="CoonFur"/>
 	</meta>
 	<meta id="11a64c7e-e103-4c44-bfcd-f2ca8c616dae" type="group" folder="true" name="Meshes">
 		<meta id="7fec84c0-db9e-415b-86a0-580788603885" name="Collie_pelo"/>
@@ -31,10 +31,10 @@
 		<meta id="9e220d28-bf45-4e18-8cae-7a9f46e58fd6" name="Collie_a"/>
 		<meta id="28622130-ca81-48c2-a848-d1589bda6e32" name="Collie_bianco"/>
 		<meta id="9845e728-7a0e-45ed-9013-1ff35acc60e8" name="Collie_zampa"/>
-		<meta id="f0f260d3-49f7-4ec9-a5de-9afb3c10734d" name="Boxer_volk.001"/>
-		<meta id="a093d371-7260-4d98-931d-9caf0b938a8e" name="Black Cat_body"/>
-		<meta id="cf97dc20-e924-4e20-a1d3-102820e4a71d" name="Black Cat_Cornea"/>
-		<meta id="2e16fa35-af73-4628-8b91-0791748251d5" name="Coon_wire_134110008"/>
+		<meta id="cf182a45-580d-47e6-8bff-2ea3223a361c" name="Boxer_BoxerFur"/>
+		<meta id="074fad8e-6c37-4801-95fb-e66693cd4ca8" name="Black Cat_BlackCatFur"/>
+		<meta id="6e29d06c-ca77-4fcb-be52-ba84a82e62fb" name="Black Cat_CatEyes"/>
+		<meta id="33a6176c-c047-4476-b4bf-80d0b8f51f22" name="Coon Cat_CoonFur"/>
 	</meta>
 	<meta id="83437804-64a3-4015-9587-bc6153b14583" name="Prefab">
 		<meta id="86314512-8236-4d08-a236-a7d3b4e90939" name="Black_Cat_Part">
@@ -66,12 +66,12 @@
 			<meta id="f860a01d-34db-49cd-85a3-3bb27b82f7d9" name="Attach_minor.003"/>
 		</meta>
 		<meta id="86644957-5cec-4d66-ba1a-41ec582d4f95" name="Coon_Cat_Part">
-			<meta id="626ce22c-ae2f-4819-8162-25878004b85e" name="Coon"/>
+			<meta id="9bc6d253-4cda-4ee3-816f-c789b64d4a6f" name="Coon Cat"/>
 		</meta>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
-	<Md5Checksum value="1bceb8bb51288d9eab83bda588663039"/>
+	<Md5Checksum value="a00b3c6ceff2874bc5a84c626704788d"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
 	<UniqueNodeName value="false"/>
@@ -210,7 +210,7 @@
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Coon"/>
+						<NodeName value="Coon Cat"/>
 					</Item>
 				</ChildList>
 				<NodeName value="Coon_Cat_Part"/>
@@ -220,8 +220,20 @@
 	</NodeConfig>
 	<MaterialList>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="e1f47faf-b1f4-4fe1-bd4b-49225ef0be9e"/>
-			<MaterialName value="Cornea"/>
+			<MaterialGuid value="cba01959-9d87-4e6b-b4a0-c7b969ce2e41"/>
+			<MaterialName value="BlackCatFur"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="0a4a1568-e192-4d17-bccb-0cb66c184abb"/>
+			<MaterialName value="BoxerFur"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="494834c1-1d1b-4354-bce4-58f275c877d8"/>
+			<MaterialName value="CatEyes"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="d2dd64a2-cb04-470d-a582-615bead90267"/>
+			<MaterialName value="CoonFur"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="dbd3f201-16b0-4b04-a83b-1c350be0a7fc"/>
@@ -234,10 +246,6 @@
 		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="31883149-51db-4cd9-8bbc-ee489f10f683"/>
 			<MaterialName value="bianco"/>
-		</Item>
-		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="3c9b97ba-467f-43cc-95f7-b1d3332dd783"/>
-			<MaterialName value="body"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="dc2f1ab7-8625-495d-a576-5b3012fd292a"/>
@@ -262,14 +270,6 @@
 		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="2378b64f-10e7-4189-950c-551534418d9a"/>
 			<MaterialName value="r"/>
-		</Item>
-		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="52b340ea-e7fd-4532-99f0-59f00453ec59"/>
-			<MaterialName value="volk.001"/>
-		</Item>
-		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="c1272ad9-c8db-4516-afe4-2b3af73920fe"/>
-			<MaterialName value="wire_134110008"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
 			<MaterialGuid value="4882f0b5-f110-4e9a-913e-9ac522a91486"/>
