@@ -4,8 +4,8 @@
 -- Functions that register prefabs.
 -- 
 -- FUNCTION ASSIGNMENTS
--- IMPORT GP OBJECT
 
+-- IMPORT GP OBJECT
 local myMod, GP = ...
 
 -- GP FUNCTION Register Category Prefabs

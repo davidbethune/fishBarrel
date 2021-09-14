@@ -19,7 +19,6 @@
 --
 -- Acknowledgements:
 -- Contains versions of models by @Batyushki and @RaisinMuffin, used with permission. 
--- Inspired by code from these modders and @Minotorious and @SkunkMonkey.
 
 -- License:
 -- This source code is public domain to use as you wish. Attribution is appreciated:
@@ -27,10 +26,10 @@
 -- 
 
 -- MODULE MOD.LUA
--- Mod Main Entrypoint & Loader
+-- Main Entrypoint & Loader
 
 -- DECLARE: GPS Version
-local version = "2.6.0"
+local version = "2.7.0"
 
 -- DECLARE: GP Object
 local GP = {}
@@ -70,9 +69,25 @@ GP:load("gp/magic.lua")
 -- Defines prefab registration functions used by all GP mods.
 GP:load("gp/prefabs.lua")
 
--- EXECUTE FILE: Building Functions
--- Defines building part and monument registration functions used by all GP mods.
+-- EXECUTE FILE: Attach Functions
+-- Defines attach point registration functions used by all GP mods.
+GP:load("gp/attach.lua")
+
+-- EXECUTE FILE: Path Functions
+-- Defines path registration functions used by all GP mods.
+GP:load("gp/paths.lua")
+
+-- EXECUTE FILE: File Functions
+-- Defines .fbx model files functions used by all GP mods.
+GP:load("gp/files.lua")
+
+-- EXECUTE FILE: Building & Monument Functions
+-- Defines building and monument registration functions used by all GP mods.
 GP:load("gp/building.lua")
+
+-- EXECUTE FILE: Building Part Functions
+-- Defines building part registration functions used by all GP mods.
+GP:load("gp/parts.lua")
 
 -- EXECUTE FILE: Custom Configuration
 -- Declares custom settings for this individual mod.

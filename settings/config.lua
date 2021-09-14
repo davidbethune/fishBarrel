@@ -2,6 +2,7 @@
 -- by Garran Plum
 --
 -- GP Configuration for this individual mod.
+
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
