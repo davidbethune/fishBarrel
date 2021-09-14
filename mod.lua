@@ -66,8 +66,12 @@ GP:load("gp/utility.lua")
 -- Defines functions that return string literals used by all GP mods.
 GP:load("gp/magic.lua")
 
--- EXECUTE FILE: Global Building Functions
--- Defines building functions used by all GP mods.
+-- EXECUTE FILE: Prefab Functions
+-- Defines prefab registration functions used by all GP mods.
+GP:load("gp/prefabs.lua")
+
+-- EXECUTE FILE: Building Functions
+-- Defines building part and monument registration functions used by all GP mods.
 GP:load("gp/building.lua")
 
 -- EXECUTE FILE: Custom Configuration

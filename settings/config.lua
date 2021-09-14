@@ -120,6 +120,6 @@ function GP:config()
         workplaces = workplaces,
         monuments = monuments
     }
-    return config
+    return GP:copyTable(config)
 end
 

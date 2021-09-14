@@ -10,6 +10,21 @@ local myMod, GP = ...
 
 GP.mod:log("GP | Utility Functions " .. GP:version())
 
+-- GP UTILITY FUNCTION Copy Table
+-- Deep copies a table by value and returns the new copy.
+-- PURE FUNCTIONAL, RECURSIVE
+function GP:copyTable (incomingTable) 
+    local newTable = {}
+    for key, value in pairs(incomingTable) do
+        if type(value) == "table" then
+            value = GP:copyTable(value)
+        end
+        newTable[key] = value
+    end
+    return newTable
+end
+
+
 -- GP UTILITY FUNCTION Ternary
 -- Returns ifTrue if test is true. Returns ifFalse if test is false.
 -- PURE FUNCTIONAL
