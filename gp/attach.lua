@@ -44,9 +44,6 @@ function GP:registerAttachNodeType(nodeType, partList)
     -- If there's a part to process...
     if (partKey) then
 
-        -- Get the first part.
-        local partKey = next(partList)
-
         -- Register the part's attach node type with Foundation.
         GP:log("Registering", partKey, "to type", nodeType)
         GP.mod:registerPrefabComponent(GP:prefabId(partKey), {
