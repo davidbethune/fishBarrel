@@ -10,6 +10,17 @@ local myMod, GP = ...
 
 GP.mod:log("GP | Utility Functions " .. GP:version())
 
+-- GP UTILITY FUNCTION Next
+-- Returns the next item in a table or nil.
+-- PURE FUNCTIONAL
+function GP:next(incomingTable)
+    local nextItem = nil
+    if (incomingTable and next(incomingTable)) then
+        nextItem = next(incomingTable)
+    end
+    return nextItem
+end
+
 -- GP UTILITY FUNCTION Copy Table
 -- Deep copies a table by value and returns the new copy.
 -- PURE FUNCTIONAL, RECURSIVE

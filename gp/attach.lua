@@ -38,16 +38,27 @@ end
 -- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerAttachNodeType(nodeType, partList)
 
-    if (partList and next(partList)) then
-    local partKey = next(partList)
+    -- Get the next part from the list.
+    local partKey = GP:next(partList)
+
+    -- If there's a part to process...
+    if (partKey) then
+
+        -- Get the first part.
+        local partKey = next(partList)
+
+        -- Register the part's attach node type with Foundation.
         GP:log("Registering", partKey, "to type", nodeType)
         GP.mod:registerPrefabComponent(GP:prefabId(partKey), {
             DataType = "COMP_BUILDING_PART",
             BuildingPartType = ATTACH_NODE_TYPE[nodeType]
         })
+
+        -- Remove the part from the list.
         partList[partKey] = nil
+
+        -- Call this function recursively to process the rest of the list.
         GP:registerAttachNodeType(nodeType, partList)
     end
-
 end
 
