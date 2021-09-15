@@ -28,6 +28,18 @@ local datatypes = {
     path = {
     },
     category = {
+    },
+    job = {
+        registrationType = "JOB",
+        progression = "DEFAULT_JOB_PROGRESSION",
+        character = "CHARACTER_SETUP",
+    },
+    override = {
+        serf = "SERF",
+        newcomer = "NEWCOMER"
+    },
+    action = {
+        append = "APPEND"
     }
 }
 

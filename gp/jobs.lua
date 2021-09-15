@@ -28,15 +28,15 @@ end
 function GP:registerJob(jobName, jobConfig) 
     
 myMod:register({
-	DataType = "JOB",
+	DataType = GP:datatypes().job.registrationType,
 	Id = jobName,
 	JobName = jobName,
-	JobDescription = jobName .. "_DESC",
+	JobDescription = jobName .. GP:magicWords().job.descSuffix,
 	IsLockedByDefault = false,
     ProductionDelay = jobConfig.Delay,
-	AssetJobProgression = "DEFAULT_JOB_PROGRESSION",
+	AssetJobProgression = GP:datatypes().job.progression,
 	CharacterSetup = {
-        DataType = "CHARACTER_SETUP",
+        DataType = GP:datatypes().job.character,
         WalkAnimation = jobConfig.Walk,
 		IdleAnimation = jobConfig.Work
 		
@@ -45,18 +45,18 @@ myMod:register({
 
 -- Job Allowed for Newcomers
 myMod:override({
-    Id = "NEWCOMER",
+    Id = GP:datatypes().override.newcomer,
     CompatibleJobList = {
-        Action = "APPEND",
+        Action = GP:datatypes().action.append,
         jobName
     }
 })
 
 -- Job Allowed for Serfs
 myMod:override({
-    Id = "SERF",
+    Id = GP:datatypes().override.serf,
     CompatibleJobList = {
-        Action = "APPEND",
+        Action = GP:datatypes().action.append,
         jobName
     }
 })

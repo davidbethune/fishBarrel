@@ -35,6 +35,9 @@ local magicWords = {
     generator = {
         idSuffix = "_GENERATOR",
         functionIdSuffix = "_GENERATOR_BASE"
+    },
+    job = {
+        descSuffix = "_DESC"
     }
 }
 
