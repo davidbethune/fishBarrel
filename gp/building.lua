@@ -29,7 +29,7 @@ end
 function GP:registerBuildingPartTypes(categoryArray)
     for index, category in ipairs(categoryArray) do
         GP:log("Registering Building Part Type", category)
-        GP.mod:registerEnumValue("BUILDING_PART_TYPE", category)
+        GP.mod:registerEnumValue(GP:datatypes().part.type, category)
     end
 end
 
@@ -43,7 +43,7 @@ function GP:registerBuildingPart(category, partName, partConfig)
     local buildingFunction = partConfig.Function
     GP:log("Registering Building Part", prefabId, "to", partId)
     GP.mod:register({
-        DataType = "BUILDING_PART",
+        DataType = GP:datatypes().building.part,
         Id = partId,
         AssetBuildingFunction = buildingFunction,
         Name = partName,
@@ -51,7 +51,7 @@ function GP:registerBuildingPart(category, partName, partConfig)
         Category = category,
         IsMovableWhenBuilt = true,
         ConstructorData = {
-            DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+            DataType = GP:datatypes().building.constructor,
             CoreObjectPrefab = prefabId
         },
         BuildingZone = {

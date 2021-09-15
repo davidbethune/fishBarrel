@@ -19,15 +19,12 @@
 --
 -- Acknowledgements:
 -- Contains versions of models by @Batyushki and @RaisinMuffin, used with permission. 
-
 -- License:
 -- This source code is public domain to use as you wish. Attribution is appreciated:
 -- "Contains portions of GP mods by Garran Plum. https://mod.io/members/garranplum"
 -- 
-
 -- MODULE MOD.LUA
 -- Main Entrypoint & Loader
-
 -- DECLARE: GPS Version
 local version = "2.7.0"
 
@@ -36,9 +33,7 @@ local GP = {}
 
 -- FUNCTION: Version
 -- Return GPS version number inside GP functions.
-function GP:version() 
-    return version
-end
+function GP:version() return version end
 
 -- FUNCTION: Register Mod
 -- Registers a mod with Foundation.
@@ -61,9 +56,13 @@ GP.mod:dofile("gp/foundation.lua", GP)
 -- Defines general Lua functions used by all GP mods.
 GP:load("gp/utility.lua")
 
--- EXECUTE FILE: Global Magic Word Functions
--- Defines functions that return string literals used by all GP mods.
+-- EXECUTE FILE: Global Magic Word Declarations & Functions
+-- Declares string literals used by all GP mods.
 GP:load("gp/magic.lua")
+
+-- EXECUTE FILE: Global Datatype Declarations & Functions
+-- Defines functions that return string literals for Foundation datatypes.
+GP:load("gp/datatypes.lua")
 
 -- EXECUTE FILE: Prefab Functions
 -- Defines prefab registration functions used by all GP mods.

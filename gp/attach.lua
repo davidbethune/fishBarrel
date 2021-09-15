@@ -33,7 +33,7 @@ function GP:registerAttachNodeTypes(config)
 end
 
 -- 1ST CLASS FUNCTION Register Prefab Attach Point Type
--- Register all the attach node types in config.nodeTypes
+-- Register a single part to an attach point type.
 -- FUNCTIONAL, GAME EFFECT CALL
 function GP.registerPrefabAttachPointType(partKey, nodeType)
 
@@ -44,5 +44,4 @@ function GP.registerPrefabAttachPointType(partKey, nodeType)
     })
 
 end
-
 
