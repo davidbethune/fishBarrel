@@ -24,39 +24,17 @@ function GP:registerAttachNodeTypes(config)
         for index, categoryKey in ipairs(categoryKeyList) do
 
             -- Get the list of parts in that category.
-            local partsList = config.categories[categoryKey]
+            local partList = GP:copyTable(config.categories[categoryKey])
 
-            -- Register the parts list to that node type.
-            GP:logKeys("Registering " .. nodeType .. " Parts", partsList)
-            GP:registerAttachNodeType(nodeType, GP:copyTable(partsList))
+            -- Map over the parts list, registering each part to the node type.
+            GP:map(partList, GP.registerPrefabAttachPointType, nodeType)
         end
     end
 end
 
--- RECURSIVE FUNCTION Register Attach Node Type
--- Register a list of parts to an attach node type.
+-- 1ST CLASS FUNCTION Register Prefab Attach Point Type
+-- Register all the attach node types in config.nodeTypes
 -- FUNCTIONAL, GAME EFFECT CALL
-function GP:registerAttachNodeType(nodeType, partList)
-
-    -- -- Get the next part from the list.
-    -- local partKey = GP:next(partList)
-
-    -- -- If there's a part to process...
-    -- if (partKey) then
-
-    --     -- Register the part's attach node type with Foundation.
-    --     GP:registerPrefabAttachPointType(partKey, nodeType)
-
-    --     -- Remove the part from the list.
-    --     partList[partKey] = nil
-
-    --     -- Call this function recursively to process the rest of the list.
-    --     GP:registerAttachNodeType(nodeType, partList)
-    -- end
-
-    GP:map(partList, GP.registerPrefabAttachPointType, nodeType)
-end
-
 function GP.registerPrefabAttachPointType(partKey, nodeType)
 
     GP:log("Registering", partKey, "to type", nodeType)

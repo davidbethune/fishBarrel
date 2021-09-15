@@ -10,6 +10,9 @@ local myMod, GP = ...
 
 GP.mod:log("GP | Utility Functions " .. GP:version())
 
+-- RECURSIVE FUNCTION Map
+-- Maps each item in incomingTable to a function, passing the remaining arguments.
+-- FUNCTIONAL, UNKNOWN EFFECTS (1ST CLASS FUNCTION CALL)
 function GP:map(incomingTable, mapFunction, ...)
     
     -- Collect multiple arguments.
@@ -21,10 +24,8 @@ function GP:map(incomingTable, mapFunction, ...)
     -- If there's an item to process...
     if (item) then
 
-        GP:log(item, unpack(arguments))
-
-        -- Apply the function to the item.
-        mapFunction(item, arguments[1])
+        -- Apply the function to the item with all its arguments.
+        mapFunction(item, unpack(arguments))
 
         -- Remove the item from the list.
         incomingTable[item] = nil
