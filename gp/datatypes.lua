@@ -1,7 +1,7 @@
 -- MODULE DATATYPES.LUA
 -- by Garran Plum
 --
--- Lua functions that return Foundation datatypes for all GP mods.
+-- Lua functions that return Foundation datatypes and built-in IDs for all GP mods.
 -- 
 -- FUNCTION ASSIGNMENTS
 
@@ -11,11 +11,9 @@ local myMod, GP = ...
 local datatypes = {
     building = {
         registrationType = "BUILDING",
-        monumentPole = "BUILDING_PART_MONUMENT_POLE",
         part = "BUILDING_PART",
         constructor = "BUILDING_CONSTRUCTOR_DEFAULT",
         processor = "BUILDING_ASSET_PROCESSOR",
-        component = "COMP_BUILDING_PART",
         generatorFunction = "BUILDING_FUNCTION_RESOURCE_GENERATOR",
         generator = "BUILDING_RESOURCE_GENERATOR",
 
@@ -24,33 +22,30 @@ local datatypes = {
         registrationType = "COMP_BUILDING_PART",
         type = "BUILDING_PART_TYPE",
     },
-    prefab = {
-    },
-    model = {
-    },
-    path = {
-    },
-    category = {
-    },
     workplace = {
         registrationType = "BUILDING_FUNCTION_WORKPLACE",
     },
     job = {
         registrationType = "JOB",
-        progression = "DEFAULT_JOB_PROGRESSION",
         character = "CHARACTER_SETUP",
         behavior = "BEHAVIOR_WORK",
-    },
-    override = {
-        serf = "SERF",
-        newcomer = "NEWCOMER"
     },
     action = {
         append = "APPEND"
     }
 }
 
+local datatype ids = {
+    monumentPole = "BUILDING_PART_MONUMENT_POLE",
+    jobProgression = "DEFAULT_JOB_PROGRESSION",
+    serf = "SERF",
+    newcomer = "NEWCOMER",
+}
+
 function GP:datatypes()
     return datatypes 
 end
 
+function GP:ids()
+    return ids 
+end

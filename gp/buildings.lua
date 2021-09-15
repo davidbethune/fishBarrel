@@ -90,7 +90,7 @@ function GP:registerMonument(buildingName, config)
         Description = buildingName .. GP:magicWords().building.descSuffix,
         BuildingType = buildingConfig.Type,
         -- AssetBuildingFunction = buildingConfig.Function,
-        AssetCoreBuildingPart = GP:datatypes().building.monumentPole,
+        AssetCoreBuildingPart = GP:ids().monumentPole,
         BuildingPartSetList = buildingPartsList,
         RequiredPartList = requiredPartsList
     })

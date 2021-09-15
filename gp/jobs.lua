@@ -34,7 +34,7 @@ myMod:register({
 	JobDescription = jobName .. GP:magicWords().job.descSuffix,
 	IsLockedByDefault = false,
     ProductionDelay = jobConfig.Delay,
-	AssetJobProgression = GP:datatypes().job.progression,
+	AssetJobProgression = GP:ids().jobProgression,
 	CharacterSetup = {
         DataType = GP:datatypes().job.character,
         WalkAnimation = jobConfig.Walk,
@@ -45,7 +45,7 @@ myMod:register({
 
 -- Job Allowed for Newcomers
 myMod:override({
-    Id = GP:datatypes().override.newcomer,
+    Id = GP:ids().newcomer,
     CompatibleJobList = {
         Action = GP:datatypes().action.append,
         jobName
@@ -54,7 +54,7 @@ myMod:override({
 
 -- Job Allowed for Serfs
 myMod:override({
-    Id = GP:datatypes().override.serf,
+    Id = GP:ids().serf,
     CompatibleJobList = {
         Action = GP:datatypes().action.append,
         jobName
