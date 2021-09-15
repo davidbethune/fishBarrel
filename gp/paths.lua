@@ -70,7 +70,7 @@ function GP:registerPathTypes(modelFileName, partName, pathTypes)
 
     GP:log("Registering path node list for", GP:prefabPath(modelFileName, partName))
     myMod:registerPrefabComponent(GP:prefabPath(modelFileName, partName), {
-        DataType = "COMP_BUILDING_PART",
+        DataType = GP:datatypes().part.registrationType,
         PathList = pathNodeList
     })
 end

@@ -21,6 +21,7 @@ local datatypes = {
 
     },
     part = {
+        registrationType = "COMP_BUILDING_PART",
         type = "BUILDING_PART_TYPE",
     },
     prefab = {
