@@ -10,6 +10,30 @@ local myMod, GP = ...
 
 GP.mod:log("GP | Utility Functions " .. GP:version())
 
+function GP:map(incomingTable, mapFunction, ...)
+    
+    -- Collect multiple arguments.
+    local arguments = {...}
+
+    -- Get the next item from the table.
+    local item = GP:next(incomingTable)
+
+    -- If there's an item to process...
+    if (item) then
+
+        GP:log(item, unpack(arguments))
+
+        -- Apply the function to the item.
+        mapFunction(item, arguments[1])
+
+        -- Remove the item from the list.
+        incomingTable[item] = nil
+
+        -- Call this function recursively to process the rest of the list.
+        GP:map(incomingTable, mapFunction, unpack(arguments))
+    end
+end
+
 -- GP UTILITY FUNCTION Next
 -- Returns the next item in a table or nil.
 -- PURE FUNCTIONAL
@@ -50,7 +74,7 @@ function GP:ternary (test, ifTrue, ifFalse)
 end
 
 -- GP UTILITY FUNCTION Split
--- Splits delimitedString into an array (resultTable) on delimiter. Default `,`.
+-- Splits string into an array (resultTable) on delimiter. Default `,`.
 -- PURE FUNCTIONAL
 function GP:split(delimitedString, delimiter)
     if (not delimiter) then
