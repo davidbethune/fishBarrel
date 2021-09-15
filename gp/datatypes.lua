@@ -32,10 +32,14 @@ local datatypes = {
     },
     category = {
     },
+    workplace = {
+        registrationType = "BUILDING_FUNCTION_WORKPLACE",
+    },
     job = {
         registrationType = "JOB",
         progression = "DEFAULT_JOB_PROGRESSION",
         character = "CHARACTER_SETUP",
+        behavior = "BEHAVIOR_WORK",
     },
     override = {
         serf = "SERF",
