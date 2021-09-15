@@ -44,7 +44,7 @@ function GP:registerModelFiles()
         GP:log("Registering Asset Processor for",
                [["]] .. modelFileName .. [["]])
         GP.mod:registerAssetProcessor(modelFileName,
-                                      {DataType = "BUILDING_ASSET_PROCESSOR"})
+                                      {DataType = GP:datatypes().building.processor})
 
         -- Register all attach node types in entire mod.
         GP:registerAttachNodeTypes(config)

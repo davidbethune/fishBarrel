@@ -39,9 +39,8 @@ function GP.registerPrefabAttachPointType(partKey, nodeType)
 
     GP:log("Registering", partKey, "to type", nodeType)
     GP.mod:registerPrefabComponent(GP:prefabId(partKey), {
-        DataType = "COMP_BUILDING_PART",
+        DataType = GP:datatypes().building.component,
         BuildingPartType = ATTACH_NODE_TYPE[nodeType]
     })
 
 end
-

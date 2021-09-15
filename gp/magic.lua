@@ -31,6 +31,10 @@ local magicWords = {
     },
     category = {
         namePrefix = "CATEGORY_",
+    },
+    generator = {
+        idSuffix = "_GENERATOR",
+        functionIdSuffix = "_GENERATOR_BASE"
     }
 }
 

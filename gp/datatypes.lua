@@ -12,6 +12,11 @@ local datatypes = {
     building = {
         part = "BUILDING_PART",
         constructor = "BUILDING_CONSTRUCTOR_DEFAULT",
+        processor = "BUILDING_ASSET_PROCESSOR",
+        component = "COMP_BUILDING_PART",
+        generatorFunction = "BUILDING_FUNCTION_RESOURCE_GENERATOR",
+        generator = "BUILDING_RESOURCE_GENERATOR",
+
     },
     part = {
         type = "BUILDING_PART_TYPE",

@@ -4,7 +4,6 @@
 -- Functions that register monuments and buildings.
 -- 
 -- FUNCTION ASSIGNMENTS
-
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
@@ -61,7 +60,7 @@ function GP:registerBuildingPart(category, partName, partConfig)
                     Type = {
                         DEFAULT = true,
                         NAVIGABLE = false,
-                        GRASS_CLEAR = true,
+                        GRASS_CLEAR = true
                     }
                 }
             }

@@ -46,8 +46,8 @@ for resource, maxQty in pairs(generatorConfig.Produces) do
 
     -- BUILDING FUNCTION RESOURCE GENERATOR (Parent) Properties
     myMod:register({
-        DataType = "BUILDING_FUNCTION_RESOURCE_GENERATOR",
-        Id = resource .. "_GENERATOR_BASE",
+        DataType = GP:datatypes().building.generatorFunction,
+        Id = resource .. GP:magicWords().generator.functionIdSuffix,
         ResourceGenerated = resource,
         IsForConsumer = false,
         IsInfinite = false
@@ -55,10 +55,10 @@ for resource, maxQty in pairs(generatorConfig.Produces) do
 
     -- BUILDING RESOURCE GENERATOR (New) Properties
     myMod:register({
-        DataType = "BUILDING_RESOURCE_GENERATOR",
-        Id = resource .. "_GENERATOR",
-        Name = resource .. "_GENERATOR",
-        ResourceGenerator = resource .. "_GENERATOR_BASE",
+        DataType = GP:datatypes().building.generator,
+        Id = resource .. GP:magicWords().generator.idSuffix,
+        Name = resource .. GP:magicWords().generator.idSuffix,
+        ResourceGenerator = resource .. GP:magicWords().generator.functionIdSuffix,
         MaxQuantity = maxQty,
         GrowRate = generatorConfig.Rate
     })
