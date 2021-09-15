@@ -80,13 +80,13 @@ GP:load("gp/paths.lua")
 -- Defines .fbx model files functions used by all GP mods.
 GP:load("gp/files.lua")
 
--- EXECUTE FILE: Building & Monument Functions
--- Defines building and monument registration functions used by all GP mods.
-GP:load("gp/building.lua")
-
 -- EXECUTE FILE: Building Part Functions
 -- Defines building part registration functions used by all GP mods.
 GP:load("gp/parts.lua")
+
+-- EXECUTE FILE: Building & Monument Functions
+-- Defines building and monument registration functions used by all GP mods.
+GP:load("gp/buildings.lua")
 
 -- EXECUTE FILE: Custom Configuration
 -- Declares custom settings for this individual mod.

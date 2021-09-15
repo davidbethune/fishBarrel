@@ -10,6 +10,8 @@ local myMod, GP = ...
 
 local datatypes = {
     building = {
+        registrationType = "BUILDING",
+        monumentPole = "BUILDING_PART_MONUMENT_POLE",
         part = "BUILDING_PART",
         constructor = "BUILDING_CONSTRUCTOR_DEFAULT",
         processor = "BUILDING_ASSET_PROCESSOR",
