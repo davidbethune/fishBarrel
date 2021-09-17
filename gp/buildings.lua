@@ -9,10 +9,34 @@
 local myMod, GP = ...
 
 GP:log("Monument Registration", GP:version())
--- FUNCTION Register Monument
+
+
+
+
+
+-- FUNCTION Register Monument List
+-- Register all the monuments in the config.
+-- FUNCTIONAL, GAME EFFECT CALL
+function GP:registerMonumentList()
+
+    -- Sugar for GP:config()
+    local config = GP:config()
+
+    -- Map over the monument list, registering each building on the list.
+    GP:logKeys("Registering Monuments", config.monuments)
+    GP:map(config.monuments, GP.registerMonument, config)
+
+    -- for buildingName, buildingConfig in pairs(config.monuments) do
+    --     GP:logKeys("Monument Config " .. buildingName, buildingConfig)
+    --     GP:registerMonument(buildingName, config)
+    -- end
+end
+
+
+-- 1ST CLASS FUNCTION Register Monument
 -- Register a single monument building.
 -- FUNCTIONAL, GAME EFFECT
-function GP:registerMonument(buildingName, config)
+function GP.registerMonument(buildingName, config)
 
     -- Sugar for buildingConfig
     local buildingConfig = config.monuments[buildingName]
@@ -94,19 +118,4 @@ function GP:registerMonument(buildingName, config)
         BuildingPartSetList = buildingPartsList,
         RequiredPartList = requiredPartsList
     })
-end
-
--- FUNCTION Register Monument List
--- Register all the monuments in the config.
--- FUNCTIONAL, GAME EFFECT CALL
-function GP:registerMonumentList()
-
-    -- Sugar for GP:config()
-    local config = GP:config()
-
-    GP:logKeys("Registering Monuments", config.monuments)
-    for buildingName, buildingConfig in pairs(config.monuments) do
-        GP:logKeys("Monument Config " .. buildingName, buildingConfig)
-        GP:registerMonument(buildingName, config)
-    end
 end

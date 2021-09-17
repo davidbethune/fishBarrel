@@ -51,7 +51,9 @@ end
 function GP:copyTable(incomingTable)
     local newTable = {}
     for key, value in pairs(incomingTable) do
-        if type(value) == "table" then value = GP:copyTable(value) end
+        if type(value) == "table" then
+            value = GP:copyTable(value)
+        end
         newTable[key] = value
     end
     return newTable
@@ -74,7 +76,9 @@ end
 -- Splits string into an array (resultTable) on delimiter. Default `,`.
 -- PURE FUNCTIONAL
 function GP:split(delimitedString, delimiter)
-    if (not delimiter) then delimiter = "," end
+    if (not delimiter) then
+        delimiter = ","
+    end
     local resultTable = {};
     for match in (delimitedString .. delimiter):gmatch("(.-)" .. delimiter) do
         table.insert(resultTable, match);
@@ -87,7 +91,9 @@ end
 -- PURE FUNCTIONAL
 function GP:tableLength(incomingTable)
     local count = 0
-    for key, value in pairs(incomingTable) do count = count + 1 end
+    for key, value in pairs(incomingTable) do
+        count = count + 1
+    end
     return count
 end
 
@@ -97,7 +103,9 @@ end
 -- PURE FUNCTIONAL
 function GP:getKeys(array)
     local keysObject = {}
-    for index, key in pairs(array) do keysObject[key] = {} end
+    for index, key in pairs(array) do
+        keysObject[key] = {}
+    end
     return keysObject
 end
 
@@ -106,7 +114,9 @@ end
 -- PURE LUA, PURE FUNCTIONAL
 function GP:tableKeys(incomingTable, delimiter)
     local keyListString = ""
-    if (not delimiter) then delimiter = ", " end
+    if (not delimiter) then
+        delimiter = ", "
+    end
     for key, value in pairs(incomingTable) do
         keyListString = key .. delimiter .. keyListString
     end
@@ -117,6 +127,8 @@ end
 -- Trims amount number of characters from end of incomingString. Default is 1.
 -- PURE LUA, PURE FUNCTIONAL
 function GP:trim(incomingString, amount)
-    if (not amount) then amount = 1 end
+    if (not amount) then
+        amount = 1
+    end
     return string.sub(incomingString, 1, string.len(incomingString) - amount)
 end

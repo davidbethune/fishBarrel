@@ -14,20 +14,20 @@ local datatypes = {
         constructor = "BUILDING_CONSTRUCTOR_DEFAULT",
         processor = "BUILDING_ASSET_PROCESSOR",
         generatorFunction = "BUILDING_FUNCTION_RESOURCE_GENERATOR",
-        generator = "BUILDING_RESOURCE_GENERATOR"
+        generator = "BUILDING_RESOURCE_GENERATOR",
 
     },
     part = {
         registrationType = "COMP_BUILDING_PART",
-        type = "BUILDING_PART_TYPE"
+        type = "BUILDING_PART_TYPE",
     },
     workplace = {registrationType = "BUILDING_FUNCTION_WORKPLACE"},
     job = {
         registrationType = "JOB",
         character = "CHARACTER_SETUP",
-        behavior = "BEHAVIOR_WORK"
+        behavior = "BEHAVIOR_WORK",
     },
-    action = {append = "APPEND"}
+    action = {append = "APPEND"},
 }
 
 local datatype
@@ -35,15 +35,19 @@ ids = {
     monumentPole = "BUILDING_PART_MONUMENT_POLE",
     jobProgression = "DEFAULT_JOB_PROGRESSION",
     serf = "SERF",
-    newcomer = "NEWCOMER"
+    newcomer = "NEWCOMER",
 }
 
 -- GP FUNCTION Datatypes
 -- Returns a copy of the Foundation built-in datatypes table.
 -- FUNCTIONAL, CLOSURE
-function GP:datatypes() return GP:copyTable(datatypes) end
+function GP:datatypes()
+    return GP:copyTable(datatypes)
+end
 
 -- GP FUNCTION IDs
 -- Returns a copy of the Foundation built-in words table.
 -- FUNCTIONAL, CLOSURE
-function GP:ids() return GP:copyTable(ids) end
+function GP:ids()
+    return GP:copyTable(ids)
+end

@@ -33,7 +33,9 @@ local GP = {}
 
 -- FUNCTION: Version
 -- Return GPS version number inside GP functions.
-function GP:version() return version end
+function GP:version()
+    return version
+end
 
 -- FUNCTION: Register Mod
 -- Registers a mod with Foundation.
