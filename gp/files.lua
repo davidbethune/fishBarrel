@@ -4,7 +4,6 @@
 -- Functions that process .fbx model files.
 -- 
 -- FUNCTION ASSIGNMENTS
-
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
@@ -22,7 +21,9 @@ function GP:registerModelFiles()
     GP:logKeys("Registering Model Files", modelFiles)
     for modelFile, categoryKeyArray in pairs(modelFiles) do
 
-        local modelFileName = GP:magicWords().model.folder .. "/" .. modelFile .. GP:magicWords().model.extension
+        local modelFileName =
+            GP:magicWords().model.folder .. "/" .. modelFile ..
+                GP:magicWords().model.extension
 
         -- Register building part types for each category in the file.           
         GP:registerBuildingPartTypes(categoryKeyArray)
@@ -36,15 +37,15 @@ function GP:registerModelFiles()
                        categoryPartsList)
 
             -- Register all prefabs in the category.
-            GP:registerCategoryPrefabs(modelFileName, categoryKey,
-                                       config)
+            GP:registerCategoryPrefabs(modelFileName, categoryKey, config)
         end
 
         -- Register one asset processor for the entire file.
         GP:log("Registering Asset Processor for",
                [["]] .. modelFileName .. [["]])
-        GP.mod:registerAssetProcessor(modelFileName,
-                                      {DataType = GP:datatypes().building.processor})
+        GP.mod:registerAssetProcessor(modelFileName, {
+            DataType = GP:datatypes().building.processor
+        })
 
         -- Register all attach node types in entire mod.
         GP:registerAttachNodeTypes(config)

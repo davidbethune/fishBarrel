@@ -41,8 +41,11 @@ local magicWords = {
     }
 }
 
+-- GP FUNCTION Magic Words
+-- Returns a copy of the magic words table.
+-- FUNCTIONAL, CLOSURE
 function GP:magicWords()
-    return magicWords 
+    return GP:copyTable(magicWords) 
 end
 
 -- GP UTILITY FUNCTION fbx Name
