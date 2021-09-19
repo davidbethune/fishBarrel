@@ -9,9 +9,9 @@ local myMod, GP = ...
 
 GP.mod:log("GP | Utility Functions " .. GP:version())
 
--- RECURSIVE FUNCTION Map
--- Maps each item in incomingTable to a function, passing the remaining arguments.
--- FUNCTIONAL, UNKNOWN EFFECTS (1ST CLASS FUNCTION CALL)
+-- GP UTILITY FUNCTION Map
+-- Maps each item in incomingTable to mapFunction, passing the remaining arguments.
+-- HIGHER ORDER, RECURSIVE, FUNCTIONAL, UNKNOWN EFFECTS (1ST CLASS FUNCTION CALL)
 function GP:map(incomingTable, mapFunction, ...)
 
     -- Collect multiple arguments.
@@ -47,7 +47,7 @@ end
 
 -- GP UTILITY FUNCTION Copy Table
 -- Deep copies a table by value and returns the new copy.
--- PURE FUNCTIONAL, RECURSIVE
+-- RECURSIVE, PURE FUNCTIONAL
 function GP:copyTable(incomingTable)
     local newTable = {}
     for key, value in pairs(incomingTable) do
@@ -111,7 +111,7 @@ end
 
 -- GP UTILITY FUNCTION Table Keys
 -- Returns a delimited string of all keys in a table. Default delimiter is `,`.
--- PURE LUA, PURE FUNCTIONAL
+-- PURE FUNCTIONAL
 function GP:tableKeys(incomingTable, delimiter)
     local keyListString = ""
     if (not delimiter) then
@@ -123,9 +123,55 @@ function GP:tableKeys(incomingTable, delimiter)
     return GP:trim(keyListString, string.len(delimiter))
 end
 
+-- GP UTILITY FUNCTION Serialize Table
+-- Returns a string serialization of a table in Lua form.
+-- TAIL RECURSIVE, PURE FUNCTIONAL
+function GP:serializeTable(incomingTable, tableString)
+
+    -- Use tableString in progress or create a new empty, one.
+    local tableString = tableString or ""
+
+    -- If there is an item in the table to work on...
+    if (incomingTable and next(incomingTable)) then
+
+        -- Get the next item's key and value from the table.
+        local itemKey, itemValue = next(incomingTable)
+
+        -- Create a string version of the key and value.
+        local stringKey, stringValue = itemKey, itemValue
+
+        -- If the itemValue is a string, surround the stringValue with quotes.
+        if (type(itemValue) == "string") then
+            stringValue = [["]] .. stringValue .. [["]]
+        end
+
+        -- If the key is a string, add an = sign after it.
+        if type(itemKey == "string") then
+            stringKey = stringKey .. " = "
+        end
+
+        -- If the itemValue is a table, serialize it.
+        if (type(nextValue) == "table") then
+            stringValue = GP:serializeTable(nextValue)
+        end
+
+        -- Format the string key and value in Lua form: [Category = "PLUM",]
+        local itemString = stringKey .. stringValue .. [[, ]]
+
+        -- Remove the item from the table.
+        incomingTable[itemKey] = nil
+
+        -- Call this function recursively, concatenating the new itemString to the tableString.
+        return GP:serializeTable(incomingTable, tableString .. itemString)
+    end
+
+    -- No more work items? Return the completed table string wrapped in {}.
+    return "{" .. tableString .. "}"
+end
+
 -- GP UTILITY FUNCTION Trim
 -- Trims amount number of characters from end of incomingString. Default is 1.
--- PURE LUA, PURE FUNCTIONAL
+-- PURE FUNCTIONAL
 function GP:trim(incomingString, amount)
     if (not amount) then
         amount = 1

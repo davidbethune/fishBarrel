@@ -58,6 +58,14 @@ function GP.registerMonument(buildingName, config)
         end
     end
 
+    local testTable = {
+       FISH = 3,
+       CATEGORIES = 2,
+       SOMETHING = 4
+    }
+
+    GP:log(GP:serializeTable(testTable))
+
     -- For each category in the monument...
     for index, categoryKey in ipairs(
         orderedCategoryKeys) do
