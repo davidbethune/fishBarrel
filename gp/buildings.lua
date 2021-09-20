@@ -23,11 +23,11 @@ function GP:registerMonumentList()
     local config = GP:config()
 
     -- Map over the monument list, registering each building on the list.
-    GP:logKeys("Registering Monuments", config.monuments)
+    GP:logTable("Registering Monuments", config.monuments)
     GP:map(config.monuments, GP.registerMonument, config)
 
     -- for buildingName, buildingConfig in pairs(config.monuments) do
-    --     GP:logKeys("Monument Config " .. buildingName, buildingConfig)
+    --     GP:logTable("Monument Config " .. buildingName, buildingConfig)
     --     GP:registerMonument(buildingName, config)
     -- end
 end
@@ -57,15 +57,6 @@ function GP.registerMonument(buildingName, config)
             table.insert(orderedCategoryKeys, categoryKey)
         end
     end
-
-    local testTable = {
-       FISH = {
-           BARREL = {ANOTHER = {YETANOTHER = "Still"}, BARREL = 2, OFISH = 3},
-           O = "O'",
-           FISH = "Fish"
-       },
-       AHI = {"Tuna"}
-    }
 
     GP:log(GP:serializeTable(config))
 

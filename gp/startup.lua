@@ -15,7 +15,7 @@ function GP:startMod()
     local config = GP:config()
 
     GP:log("Starting", config.modName, GP:version())
-    GP:logKeys("Found", config)
+    GP:logTable("Found", config)
 
     -- STARTUP Register Model Files
     GP:registerModelFiles()

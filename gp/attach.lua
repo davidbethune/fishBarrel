@@ -12,7 +12,7 @@ local myMod, GP = ...
 -- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerAttachNodeTypes(config)
 
-    GP:logKeys("Attach Node Types Config", config)
+    GP:logTable("Attach Node Types Config", config)
 
     -- Sugar for config.nodeTypes
     local nodeTypeList = config.nodeTypes

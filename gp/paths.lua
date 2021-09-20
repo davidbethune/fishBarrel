@@ -28,7 +28,7 @@ function GP:registerPartPaths(modelFileName, categoryKey, config)
         -- If the part has path types, register them.
         if (partConfig.PathTypes) then
             GP:log("Registering path types for", partName)
-            GP:logKeys(partName, partConfig.PathTypes)
+            GP:logTable(partName, partConfig.PathTypes)
             GP:registerPathTypes(modelFileName, partName, partConfig.PathTypes)
         end
     end
@@ -52,7 +52,7 @@ end
 -- Register a single path type on a single part in a model file.
 -- FUNCTIONAL, GAME EFFECT
 function GP:registerPathTypes(modelFileName, partName, pathTypes)
-    GP:logKeys("Registering Path Types for " .. partName, pathTypes)
+    GP:logTable("Registering Path Types for " .. partName, pathTypes)
 
     local pathNodeList = {}
 

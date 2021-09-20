@@ -16,7 +16,7 @@ function GP:registerCategoryPrefabs(modelFileName, category, config)
     -- Sugar for config.categories[category]
     local categoryPartsList = config.categories[category]
 
-    GP:logKeys("Registering Prefabs", categoryPartsList)
+    GP:logTable("Registering Prefabs", categoryPartsList)
     for partName in pairs(categoryPartsList) do
         local partConfig = categoryPartsList[partName]
         if (partConfig.AssetRegistered) then

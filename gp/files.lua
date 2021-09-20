@@ -18,7 +18,7 @@ function GP:registerModelFiles()
     -- Sugar for config.modelFiles
     local modelFiles = config.modelFiles
 
-    GP:logKeys("Registering Model Files", modelFiles)
+    GP:logTable("Registering Model Files", modelFiles)
     for modelFile, categoryKeyArray in pairs(modelFiles) do
 
         local modelFileName =
@@ -33,7 +33,7 @@ function GP:registerModelFiles()
 
             -- Get a list of parts for the category.
             local categoryPartsList = config.categories[categoryKey]
-            GP:logKeys("Retrieved prefab parts list for " .. categoryKey,
+            GP:logTable("Retrieved prefab parts list for " .. categoryKey,
                        categoryPartsList)
 
             -- Register all prefabs in the category.
@@ -55,7 +55,7 @@ function GP:registerModelFiles()
 
             -- Get a list of parts for the category.
             local categoryPartsList = config.categories[categoryKey]
-            GP:logKeys("Retrieved path parts list for " .. categoryKey,
+            GP:logTable("Retrieved path parts list for " .. categoryKey,
                        categoryPartsList)
 
             -- Register all path nodes and types to all parts in the category.

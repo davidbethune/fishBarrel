@@ -30,7 +30,7 @@ end
 -- GP FOUNDATION FUNCTION Log Keys
 -- Logs all the keys in incomingTable. Default label is `keys`.
 -- GAME EFFECT CALL
-function GP:logKeys(label, incomingTable)
+function GP:logTable(label, incomingTable)
     if (not incomingTable) then incomingTable, label = label, "keys" end
-    GP:log(label .. ":", GP:tableKeys(incomingTable))
+    GP:log(label .. ":", GP:serializeTable(incomingTable))
 end
