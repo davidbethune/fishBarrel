@@ -128,9 +128,11 @@ end
 -- TAIL RECURSIVE, PURE FUNCTIONAL
 function GP:serializeTable(incomingTable, tableString)
 
-    -- Use tableString in progress or create a new empty, one.
-    local tableString = tableString or ""
-
+    -- If first call (no tableString), make a copy of incomingTable first.
+    if (not tableString) then
+        return GP:serializeTable(GP:copyTable(incomingTable), "")
+    end
+    
     -- If there is an item in the table to work on...
     if (incomingTable and next(incomingTable)) then
 

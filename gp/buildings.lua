@@ -67,7 +67,7 @@ function GP.registerMonument(buildingName, config)
        AHI = {"Tuna"}
     }
 
-    GP:log(GP:serializeTable(GP:copyTable(config)))
+    GP:log(GP:serializeTable(config))
 
     -- For each category in the monument...
     for index, categoryKey in ipairs(
