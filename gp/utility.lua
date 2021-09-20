@@ -138,21 +138,31 @@ function GP:serializeTable(incomingTable, tableString)
         local itemKey, itemValue = next(incomingTable)
 
         -- Create a string version of the key and value.
-        local stringKey, stringValue = itemKey, itemValue
+        local stringKey, stringValue = "", ""
 
         -- If the itemValue is a string, surround the stringValue with quotes.
         if (type(itemValue) == "string") then
-            stringValue = [["]] .. stringValue .. [["]]
+            stringValue = [["]] .. itemValue .. [["]]
+        end
+ 
+       -- If the itemValue is a number, write it without quotes.
+        if (type(itemValue) == "number") then
+            stringValue = itemValue
         end
 
-        -- If the key is a string, add an = sign after it.
-        if type(itemKey == "string") then
-            stringKey = stringKey .. " = "
+        -- If the itemKey is a string, add an = sign after it.
+        if (type(itemKey) == "string") then
+            stringKey = itemKey .. " = "
+        end
+
+        -- If the itemKey is a number, don't write it (array style).
+        if (type(itemKey) == "number") then
+            stringKey = ""
         end
 
         -- If the itemValue is a table, serialize it.
-        if (type(nextValue) == "table") then
-            stringValue = GP:serializeTable(nextValue)
+        if (type(itemValue) == "table") then
+            stringValue = GP:serializeTable(itemValue)
         end
 
         -- Format the string key and value in Lua form: [Category = "PLUM",]
@@ -165,8 +175,9 @@ function GP:serializeTable(incomingTable, tableString)
         return GP:serializeTable(incomingTable, tableString .. itemString)
     end
 
-    -- No more work items? Return the completed table string wrapped in {}.
-    return "{" .. tableString .. "}"
+    -- No more work items? Remove the final ", " and return the completed table string wrapped in {}.
+
+    return "{" .. GP:trim(tableString, 2) .. "}"
 end
 
 -- GP UTILITY FUNCTION Trim

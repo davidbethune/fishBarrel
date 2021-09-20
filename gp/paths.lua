@@ -42,7 +42,7 @@ function GP:registerPathNodes(modelFileName, partName, pathNodes)
         local pathName = GP:magicWords().path.namePrefix .. GP:fbxName(partName) .. "_" .. pathKey
         local pathId = string.upper(pathName)
         local pathPath = GP:prefabPath(modelFileName, partName) .. pathName
-        GP:log("Registering path path", pathPath, "to", pathId)
+        GP:log("Registering", pathPath, "to", pathId)
         myMod:registerAssetId(pathPath, pathId)
     end
 

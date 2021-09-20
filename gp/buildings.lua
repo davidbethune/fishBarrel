@@ -59,9 +59,12 @@ function GP.registerMonument(buildingName, config)
     end
 
     local testTable = {
-       FISH = 3,
-       CATEGORIES = 2,
-       SOMETHING = 4
+       FISH = {
+           BARREL = "Barrel",
+           O = "O'",
+           FISH = "Fish"
+       },
+       AHI = {"Tuna"}
     }
 
     GP:log(GP:serializeTable(testTable))
