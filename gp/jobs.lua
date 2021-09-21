@@ -5,7 +5,7 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
-GP:log("Jobs", GP:version())
+GP:log("jobs.lua", GP:version())
 
 -- FUNCTION Register All Jobs
 -- FUNCTIONAL, GAME EFFECT CALL

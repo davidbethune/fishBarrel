@@ -1,4 +1,4 @@
--- MODULE FILES.LUA
+-- MODULE MODELS.LUA
 -- by Garran Plum
 --
 -- Functions that process .fbx model files.
@@ -6,6 +6,8 @@
 -- FUNCTION ASSIGNMENTS
 -- IMPORT GP OBJECT
 local myMod, GP = ...
+
+GP:log("models.lua", GP:version())
 
 -- GP FUNCTION Register Model Files
 -- Register all model files in config.models.
@@ -18,7 +20,6 @@ function GP:registerModelFiles()
     -- Sugar for config.modelFiles
     local modelFiles = config.modelFiles
 
-    GP:logTable("Registering Model Files", modelFiles)
     for modelFile, categoryKeyArray in pairs(modelFiles) do
 
         local modelFileName =
@@ -33,16 +34,12 @@ function GP:registerModelFiles()
 
             -- Get a list of parts for the category.
             local categoryPartsList = config.categories[categoryKey]
-            GP:logTable("Retrieved prefab parts list for " .. categoryKey,
-                       categoryPartsList)
 
             -- Register all prefabs in the category.
             GP:registerCategoryPrefabs(modelFileName, categoryKey, config)
         end
 
         -- Register one asset processor for the entire file.
-        GP:log("Registering Asset Processor for",
-               [["]] .. modelFileName .. [["]])
         GP.mod:registerAssetProcessor(modelFileName, {
             DataType = GP:datatypes().building.processor,
         })
@@ -55,8 +52,6 @@ function GP:registerModelFiles()
 
             -- Get a list of parts for the category.
             local categoryPartsList = config.categories[categoryKey]
-            GP:logTable("Retrieved path parts list for " .. categoryKey,
-                       categoryPartsList)
 
             -- Register all path nodes and types to all parts in the category.
             GP:registerPartPaths(modelFileName, categoryKey, config)

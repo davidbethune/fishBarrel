@@ -6,7 +6,7 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ... 
 
-GP:log("Building Overrides",GP:version())
+GP:log("overrides.lua",GP:version())
 
 -- OVERRIDE Blue Market Tent
 myMod:register({

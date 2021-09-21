@@ -8,6 +8,8 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
+GP:log("paths.lua", GP:version())
+
 -- GP FUNCTION Register Part Paths
 -- Register path nodes and types for all parts in a single category in a model file.
 -- FUNCTIONAL, GAME EFFECT CALL
@@ -21,14 +23,11 @@ function GP:registerPartPaths(modelFileName, categoryKey, config)
 
         -- If the part has path nodes, register them.
         if (partConfig.PathNodes) then
-            GP:log("Registering path nodes for", partName)
             GP:registerPathNodes(modelFileName, partName, partConfig.PathNodes)
         end
 
         -- If the part has path types, register them.
         if (partConfig.PathTypes) then
-            GP:log("Registering path types for", partName)
-            GP:logTable(partName, partConfig.PathTypes)
             GP:registerPathTypes(modelFileName, partName, partConfig.PathTypes)
         end
     end
@@ -42,7 +41,6 @@ function GP:registerPathNodes(modelFileName, partName, pathNodes)
         local pathName = GP:magicWords().path.namePrefix .. GP:fbxName(partName) .. "_" .. pathKey
         local pathId = string.upper(pathName)
         local pathPath = GP:prefabPath(modelFileName, partName) .. pathName
-        GP:log("Registering", pathPath, "to", pathId)
         myMod:registerAssetId(pathPath, pathId)
     end
 
@@ -52,7 +50,6 @@ end
 -- Register a single path type on a single part in a model file.
 -- FUNCTIONAL, GAME EFFECT
 function GP:registerPathTypes(modelFileName, partName, pathTypes)
-    GP:logTable("Registering Path Types for " .. partName, pathTypes)
 
     local pathNodeList = {}
 
@@ -60,7 +57,6 @@ function GP:registerPathTypes(modelFileName, partName, pathTypes)
         local pathName = GP:magicWords().path.namePrefix .. GP:fbxName(partName) .. "_" ..
                              nodeName
         local pathId = string.upper(pathName)
-        GP:log("Adding type", typeName .. ":", pathId, "to", partName)
         local onePathNode = {
             PathType = BUILDING_PATH_TYPE[typeName],
             WayPointList = {pathId}
@@ -68,7 +64,6 @@ function GP:registerPathTypes(modelFileName, partName, pathTypes)
         table.insert(pathNodeList, onePathNode)
     end
 
-    GP:log("Registering path node list for", GP:prefabPath(modelFileName, partName))
     myMod:registerPrefabComponent(GP:prefabPath(modelFileName, partName), {
         DataType = GP:datatypes().part.registrationType,
         PathList = pathNodeList

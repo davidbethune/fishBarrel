@@ -7,6 +7,8 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
+GP:log("magic.lua", GP:version())
+
 local magicWords = {
     building = {idPrefix = "BUILDING_", descSuffix = "_DESC"},
     part = {

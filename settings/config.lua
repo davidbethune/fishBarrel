@@ -6,7 +6,7 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
-GP:log("My Config", GP:version())
+GP:log("config.lua", GP:version())
 
 -- MY CONFIG Mod Name
 local modName = "fishBarrel"

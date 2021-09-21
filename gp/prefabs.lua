@@ -8,6 +8,8 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
+GP:log("prefabs.lua", GP:version())
+
 -- GP FUNCTION Register Category Prefabs
 -- Register all the prefabs in a single category in a model file.
 -- FUNCTIONAL, GAME EFFECT CALL
@@ -16,12 +18,11 @@ function GP:registerCategoryPrefabs(modelFileName, category, config)
     -- Sugar for config.categories[category]
     local categoryPartsList = config.categories[category]
 
-    GP:logTable("Registering Prefabs", categoryPartsList)
+    -- For each part on the category list...
     for partName in pairs(categoryPartsList) do
-        local partConfig = categoryPartsList[partName]
-        if (partConfig.AssetRegistered) then
-            GP:log("Using Existing Prefab:", string.upper(GP:prefabId(partName)))
-        else
+
+        -- If not already registered, register the prefab.
+        if (not categoryPartsList[partName].AssetRegistered) then
             GP:registerPrefab(modelFileName, partName)
         end
     end
@@ -31,8 +32,5 @@ end
 -- Register a single prefab in a model file.
 -- FUNCTIONAL, GAME EFFECT
 function GP:registerPrefab(modelFileName, partName)
-    GP:log("Registering Prefab", GP:prefabPath(modelFileName, partName), "to",
-           GP:prefabId(partName))
-    GP.mod:registerAssetId(GP:prefabPath(modelFileName, partName),
-                           GP:prefabId(partName))
+    GP.mod:registerAssetId(GP:prefabPath(modelFileName, partName), GP:prefabId(partName))
 end

@@ -7,12 +7,12 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
+GP:log("attach.lua", GP:version())
+
 -- GP FUNCTION Register Attach Node Types
 -- Register all the attach node types in config.nodeTypes
 -- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerAttachNodeTypes(config)
-
-    GP:logTable("Attach Node Types Config", config)
 
     -- Sugar for config.nodeTypes
     local nodeTypeList = config.nodeTypes
@@ -37,7 +37,6 @@ end
 -- FUNCTIONAL, GAME EFFECT CALL
 function GP.registerPrefabAttachPointType(partKey, nodeType)
 
-    GP:log("Registering", partKey, "to type", nodeType)
     GP.mod:registerPrefabComponent(GP:prefabId(partKey), {
         DataType = GP:datatypes().part.registrationType,
         BuildingPartType = ATTACH_NODE_TYPE[nodeType]

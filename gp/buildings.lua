@@ -8,11 +8,7 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
-GP:log("Monument Registration", GP:version())
-
-
-
-
+GP:log("buildings.lua", GP:version())
 
 -- FUNCTION Register Monument List
 -- Register all the monuments in the config.
@@ -23,13 +19,7 @@ function GP:registerMonumentList()
     local config = GP:config()
 
     -- Map over the monument list, registering each building on the list.
-    GP:logTable("Registering Monuments", config.monuments)
     GP:map(config.monuments, GP.registerMonument, config)
-
-    -- for buildingName, buildingConfig in pairs(config.monuments) do
-    --     GP:logTable("Monument Config " .. buildingName, buildingConfig)
-    --     GP:registerMonument(buildingName, config)
-    -- end
 end
 
 
@@ -40,9 +30,6 @@ function GP.registerMonument(buildingName, config)
 
     -- Sugar for buildingConfig
     local buildingConfig = config.monuments[buildingName]
-
-    -- Sugar for config.
-    GP:log("Registering Monument:", buildingName)
 
     -- Build Parts Lists
     local buildingPartsList = {}
@@ -58,15 +45,13 @@ function GP.registerMonument(buildingName, config)
         end
     end
 
-    GP:log(GP:serializeTable(config))
+    GP:writeTable(config)
 
     -- For each category in the monument...
     for index, categoryKey in ipairs(
         orderedCategoryKeys) do
 
         categoryConfig = config.monuments[buildingName].Categories[categoryKey]     
-
-        GP:log("Monument Category:", categoryKey)
 
         -- Create a monument part set for the category
         local categoryPartSet = {

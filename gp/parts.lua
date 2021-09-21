@@ -7,16 +7,14 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
-GP:log("Building Parts Registration", GP:version())
+GP:log("parts.lua", GP:version())
 
 -- GP FUNCTION Register Category Buildings
 -- Register all the building parts in a single category in a model file.
 -- FUNCTIONAL, GAME EFFECT CALL
 function GP:registerCategoryBuildingParts(modelFileName, category, categoryParts)
     for partName, partConfig in pairs(categoryParts) do
-        if (partConfig.BuildingRegistered) then
-            GP:log("Using Existing Part:", string.upper(GP:partId(partName)))
-        else
+        if (not partConfig.BuildingRegistered) then
             GP:registerBuildingPart(category, partName, partConfig)
         end
     end
@@ -27,7 +25,6 @@ end
 -- FUNCTIONAL, GAME EFFECT
 function GP:registerBuildingPartTypes(categoryArray)
     for index, category in ipairs(categoryArray) do
-        GP:log("Registering Building Part Type", category)
         GP.mod:registerEnumValue(GP:datatypes().part.type, category)
     end
 end
@@ -40,7 +37,6 @@ function GP:registerBuildingPart(category, partName, partConfig)
     local prefabId = GP:prefabId(partName)
     if (partConfig.AssetRegistered) then prefabId = string.upper(prefabId) end
     local buildingFunction = partConfig.Function
-    GP:log("Registering Building Part", prefabId, "to", partId)
     GP.mod:register({
         DataType = GP:datatypes().building.part,
         Id = partId,

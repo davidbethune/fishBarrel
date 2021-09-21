@@ -78,9 +78,9 @@ GP:load("gp/attach.lua")
 -- Defines path registration functions used by all GP mods.
 GP:load("gp/paths.lua")
 
--- EXECUTE FILE: File Functions
--- Defines .fbx model files functions used by all GP mods.
-GP:load("gp/files.lua")
+-- EXECUTE FILE: Model File Functions
+-- Defines .fbx model file functions used by all GP mods.
+GP:load("gp/models.lua")
 
 -- EXECUTE FILE: Building Part Functions
 -- Defines building part registration functions used by all GP mods.
