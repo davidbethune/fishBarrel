@@ -49,8 +49,6 @@ function GP:write(fileContent, fileName)
 
     -- Call the Foundation function to write the file and grab the return boolean.
     isWriteSuccessful = myMod:writeFileAsString(fileName, fileContent)
-
-    GP:log("Writing string to", fileName, tostring(isWriteSuccessful)) 
 end
 
 -- GP FOUNDATION FUNCTION Write Table
@@ -60,8 +58,6 @@ function GP:writeTable(incomingTable, fileName)
 
     -- Set a default fileName if one isn't provided.
     fileName = fileName or "GPtable.log"
-
-    GP:log("Writing table to", fileName)
 
     -- Write the table serialized as a string.
     GP:write(GP:serializeTable(incomingTable), fileName)
