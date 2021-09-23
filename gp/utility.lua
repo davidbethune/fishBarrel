@@ -126,13 +126,24 @@ end
 -- GP UTILITY FUNCTION Serialize Table
 -- Returns a string serialization of a table in Lua form.
 -- TAIL RECURSIVE, PURE FUNCTIONAL
-function GP:serializeTable(incomingTable, tableString)
+function GP:serializeTable(incomingTable, tableString, indent)
+
+    -- Intent each level
+    indent = indent or 1
 
     -- If first call (no tableString), make a copy of incomingTable first.
     if (not tableString) then
-        return GP:serializeTable(GP:copyTable(incomingTable), "")
+        return GP:serializeTable(GP:copyTable(incomingTable), "", indent)
     end
-    
+
+    -- Setup for indent
+    local indentChar = "\t"
+    local stringIndent = string.rep(indentChar, indent)
+    local stringBackIndent = string.rep(indentChar, indent - 1)
+
+    -- Setup for detecting array-style tables
+    local isArray = true
+
     -- If there is an item in the table to work on...
     if (incomingTable and next(incomingTable)) then
 
@@ -143,28 +154,30 @@ function GP:serializeTable(incomingTable, tableString)
         local stringKey, stringValue = "", ""
 
         -- If the itemValue is a string, surround the stringValue with quotes.
-        if (type(itemValue) == "string") then
+        if GP:isString(itemValue) then
             stringValue = [["]] .. itemValue .. [["]]
         end
  
        -- If the itemValue is a number, write it without quotes.
-        if (type(itemValue) == "number") then
+        if GP:isNumber(itemValue) then
             stringValue = itemValue
         end
 
-        -- If the itemKey is a string, add an = sign after it.
-        if (type(itemKey) == "string") then
-            stringKey = itemKey .. " = "
+        -- If the itemKey is a string, add a return and indent before it and an = sign after it.
+        if GP:isString(itemKey) then
+            isArray = false
+            stringKey = "\n" .. stringIndent .. itemKey .. " = "
         end
 
         -- If the itemKey is a number, don't write it (array style).
-        if (type(itemKey) == "number") then
+        if GP:isNumber(itemKey) then
             stringKey = ""
         end
 
         -- If the itemValue is a table, serialize it.
-        if (type(itemValue) == "table") then
-            stringValue = GP:serializeTable(itemValue)
+        if GP:isTable(itemValue) then
+            stringValue, isArray = GP:serializeTable(itemValue, nil, indent + 1)
+            indent = indent - 1
         end
 
         -- Format the string key and value in Lua form: [Category = "PLUM",]
@@ -174,20 +187,46 @@ function GP:serializeTable(incomingTable, tableString)
         incomingTable[itemKey] = nil
 
         -- Call this function recursively, concatenating the new itemString to the tableString.
-        return GP:serializeTable(incomingTable, tableString .. itemString)
+        return GP:serializeTable(incomingTable, tableString .. itemString, indent + 1)
     end
 
-    -- No more work items? Remove the final ", " and return the completed table string wrapped in {}.
-
-    return "{" .. GP:trim(tableString, 2) .. "}"
+    -- No more work items? Prepare the final tableString.
+    
+    -- Remove the final ", " and return the completed table string wrapped in {}.
+    local backReturn = ""
+    if not isArray then
+        backReturn = "\n" .. stringBackIndent
+    end
+    return "{" .. GP:trim(tableString, 2) .. backReturn .. "}", isArray
 end
 
 -- GP UTILITY FUNCTION Trim
 -- Trims amount number of characters from end of incomingString. Default is 1.
 -- PURE FUNCTIONAL
 function GP:trim(incomingString, amount)
-    if (not amount) then
+    if not amount then
         amount = 1
     end
     return string.sub(incomingString, 1, string.len(incomingString) - amount)
+end
+
+-- GP UTILITY FUNCTION isString
+-- Returns true if passed a string.
+-- PURE FUNCTIONAL
+function GP:isString(object)
+    return (type(object) == "string")
+end
+
+-- GP UTILITY FUNCTION isNumber
+-- Returns true if passed a number.
+-- PURE FUNCTIONAL
+function GP:isNumber(object)
+    return (tonumber(object) and true)
+end
+
+-- GP UTILITY FUNCTION isTable
+-- Returns true if passed a table.
+-- PURE FUNCTIONAL
+function GP:isTable(object)
+    return (type(object) == "table")
 end
