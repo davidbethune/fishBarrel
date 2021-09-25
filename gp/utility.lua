@@ -163,6 +163,11 @@ function GP:serializeTable(incomingTable, tableString, indent)
             stringValue = itemValue
         end
 
+        -- If the itemValue is a boolean, stringify it without quotes.
+        if GP:isBoolean(itemValue) then
+            stringValue = tostring(itemValue)
+        end
+
         -- If the itemKey is a string, add a return and indent before it and an = sign after it.
         if GP:isString(itemKey) then
             isArray = false
@@ -194,10 +199,10 @@ function GP:serializeTable(incomingTable, tableString, indent)
     
     -- Remove the final ", " and return the completed table string wrapped in {}.
     local backReturn = ""
-    if not isArray then
+    if true then
         backReturn = "\n" .. stringBackIndent
     end
-    return "{" .. GP:trim(tableString, 2) .. backReturn .. "}", isArray
+    return "{" .. GP:trim(tableString, 2) .. backReturn .. "}"
 end
 
 -- GP UTILITY FUNCTION Trim
@@ -214,19 +219,26 @@ end
 -- Returns true if passed a string.
 -- PURE FUNCTIONAL
 function GP:isString(object)
-    return (type(object) == "string")
+    return type(object) == "string"
 end
 
 -- GP UTILITY FUNCTION isNumber
 -- Returns true if passed a number.
 -- PURE FUNCTIONAL
 function GP:isNumber(object)
-    return (tonumber(object) and true)
+    return tonumber(object) and true
+end
+
+-- GP UTILITY FUNCTION isBoolean
+-- Returns true if passed a boolean.
+-- PURE FUNCTIONAL
+function GP:isBoolean(object)
+    return type(object) == "boolean"
 end
 
 -- GP UTILITY FUNCTION isTable
 -- Returns true if passed a table.
 -- PURE FUNCTIONAL
 function GP:isTable(object)
-    return (type(object) == "table")
+    return type(object) == "table"
 end

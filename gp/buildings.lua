@@ -77,10 +77,18 @@ function GP.registerMonument(buildingName, config)
 
             -- Get the part config
             partConfig = categoryPartsList[partKey]
+
+            -- Setup for adding part prefix, if any.
+            local partPrefix = ""
+
+            -- If GP part, use our part prefix.
+            if not partConfig.BuildingRegistered then
+                partPrefix = GP:magicWords().part.idPrefix
+            end
     
             -- Add the part to the category parts list
             table.insert(categoryPartSet.BuildingPartList,
-                         GP:magicWords().part.idPrefix .. partKey)
+                         partPrefix .. partKey)
         end
 
         -- Add the category parts list to the monument

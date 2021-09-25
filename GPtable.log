@@ -1,97 +1,151 @@
 {
 	modelFiles = {
-		fishBarrel = {"CRATE", "DECOR", "BARREL", "FISH"}, 
-		friends = {"FRIENDS"}}, 
+		fishBarrel = {"CRATE", "DECOR", "BARREL", "FISH"
+						}, 
+		friends = {"FRIENDS"
+			}
+	}, 
 	monuments = {
 		FISH_BARREL = {
 			Type = "FOOD_PRODUCTION", 
-				Function = {}, 
+				Function = {
+				}, 
 				Categories = {
 					FRIENDS = {
-						Order = 4}, 
+						Order = 4
+						}, 
 					DECOR = {
-						Order = 5}, 
+						Order = 5
+						}, 
 					CRATE = {
 						Min = 1, 
-							Order = 2}, 
+							Order = 2
+							}, 
 					BARREL = {
 						Min = 1, 
-							Order = 1}, 
+							Order = 1
+							}, 
 					FISH = {
-						Order = 3}}}}, 
+						Order = 3
+						}
+				}
+			}
+	}, 
 	version = "2.7.0", 
 		categories = {
 			FRIENDS = {
-				Black_Cat = {}, 
-				Collie_Dog = {}, 
-				Boxer_Dog = {}, 
-				Coon_Cat = {}}, 
+				Black_Cat = {
+				}, 
+				Collie_Dog = {
+				}, 
+				Boxer_Dog = {
+				}, 
+				Coon_Cat = {
+				}
+			}, 
 			DECOR = {
 				Flower_Blue = {
-					Order = 4}, 
+					Order = 4
+					}, 
 				MARKET_FOOD_SIGN = {
-					AssetRegistered = , 
-						BuildingRegistered = , 
-							Order = 2}, 
+					AssetRegistered = true, 
+						BuildingRegistered = true, 
+							Order = 2
+							}, 
 				Flower_Yellow = {
-					Order = 3}, 
+					Order = 3
+					}, 
 				Flower_Orange = {
-					Order = 5}, 
+					Order = 5
+					}, 
 				MARKET_BLUE_TENT = {
-					AssetRegistered = , 
-						BuildingRegistered = , 
-							Order = 1}}, 
+					AssetRegistered = true, 
+						BuildingRegistered = true, 
+							Order = 1
+							}
+			}, 
 			CRATE = {
 				Crate = {
-					PathNodes = {"Worker_1", "Worker_2", "Transport", "Visitor"}, 
+					PathNodes = {"Worker_1", "Worker_2", "Transport", "Visitor"
+									}, 
 					Order = 1, 
 						Function = "FISH_GENERATOR", 
 							PathTypes = {
-								DEFAULT = "Transport"}}, 
+								DEFAULT = "Transport"
+								}
+						}, 
 				Crate_Stack = {
-					PathNodes = {"Worker_1", "Worker_2", "Transport", "Visitor"}, 
+					PathNodes = {"Worker_1", "Worker_2", "Transport", "Visitor"
+									}, 
 					Order = 2, 
 						Function = "FISH_GENERATOR", 
 							PathTypes = {
-								DEFAULT = "Transport"}}}, 
+								DEFAULT = "Transport"
+								}
+						}
+			}, 
 			BARREL = {
 				Barrel = {
-					PathNodes = {"Worker_1", "Worker_2", "Transport", "Visitor"}, 
+					PathNodes = {"Worker_1", "Worker_2", "Transport", "Visitor"
+									}, 
 					Function = "FISH_PRODUCER", 
 						PathTypes = {
-							DEFAULT = "Worker_1"}}}, 
+							DEFAULT = "Worker_1"
+							}
+					}
+			}, 
 			FISH = {
 				Ahi = {
-					Order = 1}, 
+					Order = 1
+					}, 
 				Trout = {
-					Order = 6}, 
+					Order = 6
+					}, 
 				Salmon = {
-					Order = 4}, 
+					Order = 4
+					}, 
 				Choice = {
-					Order = 7}, 
+					Order = 7
+					}, 
 				Roughy = {
-					Order = 2}, 
+					Order = 2
+					}, 
 				Grouper = {
-					Order = 3}, 
+					Order = 3
+					}, 
 				Bass = {
-					Order = 5}}}, 
+					Order = 5
+					}
+			}
+		}, 
 		workplaces = {
 			FISH_PRODUCER = {
 				Job = "FISHMONGER", 
 					Produces = {
-						FISH = 5}, 
+						FISH = 5
+						}, 
 					Positions = 1, 
 						Requires = {
-							FISH = 0}}, 
+							FISH = 0
+							}
+					}, 
 			FISH_GENERATOR = {
 				Rate = 0.03125, 
 					Produces = {
-						FISH = 5}}}, 
+						FISH = 5
+						}
+				}
+		}, 
 		jobs = {
 			FISHMONGER = {
 				Walk = "WALKING", 
 					Delay = 7, 
-						Work = "MARKET_TENDER"}}, 
+						Work = "MARKET_TENDER"
+						}
+		}, 
 		nodeTypes = {
-			MINOR = {"FISH"}}, 
-		modName = "fishBarrel"}
+			MINOR = {"FISH"
+				}
+		}, 
+		modName = "fishBarrel"
+		}
