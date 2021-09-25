@@ -47,10 +47,10 @@
 				Flower_Blue = {
 					Order = 4
 					}, 
-				MARKET_FOOD_SIGN = {
+				BUILDING_PART_MARKET_BLUE_TENT = {
 					AssetRegistered = true, 
 						BuildingRegistered = true, 
-							Order = 2
+							Order = 1
 							}, 
 				Flower_Yellow = {
 					Order = 3
@@ -58,10 +58,10 @@
 				Flower_Orange = {
 					Order = 5
 					}, 
-				MARKET_BLUE_TENT = {
+				BUILDING_PART_MARKET_FOOD_SIGN = {
 					AssetRegistered = true, 
 						BuildingRegistered = true, 
-							Order = 1
+							Order = 2
 							}
 			}, 
 			CRATE = {

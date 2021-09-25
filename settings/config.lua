@@ -69,12 +69,12 @@ local categories = {
         Collie_Dog = {}
     },
     DECOR = {
-        MARKET_BLUE_TENT = {
+        BUILDING_PART_MARKET_BLUE_TENT = {
             Order = 1,
             AssetRegistered = true,
             BuildingRegistered = true
         },
-        MARKET_FOOD_SIGN = {
+        BUILDING_PART_MARKET_FOOD_SIGN = {
             Order = 2,
             AssetRegistered = true,
             BuildingRegistered = true
