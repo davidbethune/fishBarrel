@@ -1,12 +1,12 @@
--- OVERRIDES.LUA
+-- CUSTOM OVERRIDES.LUA
 -- by Garran Plum
 --
--- Overrides for built-in buildings.
+-- Custom overrides for the entire mod.
 
 -- IMPORT GP OBJECT
 local myMod, GP = ... 
 
-GP:log("overrides.lua",GP:version())
+GP:log("script/overrides.lua",GP:version())
 
 -- OVERRIDE Blue Market Tent
 myMod:register({
@@ -40,3 +40,4 @@ myMod:override({
         Action = "APPEND","FISH_BARREL_BUILDING_PART_COST_LIST"
     }
 })
+
