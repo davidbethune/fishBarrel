@@ -109,18 +109,25 @@ local monuments = {
     }
 }
 
-function GP:config()
-    -- Create config object
-    local config = {
-        version = GP:version(),
-        modName = modName,
-        modelFiles = modelFiles,
-        categories = categories,
-        nodeTypes = nodeTypes,
-        jobs = jobs,
-        workplaces = workplaces,
-        monuments = monuments
-    }
-    return GP:copyTable(config)
-end
+-- WARNING!
+--
+-- MY CONFIG Ends Here. Changing code below this line will change *GPS*, not just your mod!
+-- As an alternative to the code above, you may supply your own config table to GP.loaded.
+--
+--
+-- Create the config table.
+local config = {
+    version = GP:version(),
+    remix = remix or {},
+    modName = modName,
+    modelFiles = modelFiles or {},
+    categories = categories or {},
+    nodeTypes = nodeTypes or {},
+    jobs = jobs or {},
+    workplaces = workplaces or {},
+    monuments = monuments or {}
+}
+
+-- Use global to return config to loader :-(.
+GP.loaded = config
 
