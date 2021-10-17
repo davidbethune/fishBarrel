@@ -1,0 +1,38 @@
+{
+	BuildingType = "FOOD_PRODUCTION", 
+		AssetCoreBuildingPart = "BUILDING_PART_MONUMENT_POLE", 
+			Description = "FISH_BARREL_DESC", 
+				DataType = "BUILDING", 
+					RequiredPartList = {{
+							Category = "BARREL", 
+								Min = 1
+								}, {
+							Category = "CRATE", 
+								Min = 1
+								}
+					}, 
+					Id = "BUILDING_FISH_BARREL", 
+						Name = "FISH_BARREL", 
+							BuildingPartSetList = {{
+									Name = "CATEGORY_BARREL", 
+										BuildingPartList = {"BUILDING_PART_Barrel"
+											}
+									}, {
+									Name = "CATEGORY_CRATE", 
+										BuildingPartList = {"BUILDING_PART_Crate", "BUILDING_PART_Crate_Stack"
+												}
+									}, {
+									Name = "CATEGORY_FISH", 
+										BuildingPartList = {"BUILDING_PART_Ahi", "BUILDING_PART_Roughy", "BUILDING_PART_Grouper", "BUILDING_PART_Salmon", "BUILDING_PART_Bass", "BUILDING_PART_Trout", "BUILDING_PART_Choice"
+																	}
+									}, {
+									Name = "CATEGORY_FRIENDS", 
+										BuildingPartList = {"BUILDING_PART_Black_Cat", "BUILDING_PART_Coon_Cat", "BUILDING_PART_Boxer_Dog", "BUILDING_PART_Collie_Dog"
+														}
+									}, {
+									Name = "CATEGORY_DECOR", 
+										BuildingPartList = {"BUILDING_PART_MARKET_BLUE_TENT", "BUILDING_PART_MARKET_FOOD_SIGN", "BUILDING_PART_Flower_Yellow", "BUILDING_PART_Flower_Blue", "BUILDING_PART_Flower_Orange"
+															}
+									}
+							}
+						}

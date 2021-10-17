@@ -1,0 +1,25 @@
+{
+	ResourceListNeeded = {{
+			Resource = "FISH", 
+				Quantity = 0
+				}
+	}, 
+	InputInventoryCapacity = {{
+			Resource = "FISH", 
+				Quantity = 5
+				}
+	}, 
+	Id = "FISH_PRODUCER", 
+		DataType = "BUILDING_FUNCTION_WORKPLACE", 
+			Name = "FISH_PRODUCER", 
+				WorkerCapacity = 1, 
+					ResourceProduced = {{
+							Resource = "FISH", 
+								Quantity = 5
+								}
+					}, 
+					RelatedJob = {
+						Job = "FISHMONGER", 
+							Behavior = "BEHAVIOR_WORK"
+							}
+				}

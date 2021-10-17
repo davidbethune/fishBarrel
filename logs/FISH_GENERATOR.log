@@ -1,0 +1,8 @@
+{
+	ResourceGenerator = "FISH_GENERATOR_BASE", 
+		GrowRate = 0.03125, 
+			Id = "FISH_GENERATOR", 
+				Name = "FISH_GENERATOR", 
+					MaxQuantity = 5, 
+						DataType = "BUILDING_RESOURCE_GENERATOR"
+						}

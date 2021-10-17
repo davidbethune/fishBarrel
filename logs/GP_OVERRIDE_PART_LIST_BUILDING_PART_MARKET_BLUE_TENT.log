@@ -1,0 +1,16 @@
+{
+	Id = "GP_OVERRIDE_PART_LIST_BUILDING_PART_MARKET_BLUE_TENT", 
+		BuildingPartCostList = {{
+				BuildingPartCost = {
+					BuildRightTaxes = {
+					}, 
+					UpkeepCost = {
+					}, 
+					RessourcesNeeded = {
+					}
+				}, 
+				BuildingPart = "BUILDING_PART_MARKET_BLUE_TENT"
+				}
+		}, 
+		DataType = "BUILDING_PART_COST_LIST"
+		}
