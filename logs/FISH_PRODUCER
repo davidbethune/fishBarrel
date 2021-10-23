@@ -4,13 +4,8 @@
 				Quantity = 0
 				}
 	}, 
-	InputInventoryCapacity = {{
-			Resource = "FISH", 
-				Quantity = 5
-				}
-	}, 
-	Id = "FISH_PRODUCER", 
-		DataType = "BUILDING_FUNCTION_WORKPLACE", 
+	DataType = "BUILDING_FUNCTION_WORKPLACE", 
+		Id = "FISH_PRODUCER", 
 			Name = "FISH_PRODUCER", 
 				WorkerCapacity = 1, 
 					ResourceProduced = {{

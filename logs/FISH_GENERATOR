@@ -4,5 +4,5 @@
 			Id = "FISH_GENERATOR", 
 				Name = "FISH_GENERATOR", 
 					MaxQuantity = 5, 
-						DataType = "BUILDING_RESOURCE_GENERATOR"
+						DataType = "fishBarrel_BUILDING_RESOURCE_GENERATOR"
 						}

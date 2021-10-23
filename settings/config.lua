@@ -6,8 +6,6 @@
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
-GP:log("config.lua", GP:version())
-
 -- MY CONFIG Mod Name
 local modName = "fishBarrel"
 
@@ -117,7 +115,7 @@ local monuments = {
 --
 -- Create the config table.
 local config = {
-    version = GP:version(),
+    version = GP:gpsVersion(),
     remix = remix or {},
     modName = modName,
     modelFiles = modelFiles or {},
