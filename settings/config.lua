@@ -2,7 +2,6 @@
 -- by Garran Plum
 --
 -- GP Configuration for this individual mod.
-
 -- IMPORT GP OBJECT
 local myMod, GP = ...
 
@@ -19,13 +18,8 @@ local jobs = {
 
 -- MY CONFIG Workplaces
 local workplaces = {
-    FISH_PRODUCER = {
-        Job = "FISHMONGER",
-        Positions = 1,
-        Produces = {FISH = 10},
-        Requires = {FISH = 0}
-    },
-    FISH_GENERATOR = {Produces = {FISH = 0}, Rate = 0.03125}
+    FISH_PRODUCER = {Job = "FISHMONGER", Positions = 1},
+    FISH_GENERATOR = {Produces = {FISH = 10}, Rate = 0.03125}
 }
 
 -- MY CONFIG Categories
@@ -60,12 +54,7 @@ local categories = {
         Trout = {Order = 6},
         Choice = {Order = 7}
     },
-    FRIENDS = {
-        Black_Cat = {}, 
-        Coon_Cat = {}, 
-        Boxer_Dog = {}, 
-        Collie_Dog = {}
-    },
+    FRIENDS = {Black_Cat = {}, Coon_Cat = {}, Boxer_Dog = {}, Collie_Dog = {}},
     DECOR = {
         BUILDING_PART_MARKET_BLUE_TENT = {
             Order = 1,
