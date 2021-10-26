@@ -1,7 +1,0 @@
-{
-	Id = "FISH_GENERATOR_BASE", 
-		IsInfinite = false, 
-			IsForConsumer = false, 
-				ResourceGenerated = "FISH", 
-					DataType = "BUILDING_FUNCTION_RESOURCE_GENERATOR"
-					}

@@ -22,10 +22,10 @@ local workplaces = {
     FISH_PRODUCER = {
         Job = "FISHMONGER",
         Positions = 1,
-        Produces = {FISH = 5},
+        Produces = {FISH = 10},
         Requires = {FISH = 0}
     },
-    FISH_GENERATOR = {Produces = {FISH = 5}, Rate = 0.03125}
+    FISH_GENERATOR = {Produces = {FISH = 0}, Rate = 0.03125}
 }
 
 -- MY CONFIG Categories
