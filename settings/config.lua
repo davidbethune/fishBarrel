@@ -92,7 +92,8 @@ local monuments = {
             DECOR = {Order = 5}
         },
         Type = "FOOD_PRODUCTION",
-        Function = {}
+        Function = {},
+        Logo = "BUILDING_PART_Barrel"
     }
 }
 
@@ -112,7 +113,9 @@ local config = {
     nodeTypes = nodeTypes or {},
     jobs = jobs or {},
     workplaces = workplaces or {},
-    monuments = monuments or {}
+    monuments = monuments or {},
+    buildings = buildings or {},
+    logo = logo or {}
 }
 
 -- Use global to return config to loader :-(.
