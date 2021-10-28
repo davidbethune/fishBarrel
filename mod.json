@@ -1,9 +1,8 @@
 {
-	"Name": "Barrel O'Fish",
+	"Name": "Casa de Fruta",
 	"Author": "GarranPlum",
-	"Description": "Produces fish quickly from a barrel you can place anywhere. Creates a Fishmonger job. Transporters take your fish to a granary.",
-	"Version": "3.0.0",
-	
+	"Description": "Creates a roadside orchard fruit stand with a selection of fresh produce.",
+	"Version": "1.0.0",
+
 	"Dependencies": []
 }
-

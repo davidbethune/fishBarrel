@@ -6,7 +6,7 @@
 local myMod, GP = ...
 
 -- MY CONFIG Mod Name
-local modName = "fishBarrel"
+local modName = "casaDeFruta"
 
 -- MY CONFIG Paths
 local pathList = {"Worker_1", "Worker_2", "Transport", "Visitor"}
@@ -83,7 +83,7 @@ local nodeTypes = {MINOR = {"FISH"}}
 
 -- MY CONFIG Monuments
 local monuments = {
-    FISH_BARREL = {
+    SEAFOOD = {
         Categories = {
             BARREL = {Order = 1, Min = 1},
             CRATE = {Order = 2, Min = 1},

@@ -1,12 +1,10 @@
-﻿-- BARREL O'FISH
+﻿-- CASA DE FRUTA
 -- by Garran Plum
 --
--- Provides a barrel which quickly produces fish.
--- Creates a Fishmonger job to fill the barrel. 
--- Transporters take produced fish to the Granary.
+-- Provides a flexible fruit stand with fresh produce.
 -- 
 -- Find usage and modding instructions:
--- https://foundation.mod.io/barrel-ofish
+-- https://foundation.mod.io/casa-de-fruta
 --
 -- Get more GP mods at mod.io:
 -- https://mod.io/members/garranplum
@@ -21,18 +19,16 @@
 -- "Contains portions of GP mods by Garran Plum. https://mod.io/members/garranplum"
 -- 
 --
-
 -- BASIC CONFIGURATION
 -- Change the line below to the name of file you wish to use, or make your own.
 -- Config files are loaded from the /settings folder.
-
 -- MY CONFIG File
 local configFile = "config.lua"
 
 -- BUG NOTICE
 --
 -- I fix all bugs! Please report them at The Orchard link above.
--- Or leave a comment at: https://foundation.mod.io/barrel-ofish
+-- Or leave a comment at: https://foundation.mod.io/casa-de-fruta
 -- Thank you. :-)
 --
 
@@ -40,10 +36,7 @@ local configFile = "config.lua"
 -- Main Entrypoint & Loader
 
 -- CREATE: GP Object 
-local GP = {
-    mod = foundation.createMod()
-}
-
+local GP = {mod = foundation.createMod()}
 
 -- EXECUTE FILE: Loader
 -- Sets up GPS.

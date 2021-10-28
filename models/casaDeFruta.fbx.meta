@@ -1,265 +1,265 @@
 <?xml version="1.0" encoding="utf-8"?>
-<meta id="cab2c8c2-6503-49e4-ad6c-b53bf8203ced">
-	<meta id="b9dda35c-a6af-4149-b36f-692d1695b963" type="group" folder="true" name="Materials">
-		<meta id="16d832df-55cd-4fc0-bc75-712afe98f80b" name="wood.003"/>
-		<meta id="6656e1b6-220d-4381-a8af-27744003392f" name="metal.001"/>
-		<meta id="abb93caa-b45f-4b6f-abfb-b4fc309858e4" name="food.001"/>
-		<meta id="df476473-d68c-4bc8-b6bf-bb57a97fd10e" name="planks.001"/>
-		<meta id="b239cb3c-4920-418a-992b-a88067e1ce5b" name="metal"/>
-		<meta id="d89aa5e8-29d3-4283-be7b-a223e26a0bc0" name="Color.Turquoise"/>
-		<meta id="e9d4cfa9-93ce-442f-bbea-cb1176b51dca" name="planks.002"/>
-		<meta id="b07f3a81-ec71-4332-8d70-d4c2f8242114" name="Color.Turquoise.003"/>
-		<meta id="2d71965e-5b6d-434f-b942-5e6646b0ad58" name="Color.Turquoise.004"/>
-		<meta id="20e87f47-f8a6-4296-a1c3-29533dacfdd9" name="Color.Turquoise.005"/>
-		<meta id="a3212d93-c3f7-4a76-8877-52b4f238094b" name="Color.Turquoise.008"/>
-		<meta id="0d264965-7e75-41f6-9146-887f4fcd6eae" name="Color.Turquoise.013"/>
-		<meta id="e9238ac3-3e81-4fbd-a62d-30151e0b792d" name="Color.Turquoise.014"/>
-		<meta id="2bbdfedf-989b-43a1-89b9-38b914d6ace7" name="Color.Turquoise.015"/>
-		<meta id="ba56eea8-cb06-41de-be3b-b0d1e70abcb0" name="Color.Turquoise.016"/>
-		<meta id="6149e4c4-1d82-43d8-aca3-46be43233f29" name="salmonScalesNew"/>
-		<meta id="7741ca29-94c1-4628-993b-41a453d1e521" name="troutScalesNew"/>
-		<meta id="4629eac6-1091-483b-8e77-336688286f43" name="ahiScalesNew"/>
-		<meta id="5f4b8aa9-64d3-41f1-96bb-22e1f9de28cb" name="bassScalesNew"/>
-		<meta id="9a49354d-0a90-4792-a21a-9eb0ea477bc6" name="roughyScales"/>
-		<meta id="2e35330f-f292-438a-ad22-53dd49126f90" name="grouperScales"/>
-		<meta id="b2cfa22d-2a84-46b1-93cd-40460225630e" name="colors"/>
-		<meta id="ea0c73f4-9b11-489a-835f-16a7a223c96d" name="leaf"/>
-		<meta id="50f82a69-3a76-4f1a-a2b6-44e5556cc40d" name="colors.001"/>
-		<meta id="4560b4c6-769d-4382-a7f5-8ba86d2ba6c1" name="leaf.001"/>
-		<meta id="e0eb1b35-a495-463c-b6a8-602d5635565d" name="colors.002"/>
-		<meta id="824f0675-84c0-44b7-950e-bf331d0f3ae5" name="leaf.002"/>
+<meta id="3a56684c-223c-4961-a1f4-5f9b96457090">
+	<meta id="9bf93ffb-66cd-4bfb-8153-e46f56f61055" type="group" folder="true" name="Materials">
+		<meta id="41b43077-e6cf-4a3f-aa41-ddbbc62efbbe" name="planks.002"/>
+		<meta id="a7dd0134-5214-485b-9a47-c7914d4903e7" name="wood.003"/>
+		<meta id="85ecfd55-8075-4492-b754-9a69224d4ad3" name="metal.001"/>
+		<meta id="0e89d06a-c993-4356-b5d3-68aead184fbb" name="food.001"/>
+		<meta id="743e2233-1fb0-4aae-8839-4eaae03b3474" name="planks.001"/>
+		<meta id="0b824195-35b6-4c29-8099-c19f01c0da72" name="metal"/>
+		<meta id="a9ab3339-d634-49e0-8277-7c0b1314c806" name="salmonScalesNew"/>
+		<meta id="8adde791-1b8e-4bb9-b82c-c4b0732746f9" name="Color.Turquoise"/>
+		<meta id="7f638724-c97a-4f91-880a-a653366f0c04" name="Color.Turquoise.003"/>
+		<meta id="b27d9203-8d6b-44ae-a22a-ad6f6537a8df" name="Color.Turquoise.004"/>
+		<meta id="6d93eace-8d0a-471a-853e-e777eb513300" name="Color.Turquoise.005"/>
+		<meta id="98f6ebc8-7631-43e3-931d-e6f1901645c4" name="troutScalesNew"/>
+		<meta id="5ee92ce8-7e0f-49a6-aa7a-c4175dd70b0a" name="Color.Turquoise.008"/>
+		<meta id="0d672f92-b13c-491e-aa8b-cb6befe8e303" name="roughyScales"/>
+		<meta id="1e6767b6-3da2-443d-b603-6ea53ae64f50" name="Color.Turquoise.013"/>
+		<meta id="619f4f89-bac8-46ef-88a5-0b1341f9fa55" name="ahiScalesNew"/>
+		<meta id="20fc79a1-fb17-4d4c-b20d-4f856e1f5e8d" name="Color.Turquoise.014"/>
+		<meta id="b86629c3-51d2-4ebd-accc-ebfc13313edd" name="bassScalesNew"/>
+		<meta id="3f4f38d9-a56b-452a-afde-6b81d59736d2" name="Color.Turquoise.015"/>
+		<meta id="9d516559-8217-460f-bb42-02640a3f1738" name="Color.Turquoise.016"/>
+		<meta id="2cbac43b-9df0-46a9-8f18-fb78514b891a" name="grouperScales"/>
+		<meta id="f832a664-27e7-4b6a-ac3f-b0e30fd40677" name="colors"/>
+		<meta id="e04649a8-e45b-48d0-b851-acb39e2f72e3" name="leaf"/>
+		<meta id="77a401c5-c6f6-476f-b527-df6c74e55d38" name="colors.001"/>
+		<meta id="29e67618-57a6-407b-8a06-36a20fa2b40d" name="leaf.001"/>
+		<meta id="6cfad8af-13af-415e-b2c6-e65c5b6327f7" name="colors.002"/>
+		<meta id="092f0915-0d78-48ff-bb8f-370469d18118" name="leaf.002"/>
 	</meta>
-	<meta id="ec242d93-7c46-4ade-80ab-3d9562c13eb3" type="group" folder="true" name="Meshes">
-		<meta id="36e14387-f6c7-4041-bd3d-68ab3ed26884" name="top.002_wood.003"/>
-		<meta id="29353768-5ded-4b26-b9b9-8df713c3e589" name="barrel.001_wood.003"/>
-		<meta id="3a4b92e8-cb7f-4ba4-92c4-d3c5fafbc3fa" name="barrel.001_metal.001"/>
-		<meta id="56df931a-d97f-4ea8-8f6a-a085bfb38461" name="barrel.001_food.001"/>
-		<meta id="199048d6-1c50-44c9-9c21-0429f72bdea2" name="crate flat.004_planks.001"/>
-		<meta id="42b2c68f-a1d8-4d5a-8617-ab0513414ee6" name="crate.006_planks.001"/>
-		<meta id="aca4688a-e9e2-45ef-8fd8-dd92828ce3cf" name="crate.007_planks.001"/>
-		<meta id="aa8be8d4-66b1-4328-bd26-5ce9eb65d63d" name="crate.008_planks.001"/>
-		<meta id="28fce56a-7039-4b0c-9f3e-704c4b16cabd" name="handcrate.004_planks.001"/>
-		<meta id="98616dee-60d7-447f-9096-1076d55b5c5c" name="handcrate.005_planks.001"/>
-		<meta id="aba2e942-de28-45d8-a472-a61b6678ebf4" name="hinge.004_metal"/>
-		<meta id="e96d7739-e138-40d9-a195-d10771d13a90" name="crate_planks.002"/>
-		<meta id="3408eeb6-deea-4129-a01c-ce7619d09bf1" name="Salmon.003_Color.Turquoise"/>
-		<meta id="b5979dc0-12e5-4c9b-9be0-1bee79376abd" name="Ahi.003_Color.Turquoise.014"/>
-		<meta id="26b24403-2902-4cad-95e3-48e58b7869c1" name="Bass.003_Color.Turquoise.016"/>
-		<meta id="c57ebe87-528a-43de-a82c-4bab1810419f" name="Bass.001_Color.Turquoise.016"/>
-		<meta id="ad5bacac-9cfe-4c13-a110-badbd8947a19" name="Salmon.003_salmonScalesNew"/>
-		<meta id="8ee0bc3c-f63e-45ca-b84d-d58aa34cd31c" name="Trout.001_troutScalesNew"/>
-		<meta id="ad0d7a27-81d0-49d4-bd9c-795a28f7c6ef" name="Trout.002_troutScalesNew"/>
-		<meta id="42c1ce23-5086-4c08-88a9-200ddf097cd8" name="Trout.003_troutScalesNew"/>
-		<meta id="e43ee179-4980-4f29-91ce-c4c42d5cbf0d" name="Ahi.003_ahiScalesNew"/>
-		<meta id="21bd039a-c7aa-4e58-b4b0-704b1b702e6e" name="Ahi.002_ahiScalesNew"/>
-		<meta id="f4ce71ce-0b52-467c-bffb-c0a3cc891afa" name="Choice.003_bassScalesNew"/>
-		<meta id="5c9bd20f-5bbc-45d5-bbf1-00b61a37ac39" name="Choice.003_Color.Turquoise.015"/>
-		<meta id="b868b416-7b9f-41f2-8f75-2a4be8e44ce1" name="Choice.002_salmonScalesNew"/>
-		<meta id="749e01a4-8279-45dc-980f-86ff95d61755" name="Choice.001_troutScalesNew"/>
-		<meta id="b9b73dc0-0af6-4bb6-b7c2-3549c6d8a013" name="Bass.004_bassScalesNew"/>
-		<meta id="4f01c228-7f20-4c3c-bef3-ba461f3f62a0" name="Bass.003_bassScalesNew"/>
-		<meta id="1cb5a008-b895-44d7-93fa-1ea0163e5fef" name="Bass.001_bassScalesNew"/>
-		<meta id="40f5770f-1853-4fb5-be3a-da295f64f73d" name="Bass.002_bassScalesNew"/>
-		<meta id="c2c943f6-4878-42bf-bc40-b94fa1758e59" name="Roughy.003_roughyScales"/>
-		<meta id="c43e63e7-e0b8-404a-b54f-542068f4a9fa" name="Roughy.002_roughyScales"/>
-		<meta id="af6f17af-b1b3-4a60-828a-4c05e73373e3" name="Roughy.001_roughyScales"/>
-		<meta id="8e542345-0856-42b4-83c6-b149461acdff" name="Roughy.004_roughyScales"/>
-		<meta id="5f228c7c-462a-4942-948b-bbe4235c075f" name="Grouper.001_Color.Turquoise.013"/>
-		<meta id="253cdff8-4147-4d1d-aeb0-293731a8f438" name="Grouper.001_grouperScales"/>
-		<meta id="1d3c14ad-ed8b-40ae-8154-cd0588c35ea5" name="Grouper.002_Color.Turquoise.013"/>
-		<meta id="2569b254-1870-4fbd-86aa-5c59d396e2e6" name="Grouper.002_grouperScales"/>
-		<meta id="4f90a822-a9d2-42f3-8884-bdd1d77e0d29" name="Grouper.003_Color.Turquoise.013"/>
-		<meta id="11d45a97-9874-4d34-93dc-f197cc2ba831" name="Grouper.003_grouperScales"/>
-		<meta id="e1298e14-aefd-4e64-bb98-e7d450a4773b" name="Grouper.004_Color.Turquoise.013"/>
-		<meta id="af7234fe-4f4d-425a-950a-b40ff17791eb" name="Grouper.004_grouperScales"/>
-		<meta id="ad6ea4cd-df33-46f3-a407-78099ceb1ae6" name="Flower_Blue_Part_LOD_01.6_colors"/>
-		<meta id="2bf0bac1-d473-4c4b-8eca-fdecd5584110" name="Flower_Blue_Part_LOD_01.6_leaf"/>
-		<meta id="724fc4f0-4a06-4309-bac4-6e996004ffbb" name="Flower_Blue_Part_LOD_23.6_colors"/>
-		<meta id="e1ca1eee-fc07-4122-a865-e42fc6d78937" name="Flower_Orange_Part_LOD_01.7_colors.001"/>
-		<meta id="1b62b438-2b84-4fe8-afc4-3e7b78bc24eb" name="Flower_Orange_Part_LOD_01.7_leaf.001"/>
-		<meta id="8082c784-fa4d-452d-8fe6-43578de5164c" name="Flower_Orange_Part_LOD_23.7_colors.001"/>
-		<meta id="d049638b-386c-49a6-8253-327a8f8b0fc2" name="Flower_Yellow_Part_LOD_01.75_colors.002"/>
-		<meta id="d9a3ce33-98ff-46fb-bfd0-57313573ab99" name="Flower_Yellow_Part_LOD_01.75_leaf.002"/>
-		<meta id="bda12b43-02a5-461d-b36e-5e354c53da87" name="Flower_Yellow_Part_LOD_23.75_colors.002"/>
+	<meta id="0b3bd4e6-93c7-42a9-864a-5e66adda7564" type="group" folder="true" name="Meshes">
+		<meta id="a8083fa9-0df5-4648-969a-efb22bfc0376" name="crate_planks.002"/>
+		<meta id="92fc0fab-fa46-48fe-9635-3bebb7128b46" name="barrel.001_wood.003"/>
+		<meta id="e4721d7a-179d-43e1-b739-28eaa4f62bcc" name="barrel.001_metal.001"/>
+		<meta id="79e820e9-c563-4d9e-8fa3-debdd8f18740" name="barrel.001_food.001"/>
+		<meta id="305cb880-b711-48d4-b7c1-ffa596846909" name="top.002_wood.003"/>
+		<meta id="a296fddf-37c0-4ebc-999f-27aef4e3d052" name="crate flat.004_planks.001"/>
+		<meta id="0dcecee2-2c7d-4051-807b-a442f29dafe7" name="crate.006_planks.001"/>
+		<meta id="da7ff72a-e71f-49ae-ba60-b56713d4cfea" name="crate.007_planks.001"/>
+		<meta id="14030f3d-0e75-442e-b87b-acf4053ec9ea" name="crate.008_planks.001"/>
+		<meta id="d29b5ab0-67d9-4f6e-ae80-e89b447c8cd7" name="handcrate.004_planks.001"/>
+		<meta id="7c7ddb04-4d45-4b40-aab1-13e7ea41fe44" name="handcrate.005_planks.001"/>
+		<meta id="f9312b27-91a2-46a1-ac85-880f7b78837b" name="hinge.004_metal"/>
+		<meta id="2f94e03a-b2f2-4e45-bc04-03246259148c" name="Salmon.003_salmonScalesNew"/>
+		<meta id="151d7e4e-1033-4c2b-be1b-0b0da68c2cd0" name="Salmon.003_Color.Turquoise"/>
+		<meta id="85ef21dd-5f85-499e-b6ca-8a30d77d6eaa" name="Trout.001_troutScalesNew"/>
+		<meta id="80abb586-8b62-4109-afa0-f6698456e593" name="Trout.002_troutScalesNew"/>
+		<meta id="f69ec7a2-0b0d-4a87-9b61-fea339c24938" name="Trout.003_troutScalesNew"/>
+		<meta id="e35766d3-b5c2-449d-b0be-f0943172a542" name="Roughy.003_roughyScales"/>
+		<meta id="d0d11bbf-4d2d-4600-9c17-054a63ae8a73" name="Roughy.002_roughyScales"/>
+		<meta id="80b185c1-21ca-4886-a6c2-ace22bcad09b" name="Roughy.001_roughyScales"/>
+		<meta id="e1e5250d-5635-4e07-ab1a-1ad0498fc46d" name="Roughy.004_roughyScales"/>
+		<meta id="b2c7beeb-ef27-4ce9-9f30-647cfbe1cd10" name="Ahi.003_ahiScalesNew"/>
+		<meta id="c1c3b4e7-1f23-45f4-961f-bb2d3487ce3e" name="Ahi.003_Color.Turquoise.014"/>
+		<meta id="ced424f5-d3ff-4b1f-ade5-185da764965b" name="Ahi.002_ahiScalesNew"/>
+		<meta id="269432e3-1679-4ef2-a50a-01bf5a78fdc0" name="Choice.003_bassScalesNew"/>
+		<meta id="ef52a6b1-a34b-4a1a-8cb0-3ae91fcb4299" name="Choice.003_Color.Turquoise.015"/>
+		<meta id="751829d5-2f96-4a7b-ac77-49d60f883257" name="Choice.002_salmonScalesNew"/>
+		<meta id="931d86ca-2e23-4c7c-8620-23d5eaa8dfa3" name="Choice.001_troutScalesNew"/>
+		<meta id="6817a670-58c0-4f3e-b413-0299fdf16df6" name="Bass.004_bassScalesNew"/>
+		<meta id="4851c6ec-3d22-46bb-bb5c-efd46bd71c50" name="Bass.003_bassScalesNew"/>
+		<meta id="633a432e-79a8-4c65-b506-53f4727ae85d" name="Bass.003_Color.Turquoise.016"/>
+		<meta id="579d9e73-12ef-4ada-9890-2e75ece2bd97" name="Bass.001_bassScalesNew"/>
+		<meta id="0214d77f-52ce-44ba-b2e2-3a1dc9b4ece1" name="Bass.001_Color.Turquoise.016"/>
+		<meta id="6941cad8-091a-4e8f-9e0c-6e6a8dc2ba80" name="Bass.002_bassScalesNew"/>
+		<meta id="eb11bffc-ee8c-460f-bd7a-6a5baf50e640" name="Grouper.001_Color.Turquoise.013"/>
+		<meta id="32b9536f-2829-4224-92a0-a36afb200bdd" name="Grouper.001_grouperScales"/>
+		<meta id="bca97876-b1e6-4b4b-8067-0cabeeda897d" name="Grouper.002_Color.Turquoise.013"/>
+		<meta id="250a1ce0-c990-49fa-bc09-cfa6c6e8b5bc" name="Grouper.002_grouperScales"/>
+		<meta id="b279d52e-ab2c-4e1f-b8c6-c39263022923" name="Grouper.003_Color.Turquoise.013"/>
+		<meta id="1583f641-972b-48a1-a1cb-ebacba199df7" name="Grouper.003_grouperScales"/>
+		<meta id="ceb05f32-95c7-4bb3-9c51-1c2f4fc15218" name="Grouper.004_Color.Turquoise.013"/>
+		<meta id="bfa2a4c8-2a3d-4658-a5ca-1e45c40fd6b4" name="Grouper.004_grouperScales"/>
+		<meta id="4d5db6d6-5fd7-451b-92cd-e10da3660e79" name="Flower_Blue_Part_LOD_01.6_colors"/>
+		<meta id="bbae3701-c56b-4db4-bd70-ae8a381b7f41" name="Flower_Blue_Part_LOD_01.6_leaf"/>
+		<meta id="bea6afb3-28ec-41f1-ae9a-a82f924c843d" name="Flower_Blue_Part_LOD_23.6_colors"/>
+		<meta id="f2b49c7a-b12e-4898-96b9-3e83a90da531" name="Flower_Orange_Part_LOD_01.7_colors.001"/>
+		<meta id="6d3a575c-8f71-4557-afbe-03f1e905033e" name="Flower_Orange_Part_LOD_01.7_leaf.001"/>
+		<meta id="f452919b-9206-4e57-9f43-06e9e20548e2" name="Flower_Orange_Part_LOD_23.7_colors.001"/>
+		<meta id="379d386a-436d-4b91-a487-dd172888edd5" name="Flower_Yellow_Part_LOD_01.75_colors.002"/>
+		<meta id="d6da9684-9eac-48e5-b402-8a39991c3427" name="Flower_Yellow_Part_LOD_01.75_leaf.002"/>
+		<meta id="a74ad82b-c9a6-4760-9c31-4e0a5cefe925" name="Flower_Yellow_Part_LOD_23.75_colors.002"/>
 	</meta>
-	<meta id="a453115c-afa2-462e-8ccb-4a9da02910d3" name="Prefab">
-		<meta id="0787c8fb-1bf2-49aa-a6ad-d8c30b42a78b" name="Crate_Part">
-			<meta id="c6669bdd-941a-4b2e-8842-3e51a680e7ae" name="crate"/>
-			<meta id="9675a809-4efd-4aac-8b7b-1711a73373ac" name="Attach_minor_5"/>
-			<meta id="c1a0bec4-5247-4622-87fd-caf1ceee22d3" name="Path_Crate_Part_Transport"/>
-			<meta id="484f760d-9960-457b-ad27-0d257f184def" name="Path_Crate_Part_Visitor"/>
-			<meta id="199dbd8a-63a2-4d10-865f-caa3e01bb469" name="Path_Crate_Part_Worker_1"/>
-			<meta id="988425c7-ff50-4215-8998-dd361d44383d" name="Path_Crate_Part_Worker_2"/>
-		</meta>
-		<meta id="6a952264-a0ee-47d7-a971-e9028a7fdc21" name="Barrel_Part">
-			<meta id="9993b3f7-8021-4e77-bf86-0b969eaf984d" name="Attach_minor_6"/>
-			<meta id="834d733d-03e9-4d60-b0c9-ecd55755ba88" name="barrel.001">
-				<meta id="1b953cef-88e2-40a2-9cb5-a454456cfcc9" name="barrel.001_0"/>
-				<meta id="f64f97da-1753-4286-a2e5-99d7e5769f3f" name="barrel.001_1"/>
-				<meta id="15e4fd7a-4f00-449d-92ae-835c300a2919" name="barrel.001_2"/>
-			</meta>
-			<meta id="9c60f2b3-4f53-4738-98d1-20c58dbf0f7b" name="top.002"/>
-			<meta id="df99c42c-aad0-4fec-9e1d-cd9f75c1194b" name="Path_Barrel_Part_Transport"/>
-			<meta id="2e2e80a3-bc1a-4dc2-aa4a-6c569520f8f5" name="Path_Barrel_Part_Visitor"/>
-			<meta id="6e3ae93c-d7a4-4744-9d24-2810e237e34a" name="Path_Barrel_Part_Worker_1"/>
-			<meta id="06e9857b-92ea-49fd-a409-97db2fc4dd2d" name="Path_Barrel_Part_Worker_2"/>
-		</meta>
-		<meta id="935bed19-7241-484c-b2eb-3c5d4e94e91d" name="Crate_Stack_Part">
-			<meta id="fdfe7d5c-d504-48eb-839c-218b7110a35c" name="crate flat.004"/>
-			<meta id="cf7f0ab8-228d-44e3-9b1b-748a5bf2f8bc" name="crate.006"/>
-			<meta id="10b5f36e-19e2-4508-aae0-4c4a80905b86" name="crate.007"/>
-			<meta id="acad9824-c17d-4509-b7cc-c672eec29c05" name="crate.008"/>
-			<meta id="95536147-6004-416e-bee6-208d84f637ca" name="handcrate.004"/>
-			<meta id="59b48cc9-69c6-4335-afba-fe6198ca3367" name="handcrate.005"/>
-			<meta id="f597df97-d14c-451e-9a2d-8d48fae3634a" name="hinge.004"/>
-			<meta id="98b7f962-1b76-40c0-9d40-e062e123fd83" name="Attach_minor_8"/>
-			<meta id="3f016936-a98d-4654-9f38-b5a2711158b6" name="Path_Crate_Stack_Part_Transport"/>
-			<meta id="25e3df25-12ec-4324-94d0-094532a34e72" name="Path_Crate_Stack_Part_Visitor"/>
-			<meta id="79a225c3-86bb-453d-b456-49921070b9f2" name="Path_Crate_Stack_Part_Worker_1"/>
-			<meta id="34e066d6-7b46-4561-be1e-de78cd99f39d" name="Path_Crate_Stack_Part_Worker_2"/>
-			<meta id="90357aa5-23d1-49bd-9f4e-865932764577" name="Attach_minor_81"/>
-			<meta id="36921158-3af4-48b3-9551-2f3c4ad43d67" name="Attach_minor_82"/>
-		</meta>
-		<meta id="0207a469-0e26-4836-827f-e1dec2d7281d" name="Salmon_Part">
-			<meta id="fc1d4d7b-693d-411f-8100-ffe76b7b60b6" name="Attach_minor_13"/>
-			<meta id="16e01315-f06d-4cf0-bd62-6ff6745b529e" name="Salmon.003">
-				<meta id="66872e4b-0730-4a1a-8183-78dc043c78fc" name="Salmon.003_0"/>
-				<meta id="a093e14a-e9a7-4340-bba4-2e04e7523d11" name="Salmon.003_1"/>
-			</meta>
-			<meta id="cd54ebdb-11a2-4e9a-9bd3-75b8f7817f68" name="Salmon.001">
-				<meta id="aacb8a08-4684-4732-a9d1-9b9656d57a29" name="Salmon.001_0"/>
-				<meta id="2eca259b-2406-4d99-a147-18d55acf1148" name="Salmon.001_1"/>
-			</meta>
-			<meta id="ea9ad021-10c7-4062-becc-908982494d2e" name="Salmon.002">
-				<meta id="546ad3b4-f6a2-4873-9ef7-ec153b8e7bb9" name="Salmon.002_0"/>
-				<meta id="c38bf1c4-9cb4-4cb9-8bf6-9a25bb77d290" name="Salmon.002_1"/>
-			</meta>
-			<meta id="58d81e74-2adf-42f4-9deb-10c3a5685102" name="Salmon.004">
-				<meta id="3c7a8b15-acb7-44d1-9eeb-4a74b76aa7b9" name="Salmon.004_0"/>
-				<meta id="3a5b6c7e-47d7-44bc-9e4c-ec437a096647" name="Salmon.004_1"/>
-			</meta>
-		</meta>
-		<meta id="033de965-aed3-45d2-977e-4ec0e0e631c6" name="Trout_Part">
-			<meta id="a395c120-444e-4304-a097-a8143761fa3b" name="Attach_minor_14"/>
-			<meta id="2a0e6a33-2e48-4bef-a3b6-389607db153d" name="Trout.001">
-				<meta id="996c21c4-9971-40ba-a920-70e271324885" name="Trout.001_0"/>
-				<meta id="c2f009d4-6bc8-4bc3-a21a-e6c36a7fa7f9" name="Trout.001_1"/>
-			</meta>
-			<meta id="9b892725-71c6-440e-82d7-1345d700e001" name="Trout.002">
-				<meta id="f0430b74-7691-4767-9cb9-256178c52deb" name="Trout.002_0"/>
-				<meta id="bf7522f8-9469-4010-bbe4-011a3d34d604" name="Trout.002_1"/>
-			</meta>
-			<meta id="f9f3e955-7ade-493f-8396-6466366e2ba3" name="Trout.003">
-				<meta id="e65889e4-5280-4b4c-a2b9-b472480c2486" name="Trout.003_0"/>
-				<meta id="14a1a497-d32f-4dac-a97f-b9e69030e861" name="Trout.003_1"/>
-			</meta>
-		</meta>
-		<meta id="be2ca966-8615-4655-bca5-cdbd058489bd" name="Roughy_Part">
-			<meta id="6a3d87fd-7526-4eda-ab8d-78b0493c5b31" name="Attach_minor_7"/>
-			<meta id="2aca9fb8-a460-4d22-bc49-fc6f927b3023" name="Roughy.003">
-				<meta id="363b0dd1-1cff-4e33-9695-82677a694fe0" name="Roughy.003_0"/>
-				<meta id="fb4ce362-b361-401a-b80b-b2eaa080f932" name="Roughy.003_1"/>
-			</meta>
-			<meta id="bf882ec3-f703-4b0c-821c-2abed992de6d" name="Roughy.002">
-				<meta id="8c8f6315-7c83-4248-9783-d655f2beae6f" name="Roughy.002_0"/>
-				<meta id="56deb667-caf8-4351-8abf-e8786cc320a8" name="Roughy.002_1"/>
-			</meta>
-			<meta id="7c0a1233-be1a-43dd-9a6e-db47e1f78817" name="Roughy.001">
-				<meta id="500391fc-2f78-4bdd-b06e-43fc68aab431" name="Roughy.001_0"/>
-				<meta id="be8840c9-a98d-482b-ac53-a0cb37dfb055" name="Roughy.001_1"/>
-			</meta>
-			<meta id="18cac65d-58d4-4522-ba67-a3e488aa7933" name="Roughy.004">
-				<meta id="9d7aa028-1775-406d-ab21-34ddb9d766c4" name="Roughy.004_0"/>
-				<meta id="92b44442-a150-45b0-ad3d-f50c0edf1c37" name="Roughy.004_1"/>
-			</meta>
-		</meta>
-		<meta id="798a7486-e84e-4e65-9f02-7e5423c8fd7e" name="Ahi_Part">
-			<meta id="68b249b1-24d9-4c65-ad86-f5d5b1120c2e" name="Attach_minor_17"/>
-			<meta id="8fa89878-e291-4a3a-94ee-f88993d604ee" name="Ahi.003">
-				<meta id="45a7aeca-b4c1-42c2-8cb5-04bd47eca471" name="Ahi.003_0"/>
-				<meta id="72686575-c6f1-4883-9e04-40599483d52a" name="Ahi.003_1"/>
-			</meta>
-			<meta id="e99352ae-169b-4fb1-8673-0faa91a267dc" name="Ahi.002">
-				<meta id="5489c135-8c70-4e65-9622-d26b3cfb236a" name="Ahi.002_0"/>
-				<meta id="522dfdc0-52c0-49ad-97f9-dc2ff7345903" name="Ahi.002_1"/>
-			</meta>
-		</meta>
-		<meta id="82502829-8bde-4ca3-b0b8-65c5c50d812b" name="Choice_Part">
-			<meta id="cad6dd20-442f-4e59-8061-e0df923ed1bb" name="Choice.003">
-				<meta id="d19d9638-3052-4c4c-9991-ad24215275e9" name="Choice.003_0"/>
-				<meta id="e6cec182-b8f5-4081-87c3-48848b61f715" name="Choice.003_1"/>
-			</meta>
-			<meta id="8fd77c1c-babd-46d1-acdc-7e62ae44bd27" name="Choice.002">
-				<meta id="5e33eadb-781f-4bbd-a9e0-f22f825ef809" name="Choice.002_0"/>
-				<meta id="d7757914-b9ef-42c2-8d25-27cd81741c7a" name="Choice.002_1"/>
-			</meta>
-			<meta id="d62e83a2-b708-4538-bb35-532ee5312201" name="Choice.001">
-				<meta id="1dc94580-6e96-4d08-a555-73d277d6f617" name="Choice.001_0"/>
-				<meta id="023aefe2-0411-4f78-9636-a03a5085c325" name="Choice.001_1"/>
-			</meta>
-			<meta id="54e39c1d-21d2-4ef3-974b-885257a9d505" name="Attach_minor_18"/>
-		</meta>
-		<meta id="152ef8c5-4147-4d96-a900-5e88e4f4c13b" name="Bass_Part">
-			<meta id="cffc8f2a-846e-4c91-9328-523bb98f8d0b" name="Attach_minor_12"/>
-			<meta id="8570be08-3c7c-467f-83e9-53c062a3052a" name="Bass.004">
-				<meta id="3f81eccf-b112-44f2-bfa2-c8e9e7e946b1" name="Bass.004_0"/>
-				<meta id="84d1650b-909c-4e7d-aa73-f466061f1fda" name="Bass.004_1"/>
-			</meta>
-			<meta id="c32f30af-3f89-4d23-8f9a-0da0249c303c" name="Bass.003">
-				<meta id="85923fa1-6385-41a2-8c5d-ff631d747abc" name="Bass.003_0"/>
-				<meta id="4ecfb543-2fc6-4452-9fa1-645bc7ae5bc9" name="Bass.003_1"/>
-			</meta>
-			<meta id="9ad9fa02-c704-49dc-a427-c5ef5b6b4288" name="Bass.001">
-				<meta id="891716df-51c0-4b3f-b818-922fd31abb6a" name="Bass.001_0"/>
-				<meta id="14434e6f-5107-4177-8a54-ddad661ffa66" name="Bass.001_1"/>
-			</meta>
-			<meta id="147e678f-d536-40bc-8b88-82fc10b9696c" name="Bass.002">
-				<meta id="cf69afa1-1b16-4abf-b199-3024e9f05186" name="Bass.002_0"/>
-				<meta id="2b08a362-9787-4464-a915-4419f1ae06da" name="Bass.002_1"/>
-			</meta>
-		</meta>
-		<meta id="1e18d2b2-5152-4d69-9481-8714ae27f055" name="Grouper_Part">
-			<meta id="21a69b30-fb47-4878-b205-c5ebae12c571" name="Attach_minor_37"/>
-			<meta id="9420aae0-62aa-40c1-92a1-a28b9e7de868" name="Grouper.001">
-				<meta id="ee472297-0144-47e6-b405-0dd8ed8bb8d5" name="Grouper.001_0"/>
-				<meta id="2c429f69-28ef-41ab-8287-fca966eeedc0" name="Grouper.001_1"/>
-			</meta>
-			<meta id="f6bf4683-5f65-4e15-b6c8-eec4909c2a89" name="Grouper.002">
-				<meta id="bf2b9617-b40b-4958-a303-cfac6098a692" name="Grouper.002_0"/>
-				<meta id="3d442e6d-fd4a-4d35-a9b5-cad8d7223b0c" name="Grouper.002_1"/>
-			</meta>
-			<meta id="50e8e2b9-a474-4984-a70e-5318256b5f20" name="Grouper.003">
-				<meta id="37ed8b75-2c52-428f-a1bc-9cbd89662be4" name="Grouper.003_0"/>
-				<meta id="2a89158c-8297-4f22-82b9-a992ddf07cdd" name="Grouper.003_1"/>
-			</meta>
-			<meta id="778849e9-1ad0-478e-939d-0b91e22cfab1" name="Grouper.004">
-				<meta id="26109fd3-b7e9-40ea-97c3-5b5c724955d5" name="Grouper.004_0"/>
-				<meta id="4f1fb373-f23a-469f-8ce4-b8e224194dac" name="Grouper.004_1"/>
-			</meta>
-		</meta>
-		<meta id="992e609f-cfcc-4168-8f9b-3cd918440fdc" name="Flower_Blue_Part">
-			<meta id="75724c98-e009-495f-bec5-365e01112ee0" name="Attach_Left.002"/>
-			<meta id="ef9d188d-65ee-4f5f-8874-8b72a1dbec07" name="Flower_Blue_Part_0"/>
-			<meta id="8e24553d-0b86-4dc0-81d0-5800dae07ba2" name="Flower_Blue_Part_1"/>
-		</meta>
-		<meta id="c621194c-c911-49db-860b-f1d4e31a581c" name="Flower_Orange_Part">
-			<meta id="ffb263c6-3ae9-4425-8e2e-d2006f0b34f2" name="Attach_Left.003"/>
-			<meta id="9401d384-1f17-4f40-b6e7-90aeafa39a88" name="Flower_Orange_Part_0"/>
-			<meta id="a5f38651-f91f-4ac6-9273-f228cebe7989" name="Flower_Orange_Part_1"/>
-		</meta>
-		<meta id="cb2efd50-afdd-4bbf-8318-164d3743f4e0" name="Flower_Yellow_Part">
-			<meta id="0efb48a4-c58d-443b-b45d-4979d06a1522" name="Attach_Left.019"/>
-			<meta id="a86b452c-5abc-49b6-a4fb-3a29695d0a21" name="Flower_Yellow_Part_0"/>
-			<meta id="e6ca2d2f-0091-452c-acec-00bff10fc220" name="Flower_Yellow_Part_1"/>
-		</meta>
+	<meta id="f288d714-e167-4053-9c67-c5166bb2ba32" type="group" folder="true" name="LOD">
+		<meta id="3787b150-4935-4e53-beae-a6c88fc17770" name="Flower_Blue_Part_0"/>
+		<meta id="d4129d15-afe4-4697-b060-13ced6bb2298" name="Flower_Blue_Part_1"/>
+		<meta id="469577d5-1316-4348-99ae-7e8a1ed1a273" name="Flower_Orange_Part_0"/>
+		<meta id="5519ec8d-5c63-4057-a851-1960d842a624" name="Flower_Orange_Part_1"/>
+		<meta id="c95d4983-b160-4c95-8e04-4efc7d5d909b" name="Flower_Yellow_Part_0"/>
+		<meta id="477bc5fc-1d1c-40fa-9d36-c5add68dd640" name="Flower_Yellow_Part_1"/>
 	</meta>
-	<meta id="b1a51bde-5caf-479e-8d5a-45a49d5980a5" type="group" folder="true" name="LOD">
-		<meta id="f8646c24-b234-491e-8bf6-7f112daad38d" name="Flower_Blue_Part_0"/>
-		<meta id="4975081b-6fbe-431a-aa46-eefde9a2a362" name="Flower_Blue_Part_1"/>
-		<meta id="7708ffae-05fd-4431-bc06-4a214b4494cb" name="Flower_Orange_Part_0"/>
-		<meta id="15f3956a-4ed8-4a5b-a577-c213cc1e3081" name="Flower_Orange_Part_1"/>
-		<meta id="31eefa55-73d7-46ba-9dd7-15b63cf93aea" name="Flower_Yellow_Part_0"/>
-		<meta id="941b941f-f27c-42cd-9400-773594a911ad" name="Flower_Yellow_Part_1"/>
+	<meta id="e4970ae1-e018-40c2-a2b5-ec57a2f9d126" name="Prefab">
+		<meta id="fd8f0400-7c25-4b88-8911-ce73dafd8369" name="Crate_Part">
+			<meta id="c5398895-5347-4f1e-a9b0-ab5d44a0cf7a" name="crate"/>
+			<meta id="b4e0b3a1-b44b-4dc3-a900-827292b5414e" name="Attach_minor_5"/>
+			<meta id="6a9a55f1-a2eb-4c57-94e1-9db64cd12b06" name="Path_Crate_Part_Worker_1"/>
+			<meta id="37b4d7e6-478c-412c-b8d0-a9debba96559" name="Path_Crate_Part_Visitor"/>
+			<meta id="027afed5-68fa-4c8e-8142-fdad35541183" name="Path_Crate_Part_Transport"/>
+			<meta id="16198ebf-90ca-48d2-8c21-44b03d800e21" name="Path_Crate_Part_Worker_2"/>
+		</meta>
+		<meta id="dd002f8a-bc02-488f-8af1-5670559caafe" name="Barrel_Part">
+			<meta id="ab6d1937-1cd7-47ca-b328-0e5164d13be7" name="Attach_minor_6"/>
+			<meta id="d667d091-8a50-49fc-ae25-f53be878c595" name="barrel.001">
+				<meta id="badf3699-72b6-4700-976c-746b2fd73d4e" name="barrel.001_0"/>
+				<meta id="9eebbd94-4cb5-4298-8aa0-35b26de50a54" name="barrel.001_1"/>
+				<meta id="f934b411-0874-44e5-9332-c644726c34e2" name="barrel.001_2"/>
+			</meta>
+			<meta id="02bc2ead-55b2-4af7-8a64-0470ceb908bf" name="top.002"/>
+			<meta id="00b6f2e6-51cc-4d49-8bd1-2e566daab8dd" name="Path_Barrel_Part_Worker_2"/>
+			<meta id="0bce6500-f727-4308-bf42-bf029cbb8e0a" name="Path_Barrel_Part_Visitor"/>
+			<meta id="f42d8daf-3e57-4e24-9728-25372a0d7577" name="Path_Barrel_Part_Transport"/>
+			<meta id="f5c4b2f7-d6c7-4239-bac4-19e8b59bca1f" name="Path_Barrel_Part_Worker_1"/>
+		</meta>
+		<meta id="4d41834f-b2d1-45c1-b1bd-119b665ce017" name="Crate_Stack_Part">
+			<meta id="ec8759b8-5508-430e-9ef3-6a391873b33e" name="crate flat.004"/>
+			<meta id="ee5e4ce1-397b-49d9-95fb-a7f2cab9caa6" name="crate.006"/>
+			<meta id="6bb1606c-b198-415f-83a9-95d42877a676" name="crate.007"/>
+			<meta id="9ee3758f-43b7-42b2-a9a0-60b6b6f2ee60" name="crate.008"/>
+			<meta id="c5002c26-a578-4fe8-918f-0ff9c082f03e" name="handcrate.004"/>
+			<meta id="187cb9cf-9260-4199-bc65-2ee38b906b22" name="handcrate.005"/>
+			<meta id="f473e47f-137c-4405-9ef1-b8f7d4188ed3" name="hinge.004"/>
+			<meta id="173f324f-6e12-4fbb-b9ec-cf8aca98e392" name="Path_Crate_Stack_Part_Transport"/>
+			<meta id="4610bb22-ccdd-4e73-9269-9bdc3309adb9" name="Path_Crate_Stack_Part_Visitor"/>
+			<meta id="27c43b7a-dda2-4c87-bfd3-9c235fa27530" name="Path_Crate_Stack_Part_Worker_1"/>
+			<meta id="2018b23a-f261-4b09-b214-e790cd301e0f" name="Path_Crate_Stack_Part_Worker_2"/>
+			<meta id="a7cc66bd-957b-45c3-b66c-2c4cee337afd" name="Attach_minor_8"/>
+			<meta id="97fc07af-b0e4-4550-a921-370305008cda" name="Attach_minor_81"/>
+			<meta id="04658449-94fa-44c7-abe0-65386e8a83d5" name="Attach_minor_82"/>
+		</meta>
+		<meta id="d028d3a0-60c8-43e5-a2ff-da9df05ea5b9" name="Salmon_Part">
+			<meta id="4d54c993-2dac-4e93-a125-5a2041b1fe67" name="Attach_minor_13"/>
+			<meta id="47b6130d-3733-4ea6-b722-e98d7e839634" name="Salmon.003">
+				<meta id="0e884e63-d1dc-4355-8e84-5ba245b10105" name="Salmon.003_0"/>
+				<meta id="9ef0d1a5-0168-4129-bfb8-64cf76439b83" name="Salmon.003_1"/>
+			</meta>
+			<meta id="c67fd002-3864-4be7-9bf9-ad99d6c5656e" name="Salmon.001">
+				<meta id="91de1a8b-c876-4593-9618-cfa11c97d8c8" name="Salmon.001_0"/>
+				<meta id="577966fd-6aa8-48b1-b4f6-679042eb060c" name="Salmon.001_1"/>
+			</meta>
+			<meta id="49fa7669-c818-4bcb-9749-dcfb6f7c1f9e" name="Salmon.002">
+				<meta id="e3f6e99a-37e8-4e37-8ac0-da4772267d8b" name="Salmon.002_0"/>
+				<meta id="3858c608-9d42-40dc-9562-a47629cc85bc" name="Salmon.002_1"/>
+			</meta>
+			<meta id="33ab62db-35cc-42ae-a658-678e9a065991" name="Salmon.004">
+				<meta id="197acb12-ab3f-4d43-a420-2ebe6be76c1b" name="Salmon.004_0"/>
+				<meta id="2400effb-8d07-46cb-aca2-9aebc7c9b8f4" name="Salmon.004_1"/>
+			</meta>
+		</meta>
+		<meta id="50dc2310-cf40-4296-b26d-58b0abe2c06d" name="Trout_Part">
+			<meta id="31c389ff-56b1-4be7-9f5a-0b431f1e8175" name="Attach_minor_14"/>
+			<meta id="7ef33a72-8314-439c-b272-366e23b3c2a5" name="Trout.001">
+				<meta id="600b7b82-5608-420f-a1cc-88f57955b085" name="Trout.001_0"/>
+				<meta id="733ddc3a-634a-4e9d-8eb0-bf190bfda3f0" name="Trout.001_1"/>
+			</meta>
+			<meta id="2cfca758-ea7f-44b6-a8dd-cec95d0820b6" name="Trout.002">
+				<meta id="ab5be8da-a9ba-464c-b25e-51873d8151aa" name="Trout.002_0"/>
+				<meta id="6917e888-82b5-4428-a774-0fc47ad8afb0" name="Trout.002_1"/>
+			</meta>
+			<meta id="befc9670-38a3-4679-9d8c-89e19079fcfa" name="Trout.003">
+				<meta id="4da31947-57a4-4bd2-87ff-1b4c46190d52" name="Trout.003_0"/>
+				<meta id="ea54e320-7cec-4f52-95b2-ccdd67cd6834" name="Trout.003_1"/>
+			</meta>
+		</meta>
+		<meta id="a62b9997-d940-4a7f-802d-835646a34c2d" name="Roughy_Part">
+			<meta id="3331aa20-76f0-4cf8-8838-6b8cce9ee3a7" name="Attach_minor_7"/>
+			<meta id="6ba443e5-737a-42e5-846f-904f66204410" name="Roughy.003">
+				<meta id="c62ddb48-e76e-4692-88dc-c026a61d4cfc" name="Roughy.003_0"/>
+				<meta id="c0a591df-8d6c-48d5-b5ee-f8f33d44b27d" name="Roughy.003_1"/>
+			</meta>
+			<meta id="639d0ffc-144a-46fb-8c17-d12d56e89622" name="Roughy.002">
+				<meta id="edfd71a4-1933-48a2-a462-2aa3150ea1b8" name="Roughy.002_0"/>
+				<meta id="b537a090-d2ea-4f1c-869e-b102c69506d2" name="Roughy.002_1"/>
+			</meta>
+			<meta id="adfdc85d-b597-44a1-b415-5ee9e1faa8b0" name="Roughy.001">
+				<meta id="2f87dfd2-1f3a-4037-a4a5-044c3b30a668" name="Roughy.001_0"/>
+				<meta id="5b26bd76-c0b3-4bc1-a9ca-fe364889258d" name="Roughy.001_1"/>
+			</meta>
+			<meta id="16cdb84a-6006-4d5c-9888-58496cc6fe41" name="Roughy.004">
+				<meta id="bf81107d-e828-463d-8576-4de20c66c5fe" name="Roughy.004_0"/>
+				<meta id="e2a6dffd-7a88-4fe5-91f8-08356931a319" name="Roughy.004_1"/>
+			</meta>
+		</meta>
+		<meta id="ee1cc1c4-25ee-449c-b4db-fa23b87085f6" name="Ahi_Part">
+			<meta id="f0e95cc2-54b3-4ab9-b9df-f7f77a1da497" name="Attach_minor_17"/>
+			<meta id="e220714e-2b17-45bd-bf9c-4bd7b68acf6a" name="Ahi.003">
+				<meta id="994a307f-03dc-403b-ad56-24bd00a1afdf" name="Ahi.003_0"/>
+				<meta id="27c45515-88ae-4fee-8a17-7711e23b7d7f" name="Ahi.003_1"/>
+			</meta>
+			<meta id="bb0e9454-94b3-4f1f-9af2-0f6496dd8a4b" name="Ahi.002">
+				<meta id="b99cc5c2-95ca-4c53-937e-af364bcb48e3" name="Ahi.002_0"/>
+				<meta id="6a842ea1-409c-4706-bce3-cfe4258ff8e7" name="Ahi.002_1"/>
+			</meta>
+		</meta>
+		<meta id="34150f22-4955-4a30-aa61-19db614c719e" name="Choice_Part">
+			<meta id="5d03d00b-c867-45ca-bce1-34b08473d30c" name="Choice.003">
+				<meta id="bcb4e35d-ae75-4515-b6b8-14e1aa7be751" name="Choice.003_0"/>
+				<meta id="9bee3089-1d7c-4297-9826-8df504afc633" name="Choice.003_1"/>
+			</meta>
+			<meta id="3ec516e6-6be9-4d83-b811-ff9c01362bf1" name="Choice.002">
+				<meta id="1af524b9-5cd7-487c-bd01-41f4e49e957f" name="Choice.002_0"/>
+				<meta id="fe701cb6-eb02-4bee-827e-d7b1ab72307e" name="Choice.002_1"/>
+			</meta>
+			<meta id="fdb082d0-79ab-4840-b38a-3ad0f36026f1" name="Choice.001">
+				<meta id="9175aea9-0bcc-4f06-96e7-84e893a7c516" name="Choice.001_0"/>
+				<meta id="d3ed77bf-cff1-4a58-a3a1-90c65de8ef55" name="Choice.001_1"/>
+			</meta>
+			<meta id="af89c45c-73d2-4677-97dd-8fbb1ad6ce6f" name="Attach_minor_18"/>
+		</meta>
+		<meta id="6c10318f-dc87-4d5a-a84a-8ecddbc584dc" name="Bass_Part">
+			<meta id="61762cc9-16e6-4bd9-bfd7-e44626e5dd88" name="Attach_minor_12"/>
+			<meta id="3535fc78-b0b8-4f5e-9de3-d0902e56f12e" name="Bass.004">
+				<meta id="1f7ee354-3aac-400b-ba34-22e007141067" name="Bass.004_0"/>
+				<meta id="08664720-a7b3-4fcc-b77b-b3e413ac2b7f" name="Bass.004_1"/>
+			</meta>
+			<meta id="356be48d-4cb0-4ba8-9463-4e504e53415b" name="Bass.003">
+				<meta id="27117296-4b72-432f-b7af-859e56f38f37" name="Bass.003_0"/>
+				<meta id="86d5b2ac-a33f-4b90-98cd-df747785af05" name="Bass.003_1"/>
+			</meta>
+			<meta id="3008a40a-59b4-41b1-9103-766e75b4e4b8" name="Bass.001">
+				<meta id="015ebf64-3435-4b61-99ed-488b1bbfb4d8" name="Bass.001_0"/>
+				<meta id="3fa5bc9b-29c2-4991-a548-abda638f279e" name="Bass.001_1"/>
+			</meta>
+			<meta id="ae0010ca-664b-453c-9582-fd77677f9ea6" name="Bass.002">
+				<meta id="ca05da70-0f77-4ee5-a200-7f8a8074d320" name="Bass.002_0"/>
+				<meta id="6cd05101-6ea3-4baa-bbc6-eef16303371f" name="Bass.002_1"/>
+			</meta>
+		</meta>
+		<meta id="f7b3b09b-4c9b-411e-93f9-0845374d844f" name="Grouper_Part">
+			<meta id="5389ba81-9b8b-47e6-b1f9-e741341b9b5e" name="Attach_minor_37"/>
+			<meta id="f4695bc6-a962-480e-802d-b8fc3cfb5300" name="Grouper.001">
+				<meta id="e54b5332-e362-45a4-9141-1f1c68c133c9" name="Grouper.001_0"/>
+				<meta id="0f4a0ea2-33c0-4b85-92e5-630722058966" name="Grouper.001_1"/>
+			</meta>
+			<meta id="4a672be0-b97a-4dd9-b6d9-01fe14b9b95b" name="Grouper.002">
+				<meta id="65a830f9-d609-40e8-8574-1c2378575942" name="Grouper.002_0"/>
+				<meta id="fcc80d92-854a-4b6c-85f1-3061212518d9" name="Grouper.002_1"/>
+			</meta>
+			<meta id="22756bb6-60d4-40ea-973a-97bf73611aac" name="Grouper.003">
+				<meta id="ffa6f62f-7941-4c59-bfe0-caa22163d176" name="Grouper.003_0"/>
+				<meta id="ea2e3fae-de99-4c74-bdd1-15dc2f2b541a" name="Grouper.003_1"/>
+			</meta>
+			<meta id="71c79d60-580b-49b4-9be2-df5aa1041a0c" name="Grouper.004">
+				<meta id="1813c0f3-b1f0-4f15-a448-f3334e7d64b4" name="Grouper.004_0"/>
+				<meta id="45906316-ada0-4f0d-b895-5c1c6c7dd4c0" name="Grouper.004_1"/>
+			</meta>
+		</meta>
+		<meta id="fc5d7869-9702-4f35-bc01-e3e902959d47" name="Flower_Blue_Part">
+			<meta id="1da7bae2-4083-401c-95f1-5766074d66f4" name="Attach_Left.002"/>
+			<meta id="d64e466a-00df-4f2b-a3a6-8138f3e4ffff" name="Flower_Blue_Part_0"/>
+			<meta id="5a9caddf-667f-435a-b1a0-7f8045b0cdab" name="Flower_Blue_Part_1"/>
+		</meta>
+		<meta id="f43337ac-72dc-40e7-b9dd-d98178412ac1" name="Flower_Orange_Part">
+			<meta id="b34c4862-a253-450f-ad9d-9c02566b0dcd" name="Attach_Left.003"/>
+			<meta id="02638def-abf0-4e59-add5-176851fc5185" name="Flower_Orange_Part_0"/>
+			<meta id="20108f65-05f7-4fb9-affe-59b6dadf03ec" name="Flower_Orange_Part_1"/>
+		</meta>
+		<meta id="47e219bd-137c-4749-b3ab-c2df016dfe6d" name="Flower_Yellow_Part">
+			<meta id="06533dd7-d213-4f62-991f-ff036aa3c861" name="Attach_Left.019"/>
+			<meta id="918c45d8-f88e-43a8-9079-95f0e6586c37" name="Flower_Yellow_Part_0"/>
+			<meta id="cf63482e-0339-4088-92d8-63971eb52daf" name="Flower_Yellow_Part_1"/>
+		</meta>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
@@ -292,7 +292,7 @@
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Path_Crate_Part_Transport"/>
+						<NodeName value="Path_Crate_Part_Worker_1"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
@@ -302,7 +302,7 @@
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Path_Crate_Part_Worker_1"/>
+						<NodeName value="Path_Crate_Part_Transport"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
@@ -349,7 +349,7 @@
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Path_Barrel_Part_Transport"/>
+						<NodeName value="Path_Barrel_Part_Worker_2"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
@@ -359,12 +359,12 @@
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Path_Barrel_Part_Worker_1"/>
+						<NodeName value="Path_Barrel_Part_Transport"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Path_Barrel_Part_Worker_2"/>
+						<NodeName value="Path_Barrel_Part_Worker_1"/>
 					</Item>
 				</ChildList>
 				<NodeName value="Barrel_Part"/>
@@ -410,11 +410,6 @@
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_minor_8"/>
-					</Item>
-					<Item type="GenCFbxNodeConfig">
-						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
 						<NodeName value="Path_Crate_Stack_Part_Transport"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
@@ -431,6 +426,11 @@
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
 						<NodeName value="Path_Crate_Stack_Part_Worker_2"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_minor_8"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
@@ -974,111 +974,111 @@
 	</NodeConfig>
 	<MaterialList>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="d89aa5e8-29d3-4283-be7b-a223e26a0bc0"/>
+			<MaterialGuid value="8adde791-1b8e-4bb9-b82c-c4b0732746f9"/>
 			<MaterialName value="Color.Turquoise"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="b07f3a81-ec71-4332-8d70-d4c2f8242114"/>
+			<MaterialGuid value="7f638724-c97a-4f91-880a-a653366f0c04"/>
 			<MaterialName value="Color.Turquoise.003"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="2d71965e-5b6d-434f-b942-5e6646b0ad58"/>
+			<MaterialGuid value="b27d9203-8d6b-44ae-a22a-ad6f6537a8df"/>
 			<MaterialName value="Color.Turquoise.004"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="20e87f47-f8a6-4296-a1c3-29533dacfdd9"/>
+			<MaterialGuid value="6d93eace-8d0a-471a-853e-e777eb513300"/>
 			<MaterialName value="Color.Turquoise.005"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="a3212d93-c3f7-4a76-8877-52b4f238094b"/>
+			<MaterialGuid value="5ee92ce8-7e0f-49a6-aa7a-c4175dd70b0a"/>
 			<MaterialName value="Color.Turquoise.008"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="0d264965-7e75-41f6-9146-887f4fcd6eae"/>
+			<MaterialGuid value="1e6767b6-3da2-443d-b603-6ea53ae64f50"/>
 			<MaterialName value="Color.Turquoise.013"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="e9238ac3-3e81-4fbd-a62d-30151e0b792d"/>
+			<MaterialGuid value="20fc79a1-fb17-4d4c-b20d-4f856e1f5e8d"/>
 			<MaterialName value="Color.Turquoise.014"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="2bbdfedf-989b-43a1-89b9-38b914d6ace7"/>
+			<MaterialGuid value="3f4f38d9-a56b-452a-afde-6b81d59736d2"/>
 			<MaterialName value="Color.Turquoise.015"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="ba56eea8-cb06-41de-be3b-b0d1e70abcb0"/>
+			<MaterialGuid value="9d516559-8217-460f-bb42-02640a3f1738"/>
 			<MaterialName value="Color.Turquoise.016"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="4629eac6-1091-483b-8e77-336688286f43"/>
+			<MaterialGuid value="619f4f89-bac8-46ef-88a5-0b1341f9fa55"/>
 			<MaterialName value="ahiScalesNew"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="5f4b8aa9-64d3-41f1-96bb-22e1f9de28cb"/>
+			<MaterialGuid value="b86629c3-51d2-4ebd-accc-ebfc13313edd"/>
 			<MaterialName value="bassScalesNew"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="b2cfa22d-2a84-46b1-93cd-40460225630e"/>
+			<MaterialGuid value="f832a664-27e7-4b6a-ac3f-b0e30fd40677"/>
 			<MaterialName value="colors"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="50f82a69-3a76-4f1a-a2b6-44e5556cc40d"/>
+			<MaterialGuid value="77a401c5-c6f6-476f-b527-df6c74e55d38"/>
 			<MaterialName value="colors.001"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="e0eb1b35-a495-463c-b6a8-602d5635565d"/>
+			<MaterialGuid value="6cfad8af-13af-415e-b2c6-e65c5b6327f7"/>
 			<MaterialName value="colors.002"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="abb93caa-b45f-4b6f-abfb-b4fc309858e4"/>
+			<MaterialGuid value="0e89d06a-c993-4356-b5d3-68aead184fbb"/>
 			<MaterialName value="food.001"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="2e35330f-f292-438a-ad22-53dd49126f90"/>
+			<MaterialGuid value="2cbac43b-9df0-46a9-8f18-fb78514b891a"/>
 			<MaterialName value="grouperScales"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="ea0c73f4-9b11-489a-835f-16a7a223c96d"/>
+			<MaterialGuid value="e04649a8-e45b-48d0-b851-acb39e2f72e3"/>
 			<MaterialName value="leaf"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="4560b4c6-769d-4382-a7f5-8ba86d2ba6c1"/>
+			<MaterialGuid value="29e67618-57a6-407b-8a06-36a20fa2b40d"/>
 			<MaterialName value="leaf.001"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="824f0675-84c0-44b7-950e-bf331d0f3ae5"/>
+			<MaterialGuid value="092f0915-0d78-48ff-bb8f-370469d18118"/>
 			<MaterialName value="leaf.002"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="b239cb3c-4920-418a-992b-a88067e1ce5b"/>
+			<MaterialGuid value="0b824195-35b6-4c29-8099-c19f01c0da72"/>
 			<MaterialName value="metal"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="6656e1b6-220d-4381-a8af-27744003392f"/>
+			<MaterialGuid value="85ecfd55-8075-4492-b754-9a69224d4ad3"/>
 			<MaterialName value="metal.001"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="df476473-d68c-4bc8-b6bf-bb57a97fd10e"/>
+			<MaterialGuid value="743e2233-1fb0-4aae-8839-4eaae03b3474"/>
 			<MaterialName value="planks.001"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="e9d4cfa9-93ce-442f-bbea-cb1176b51dca"/>
+			<MaterialGuid value="41b43077-e6cf-4a3f-aa41-ddbbc62efbbe"/>
 			<MaterialName value="planks.002"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="9a49354d-0a90-4792-a21a-9eb0ea477bc6"/>
+			<MaterialGuid value="0d672f92-b13c-491e-aa8b-cb6befe8e303"/>
 			<MaterialName value="roughyScales"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="6149e4c4-1d82-43d8-aca3-46be43233f29"/>
+			<MaterialGuid value="a9ab3339-d634-49e0-8277-7c0b1314c806"/>
 			<MaterialName value="salmonScalesNew"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="7741ca29-94c1-4628-993b-41a453d1e521"/>
+			<MaterialGuid value="98f6ebc8-7631-43e3-931d-e6f1901645c4"/>
 			<MaterialName value="troutScalesNew"/>
 		</Item>
 		<Item type="GamCDataMaterialPair">
-			<MaterialGuid value="16d832df-55cd-4fc0-bc75-712afe98f80b"/>
+			<MaterialGuid value="a7dd0134-5214-485b-9a47-c7914d4903e7"/>
 			<MaterialName value="wood.003"/>
 		</Item>
 	</MaterialList>
