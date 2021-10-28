@@ -100,7 +100,7 @@ local monuments = {
 -- WARNING!
 --
 -- MY CONFIG Ends Here. Changing code below this line will change *GPS*, not just your mod!
--- As an alternative to the code above, you may supply your own config table to GP.loaded.
+-- As an alternative to the code above, you may return your own config table.
 --
 --
 -- Create the config table.
@@ -118,6 +118,6 @@ local config = {
     logo = logo or {}
 }
 
--- Use global to return config to loader :-(.
-GP.loaded = config
+-- Return config to loader
+return config
 
