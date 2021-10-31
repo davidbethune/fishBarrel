@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meta id="2824e424-0678-495b-9c1d-c320254325f1">
+	<meta id="3d90cc8e-43fa-491b-a7d2-00af9ceb8abd" type="group" folder="true" name="Materials">
+		<meta id="44db3c4e-2abf-4a0b-8dfa-4ade8a9021dc" name="wood"/>
+		<meta id="832d1703-e33d-4229-be5b-8b0a1413a754" name="hay"/>
+	</meta>
+	<meta id="67cf2d1f-f6e6-4032-8a15-34d38a09e445" type="group" folder="true" name="Meshes">
+		<meta id="b6e46a18-9da0-411f-86a2-f81e9e822579" name="trough.001_wood"/>
+		<meta id="3e830a6b-3855-457a-8d64-cab4fd04de8c" name="trough.001_hay"/>
+	</meta>
+	<meta id="47bd6414-3423-436b-93ee-6e0489685103" name="Prefab">
+		<meta id="03a5c2c8-8433-4683-a991-82da71e908a7" name="Light"/>
+		<meta id="3d42f4e4-e660-4f9f-bcfa-1b4b9d72c26b" name="Camera"/>
+		<meta id="2f518894-cbd7-4364-a245-71261b0d17aa" name="Produce_Crate_Part">
+			<meta id="17f2a1c2-d556-47f3-b57b-e96583f505c3" name="trough.001">
+				<meta id="0dbec646-cd7f-4aff-9fa5-92a45919d6e6" name="trough.001_0"/>
+				<meta id="4b2a71ea-54d6-4721-8e56-ecbff4a3c666" name="trough.001_1"/>
+			</meta>
+			<meta id="8692c443-efd0-43dd-b1e2-f29e9dc94086" name="Attach_Bottom.001"/>
+		</meta>
+	</meta>
+</meta>
+<importer type="GamCFbxImporterConfiguration">
+	<Md5Checksum value="2bf3e2d259a7484335f23e9e37917fd8"/>
+	<Scale value="0.01"/>
+	<PatchMeshOffset value="true"/>
+	<UniqueNodeName value="false"/>
+	<ImportAnimation value="false"/>
+	<IgnoreRootAnimation value="false"/>
+	<FlipXAxis value="true"/>
+	<MergeDuplicateMeshes value="true"/>
+	<GenerateLod value="false"/>
+	<OverrideExistingLod value="false"/>
+	<NodeConfig type="GenCFbxNodeConfig">
+		<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+		<ChildList>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="Light"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="Camera"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="trough.001_0"/>
+							</Item>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="trough.001_1"/>
+							</Item>
+						</ChildList>
+						<NodeName value="trough.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Bottom.001"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Produce_Crate_Part"/>
+			</Item>
+		</ChildList>
+		<NodeName value="Prefab"/>
+	</NodeConfig>
+	<MaterialList>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="832d1703-e33d-4229-be5b-8b0a1413a754"/>
+			<MaterialName value="hay"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="44db3c4e-2abf-4a0b-8dfa-4ade8a9021dc"/>
+			<MaterialName value="wood"/>
+		</Item>
+	</MaterialList>
+</importer>
+

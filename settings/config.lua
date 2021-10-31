@@ -56,10 +56,15 @@ local categories = {
             PathTypes = {DEFAULT = "Transport"}
         }
     },
+    PRODUCE_CRATE = {Produce_Crate = {}},
+    TROUGH = {TROUGH_HAY = {AssetRegistered = true, BuildingRegistered = true}},
     BUCKET = {
         BUCKET_WATER = {AssetRegistered = true, BuildingRegistered = true}
     },
-    TABLE = {TABLE_WOOD1 = {AssetRegistered = true, BuildingRegistered = true}},
+    TABLE = {
+        TABLE_WOOD1 = {AssetRegistered = true, BuildingRegistered = true},
+        TABLE_WOOD2 = {AssetRegistered = true, BuildingRegistered = true}
+    },
     SEATING = {
         BENCH_WOOD1 = {AssetRegistered = true, BuildingRegistered = true},
         STOOL_WOOD1 = {AssetRegistered = true, BuildingRegistered = true},
@@ -87,7 +92,8 @@ local categories = {
 -- MY CONFIG Model Files
 local modelFiles = {
     [modName] = {"CRATE", "DECOR", "BARREL"},
-    friends = {"FRIENDS"}
+    friends = {"FRIENDS"},
+    produceCrate = {"PRODUCE_CRATE"}
 }
 
 -- MY CONFIG Node Types
@@ -99,11 +105,13 @@ local monuments = {
         Categories = {
             BARREL = {Order = 1},
             CRATE = {Order = 2},
-            BUCKET = {Order = 3},
-            TABLE = {Order = 4},
-            SEATING = {Order = 5},
-            FRIENDS = {Order = 6},
-            DECOR = {Order = 7}
+            PRODUCE_CRATE = {Order = 3},
+            BUCKET = {Order = 4},
+            TROUGH = {Order = 5},
+            TABLE = {Order = 6},
+            SEATING = {Order = 7},
+            FRIENDS = {Order = 8},
+            DECOR = {Order = 9}
         },
         Type = "FOOD_PRODUCTION",
         Function = {},

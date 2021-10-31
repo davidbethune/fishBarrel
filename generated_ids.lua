@@ -51,4 +51,6 @@ IdMap = {
 	{ "models/troutBake.png", "", "ebe0b749-3f75-495d-99d2-62a449187315" },
 	{ "models/casaDeFruta.fbx", "", "3a56684c-223c-4961-a1f4-5f9b96457090" },
 	{ "BUILDING_FISH_BARREL", "BUILDING", "9389ddcb-6756-47c6-ab0e-77d5f8894c57" },
+	{ "models/produceCrate.fbx", "", "2824e424-0678-495b-9c1d-c320254325f1" },
+	{ "BUILDING_PART_Produce_Crate", "BUILDING_PART", "3efe2c0a-2f58-43eb-9aa8-ab48c0bc6d36" },
 }
