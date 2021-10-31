@@ -99,11 +99,11 @@ local monuments = {
         Categories = {
             BARREL = {Order = 1},
             CRATE = {Order = 2},
-            BUCKET = {Order = 2},
-            TABLE = {Order = 3},
-            SEATING = {Order = 3},
-            FRIENDS = {Order = 4},
-            DECOR = {Order = 5}
+            BUCKET = {Order = 3},
+            TABLE = {Order = 4},
+            SEATING = {Order = 5},
+            FRIENDS = {Order = 6},
+            DECOR = {Order = 7}
         },
         Type = "FOOD_PRODUCTION",
         Function = {},
