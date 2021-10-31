@@ -4,6 +4,7 @@
 ModId = "d7c26e00-0629-492f-8155-90065e7594f6"
 
 IdMap = {
+	{ "BUILDING_CASA_DE_FRUTA", "BUILDING", "af9b8d3e-b05e-4d6f-9013-675692fe8448" },
 	{ "FISHMONGER", "JOB", "68e09c02-8a15-423f-a9f7-2dd63fd36139" },
 	{ "FISH_PRODUCER", "BUILDING_FUNCTION", "e306a376-fcc4-4866-96b3-9e0c3968803b" },
 	{ "models/roughyBake.png", "", "2c6caff6-366e-401b-a8e1-077183ee91cd" },
@@ -49,4 +50,5 @@ IdMap = {
 	{ "models/rainbowScalesBaked.png", "", "eb34a634-8375-41be-85d7-924019978872" },
 	{ "models/troutBake.png", "", "ebe0b749-3f75-495d-99d2-62a449187315" },
 	{ "models/casaDeFruta.fbx", "", "3a56684c-223c-4961-a1f4-5f9b96457090" },
+	{ "BUILDING_FISH_BARREL", "BUILDING", "9389ddcb-6756-47c6-ab0e-77d5f8894c57" },
 }

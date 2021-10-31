@@ -18,8 +18,14 @@ local jobs = {
 
 -- MY CONFIG Workplaces
 local workplaces = {
-    FISH_PRODUCER = {Job = "FISHMONGER", Positions = 1},
-    FISH_GENERATOR = {Produces = {FISH = 10}, Rate = 0.03125}
+    FISH_PRODUCER = {
+        Job = "FISHMONGER",
+        Positions = 1,
+        Produces = {FISH = 0},
+        Requires = {FISH = 1},
+        Carries = {FISH = 5}
+    },
+    FISH_GENERATOR = {Produces = {FISH = 5}, Rate = 0.03125}
 }
 
 -- MY CONFIG Categories
@@ -33,27 +39,33 @@ local categories = {
     },
     CRATE = {
         Crate = {
-            Order = 1,
+            Order = 2,
             Function = "FISH_GENERATOR",
             PathNodes = pathList,
             PathTypes = {DEFAULT = "Transport"}
         },
+        CRATE_FLAT_IRON = {
+            Order = 1,
+            AssetRegistered = true,
+            BuildingRegistered = true
+        },
         Crate_Stack = {
-            Order = 2,
+            Order = 1,
             Function = "FISH_GENERATOR",
             PathNodes = pathList,
             PathTypes = {DEFAULT = "Transport"}
         }
     },
-    FISH = {
-        Ahi = {Order = 1},
-        Roughy = {Order = 2},
-        Grouper = {Order = 3},
-        Salmon = {Order = 4},
-        Bass = {Order = 5},
-        Trout = {Order = 6},
-        Choice = {Order = 7}
+    BUCKET = {
+        BUCKET_WATER = {AssetRegistered = true, BuildingRegistered = true}
     },
+    TABLE = {TABLE_WOOD1 = {AssetRegistered = true, BuildingRegistered = true}},
+    SEATING = {
+        BENCH_WOOD1 = {AssetRegistered = true, BuildingRegistered = true},
+        STOOL_WOOD1 = {AssetRegistered = true, BuildingRegistered = true},
+        STOOL_WOOD2 = {AssetRegistered = true, BuildingRegistered = true}
+    },
+
     FRIENDS = {Black_Cat = {}, Coon_Cat = {}, Boxer_Dog = {}, Collie_Dog = {}},
     DECOR = {
         BUILDING_PART_MARKET_BLUE_TENT = {
@@ -74,26 +86,28 @@ local categories = {
 
 -- MY CONFIG Model Files
 local modelFiles = {
-    [modName] = {"CRATE", "DECOR", "BARREL", "FISH"},
+    [modName] = {"CRATE", "DECOR", "BARREL"},
     friends = {"FRIENDS"}
 }
 
 -- MY CONFIG Node Types
-local nodeTypes = {MINOR = {"FISH"}}
+-- local nodeTypes = {MINOR = {"FISH"}}
 
 -- MY CONFIG Monuments
 local monuments = {
-    SEAFOOD = {
+    CASA_DE_FRUTA = {
         Categories = {
-            BARREL = {Order = 1, Min = 1},
-            CRATE = {Order = 2, Min = 1},
-            FISH = {Order = 3},
+            BARREL = {Order = 1},
+            CRATE = {Order = 2},
+            BUCKET = {Order = 2},
+            TABLE = {Order = 3},
+            SEATING = {Order = 3},
             FRIENDS = {Order = 4},
             DECOR = {Order = 5}
         },
         Type = "FOOD_PRODUCTION",
         Function = {},
-        Logo = "BUILDING_PART_Barrel"
+        Logo = "BUILDING_PART_MARKET_FOOD_SIGN"
     }
 }
 
