@@ -92,9 +92,9 @@ local categories = {
 
 -- MY CONFIG Model Files
 local modelFiles = {
-    [modName] = {"CRATE", "DECOR", "BARREL"},
-    friends = {"FRIENDS"},
-    produceCrate = {"PRODUCE_CRATE"}
+    [modName] = {"PRODUCE_CRATE"},
+    fishBarrel = {"CRATE", "DECOR", "BARREL"},
+    friends = {"FRIENDS"}
 }
 
 -- MY CONFIG Node Types

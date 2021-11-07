@@ -26,6 +26,7 @@ IdMap = {
 	{ "models/ahiBake.png", "", "89bc24f7-31c8-4078-90c2-d61102796830" },
 	{ "models/collieFur.png", "", "74b453b7-f49a-4007-acb9-fe6bed9ea57c" },
 	{ "models/fishBarrel.fbx", "", "cab2c8c2-6503-49e4-ad6c-b53bf8203ced" },
+	{ "models/mixedBerries.jpg", "", "ca46f98f-97e9-4133-909c-880143768930" },
 	{ "BUILDING_PART_Ahi", "BUILDING_PART", "cea76a48-b173-4b48-9e1d-2576f7a6fd66" },
 	{ "BUILDING_PART_Salmon", "BUILDING_PART", "22e2fd99-92b4-4e9b-a0eb-3202c89125a5" },
 	{ "BUILDING_PART_Trout", "BUILDING_PART", "3964604c-f111-4225-a6ea-86e62c3fbb66" },
