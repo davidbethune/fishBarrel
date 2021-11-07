@@ -25,7 +25,8 @@ local workplaces = {
         Requires = {FISH = 1},
         Carries = {FISH = 5}
     },
-    FISH_GENERATOR = {Produces = {FISH = 5}, Rate = 0.03125}
+    FISH_GENERATOR = {Produces = {FISH = 5}, Rate = 0.03125},
+    BERRY_GENERATOR = {Produces = {BERRIES = 5}, Rate = 0.03125}
 }
 
 -- MY CONFIG Categories
@@ -56,7 +57,7 @@ local categories = {
             PathTypes = {DEFAULT = "Transport"}
         }
     },
-    PRODUCE_CRATE = {Produce_Crate = {}},
+    PRODUCE_CRATE = {Produce_Crate = {Function = "BERRY_GENERATOR"}},
     TROUGH = {TROUGH_HAY = {AssetRegistered = true, BuildingRegistered = true}},
     BUCKET = {
         BUCKET_WATER = {AssetRegistered = true, BuildingRegistered = true}
@@ -135,6 +136,7 @@ local config = {
     nodeTypes = nodeTypes or {},
     jobs = jobs or {},
     workplaces = workplaces or {},
+    generators = generators or {},
     monuments = monuments or {},
     buildings = buildings or {},
     logo = logo or {}
