@@ -10,10 +10,12 @@ local modName = "casaDeFruta"
 
 -- MY CONFIG Paths
 local pathList = {"Worker_1", "Worker_2", "Transport", "Visitor"}
+local trayPathList = {"Worker_1", "Transport"}
 
 -- MY CONFIG Jobs
 local jobs = {
-    FISHMONGER = {Work = "MARKET_TENDER", Walk = "WALKING", Delay = 7}
+    FISHMONGER = {Work = "MARKET_TENDER", Walk = "WALKING", Delay = 7},
+    BERRYTENDER = {Work = "MARKET_TENDER", Walk = "WALKING", Delay = 7}
 }
 
 -- MY CONFIG Workplaces
@@ -26,7 +28,13 @@ local workplaces = {
         Carries = {FISH = 5}
     },
     FISH_GENERATOR = {Produces = {FISH = 5}, Rate = 0.03125},
-    BERRY_GENERATOR = {Produces = {BERRIES = 5}, Rate = 0.03125}
+    BERRY_PRODUCER = {
+        Job = "BERRYTENDER",
+        Positions = 1,
+        Produces = {BERRIES = 0},
+        Requires = {BERRIES = 1},
+        Carries = {BERRIES = 5}
+    }
 }
 
 -- MY CONFIG Categories
@@ -57,7 +65,13 @@ local categories = {
             PathTypes = {DEFAULT = "Transport"}
         }
     },
-    PRODUCE_CRATE = {Produce_Crate = {Function = "BERRY_GENERATOR"}},
+    PRODUCE_CRATE = {
+        Produce_Crate = {
+            Function = "BERRY_PRODUCER",
+            PathNodes = trayPathList,
+            PathTypes = {DEFAULT = "Worker_1"}
+        }
+    },
     TROUGH = {TROUGH_HAY = {AssetRegistered = true, BuildingRegistered = true}},
     BUCKET = {
         BUCKET_WATER = {AssetRegistered = true, BuildingRegistered = true}

@@ -16,12 +16,14 @@
 				<meta id="083fc385-73b7-4fcb-bdd2-a6450f28a6b3" name="trough.001_0"/>
 				<meta id="d9f7c1cc-bb9a-406f-8f15-dddaedecc6ab" name="trough.001_1"/>
 			</meta>
-			<meta id="b2620a43-4d90-4abc-a528-027d58b976e1" name="Attach_Bottom.001"/>
+			<meta id="dfc2b43e-8066-4aa7-883b-4d12374b1851" name="Attach_Minor.001"/>
+			<meta id="28070c16-c977-454d-8875-504bff96937b" name="Path_Produce_Crate_Part_Transport"/>
+			<meta id="2fc122e3-7385-4112-8615-bcad756c1e56" name="Path_Produce_Crate_Part_Worker_1"/>
 		</meta>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
-	<Md5Checksum value="f8a398349a0717d723feb23435f5afbc"/>
+	<Md5Checksum value="6462ebd9c5ea0800a6d3b1c061c07b05"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
 	<UniqueNodeName value="false"/>
@@ -66,7 +68,17 @@
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_Bottom.001"/>
+						<NodeName value="Attach_Minor.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Path_Produce_Crate_Part_Transport"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Path_Produce_Crate_Part_Worker_1"/>
 					</Item>
 				</ChildList>
 				<NodeName value="Produce_Crate_Part"/>

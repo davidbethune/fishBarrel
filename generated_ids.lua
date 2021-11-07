@@ -44,6 +44,7 @@ IdMap = {
 	{ "models/food.png", "", "b81b8f40-2874-42a5-a28f-fb8ca99c35bb" },
 	{ "models/leaf.png", "", "802ec555-a176-4363-9cce-3830d3aeec4d" },
 	{ "models/friends.fbx", "", "559e575b-1d6b-4c5e-8bba-8150f2aae84c" },
+	{ "BERRY_PRODUCER", "BUILDING_FUNCTION", "c30d5c84-0b2d-47a5-8c65-b01c9996c05c" },
 	{ "models/grouperBake.png", "", "6bfd3f3c-78b5-4351-a439-ce115d46f55d" },
 	{ "models/log.png", "", "7281bdba-405f-462a-846b-a2442bbffd3a" },
 	{ "models/metal.jpg", "", "6fe882f5-8524-45fe-b8e4-291dab97de0a" },
@@ -62,4 +63,5 @@ IdMap = {
 	{ "BERRY_GENERATOR_GENERATOR_BASE", "BUILDING_FUNCTION", "8149e4ce-6f47-4c48-bcec-7547790c5511" },
 	{ "FISH_GENERATOR_GENERATOR_BASE", "BUILDING_FUNCTION", "bea3215c-777c-4c9e-ab2b-d76a199124fa" },
 	{ "BERRY_GENERATOR", "BUILDING_FUNCTION", "9c45c1a9-4143-4143-9072-06ef3712876f" },
+	{ "BERRYTENDER", "JOB", "0f38d0ab-401b-470b-a146-74c82cc004db" },
 }
